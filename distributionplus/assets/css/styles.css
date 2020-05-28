@@ -182,11 +182,15 @@ header ul li a {
 
 /* Styling for Løsninger boxes starts here */
 
+.bodyloesninger {
+    background-color: #C0C0C0;
+}
+
 .grid section {
     height: 40vh;
     width: 25vw;
-    background-color: yellow;
-    margin: 4vh auto 4vh auto;
+    background-color: white;
+    margin: 15vh auto 0 auto;
 }
 
 .adressering {
@@ -235,6 +239,5 @@ header ul li a {
 
 section div {
     height: 20vh;
-    background: blue;
     width: 25vw;
 }
