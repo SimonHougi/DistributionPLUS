@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 header {
@@ -18,6 +17,13 @@ button {
     border-radius: 1vw;
     border: none;
     background-color: purple;
+    color: white;
+}
+
+footer {
+    height: 20vh;
+    background-color: #3B3B3B;
+    position: relative;
 }
 
 /* Styling for forside starter her */
@@ -61,10 +67,12 @@ header ul li a {
 #backgroundimage h1 {
     font-size: 2.5vw;
     margin-bottom: 3vh;
+    color: white;
 }
 
 #backgroundimage h2 {
-    font-size: 1.5vw    ;
+    font-size: 1.5vw;
+    color: white;
 }
 
 /* Styling for midterste del af forside starter her */
@@ -79,6 +87,7 @@ header ul li a {
     padding-top: 9vh;
     font-size: 2.5vw;
     text-shadow: 1.5px 1.5px rgb(34, 34, 34);
+    color: white;
 }
 
 .flexbox {
@@ -90,19 +99,21 @@ header ul li a {
 #left {
     width: 50vw;
     height: 70vh;
-    background-color: #c8c9c9;
+    background-color: #3B3B3B;
     text-align: center;
 }
 
 #left h2 {
     margin-top: 8vh;
     font-size: 3vw;
+    color: white;
 }
 
 #left p {
     margin-top: 6vh;
     font-size: 2vw;
     font-weight: normal;
+    color: white;
 }
 
 #left button {
@@ -132,11 +143,13 @@ header ul li a {
 
 #nyhedsbrev h2 {
     font-size: 3vw;
+    color: white;
 }
 
 #nyhedsbrev #label {
     margin-top: 4vh;
     font-size: 1.5vw;
+    color: white;
 }
 
 #nyhedsbrev input {
@@ -165,8 +178,63 @@ header ul li a {
     z-index: 1;
 }
 
-footer {
+/* Styling for loesninger.html starts here */
+
+/* Styling for Løsninger boxes starts here */
+
+.grid section {
+    height: 40vh;
+    width: 25vw;
+    background-color: yellow;
+    margin: 4vh auto 4vh auto;
+}
+
+.adressering {
+    grid-area: tl;
+}
+
+.foliering {
+    grid-area: tm;
+}
+
+.kuvertering {
+    grid-area: tr;
+}
+
+.databehandling {
+    grid-area: ml;
+}
+
+.fulfillment {
+    grid-area: mm;
+}
+
+.haandpakning {
+    grid-area: mr;
+}
+
+.papirindpakning {
+    grid-area: bl;
+}
+
+.print {
+    grid-area: bm;
+}
+
+.segmentering {
+    grid-area: br;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'tl tm tr'
+    'ml mm mr'
+    'bl bm br';
+}
+
+section div {
     height: 20vh;
-    background-color: rgb(92, 76, 148);
-    position: relative;
+    background: blue;
+    width: 25vw;
 }
