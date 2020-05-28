@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+}
+
+button {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 1vw;
+    border: none;
+    background-color: purple;
+}
+
+/* Styling for forside starter her */
+
+/* Styling for header starter her */
+
+#logo {
+    width: 7vw;
+}
+
+header img {
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: 2vw;   
+}
+
+header ul {
+    margin-left: 38vw;
+    margin-top: 6vh;
+    list-style-type: none;
+}
+
+header ul li a {
+    color: white;
+    font-size: 1.3vw;
+    padding-left: 4.5vw;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling for baggrundsbillede starter her */
+
+#backgroundimage {
+    height: 100vh;
+    padding: 30vh 0 0 60vw;
+    text-align: center;
+    background-image: url("hero.jpg");
+    background-size: cover;
+}
+
+#backgroundimage h1 {
+    font-size: 2.5vw;
+    margin-bottom: 3vh;
+}
+
+#backgroundimage h2 {
+    font-size: 1.5vw    ;
+}
+
+/* Styling for midterste del af forside starter her */
+
+#top {
+    height: 30vh;
+    background-color: rgb(92, 76, 148);
+    text-align: center;
+}
+
+#top h2 {
+    padding-top: 9vh;
+    font-size: 2.5vw;
+    text-shadow: 1.5px 1.5px rgb(34, 34, 34);
+}
+
+.flexbox {
+    display: flex;
+}
+
+/* Styling for den vestre side af den midterste del starter her */
+
+#left {
+    width: 50vw;
+    height: 70vh;
+    background-color: #c8c9c9;
+    text-align: center;
+}
+
+#left h2 {
+    margin-top: 8vh;
+    font-size: 3vw;
+}
+
+#left p {
+    margin-top: 6vh;
+    font-size: 2vw;
+    font-weight: normal;
+}
+
+#left button {
+    margin-top: 6vh;
+}
+
+
+/* Styling for den højre side af den midterste del starter her */
+
+#map {
+    width: 50vw;
+    height: 70vh;
+    background-color: grey;
+}
+
+/* Styling for nyhedsbrev og footer på forsiden starter her */
+
+#nyhedsbrev {
+    text-align: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#nyhedsbrev h2 {
+    font-size: 3vw;
+}
+
+#nyhedsbrev #label {
+    margin-top: 4vh;
+    font-size: 1.5vw;
+}
+
+#nyhedsbrev input {
+    margin: 1vh 0 1vh 0;
+    width: 15vw;
+    height: 4vh;
+    font-size: 1vw;
+    color: black;
+    margin-bottom: 8vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.video-container video {
+    width: 100vw;
+    height: 100%;
+    filter: grayscale();
+}
+
+.arrangeforward {
+    z-index: 1;
+}
+
+footer {
+    height: 20vh;
+    background-color: rgb(92, 76, 148);
+    position: relative;
+}
