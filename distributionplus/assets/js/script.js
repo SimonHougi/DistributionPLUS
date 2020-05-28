@@ -6,5 +6,23 @@ function initMap() {
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 17, center: DistributionPLUS});
     // The marker, positioned at DistributionPLUS
-    var marker = new google.maps.Marker({position: DistributionPLUS, map: map});
-  }
+    var marker = new google.maps.Marker({ position: DistributionPLUS, map: map });
+};
+
+// Video preview i loesninger //
+
+let videoContainerList = document.querySelectorAll(".video-container");
+
+videoContainerList.forEach(videoContainer => {
+    videoContainer.addEventListener("mouseover", function () {
+        this.querySelectorAll("video").forEach(video => {
+            video.play()
+        })
+    })
+    
+    videoContainer.addEventListener("mouseout", function () {
+        this.querySelectorAll("video").forEach(video => {
+            video.pause()
+        })
+    })
+})
