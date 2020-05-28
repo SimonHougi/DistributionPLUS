@@ -24,7 +24,29 @@ footer {
     height: 20vh;
     background-color: #3B3B3B;
     position: relative;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    'lf mf rf';
 }
+
+.leftfooter {
+    grid-area: lf;
+}
+
+.middlefooter {
+    grid-area: mf;
+}
+
+.rightfooter {
+    grid-area: rf;
+}
+
+footer div {
+    margin: auto;
+    text-align: center;
+}
+
 
 /* Styling for forside starter her */
 
@@ -41,7 +63,7 @@ header img {
 }
 
 header ul {
-    margin-left: 38vw;
+    margin-left: 45vw;
     margin-top: 6vh;
     list-style-type: none;
 }
@@ -240,4 +262,18 @@ header ul li a {
 section div {
     height: 20vh;
     width: 25vw;
+}
+
+/* Styling for case.html starter her */
+
+.cases div {
+    width: 80vw;
+    height: 10vh;
+    background-color: teal;
+    margin: 10vh auto auto auto;
+    text-align: center;
+}
+
+.cases div h1 {
+    padding: 2.5vh;
 }
