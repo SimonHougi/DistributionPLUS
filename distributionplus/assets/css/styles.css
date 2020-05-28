@@ -180,6 +180,8 @@ header ul li a {
 
 /* Styling for loesninger.html starts here */
 
+
+
 /* Styling for Løsninger boxes starts here */
 
 .bodyloesninger {
@@ -191,6 +193,30 @@ header ul li a {
     width: 25vw;
     background-color: white;
     margin: 15vh auto 0 auto;
+}
+
+.preview {
+    width: inherit;
+}
+
+.videobox {
+    overflow: hidden;
+}
+
+.videotext {
+    padding: 2vh 0 0 1vw;
+}
+
+.videotext h1 {
+    margin-bottom: 2vh;
+}
+
+.videotext p {
+
+}
+
+.shadow {
+    box-shadow: 5px 5px 8px #888888;
 }
 
 .adressering {
@@ -237,7 +263,7 @@ header ul li a {
     'bl bm br';
 }
 
-section div {
+.loesningerframe section div {
     height: 20vh;
     width: 25vw;
 }
