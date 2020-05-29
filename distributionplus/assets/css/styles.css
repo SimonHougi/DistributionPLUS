@@ -266,14 +266,47 @@ section div {
 
 /* Styling for case.html starter her */
 
-.cases div {
-    width: 80vw;
-    height: 10vh;
-    background-color: teal;
-    margin: 10vh auto auto auto;
-    text-align: center;
+.bodycase {
+    background-color: #C0C0C0;
 }
 
-.cases div h1 {
-    padding: 2.5vh;
+.cases {
+    padding-top: 15vh;
+    display: grid;
+    grid-template-areas: 
+    'tl tr'
+    'bl br';
+}
+
+.bghunden {
+    grid-area: tl;
+}
+
+.bgaeldresagen {
+    grid-area: tr;
+}
+
+.bgskiltemagasinet {
+    grid-area: br;
+}
+
+.bgjaeger {
+    grid-area: bl;
+}
+
+.cases section {
+    width: 30vw;
+    height: 50vh;
+    background-color: teal;
+    margin: auto auto 20vh auto;
+}
+
+/* Styling for kontakt.html starter her */
+
+.bodykontakt {
+    background-color: #C0C0C0;
+}
+
+.kontaktgrid {
+    
 }
