@@ -10,9 +10,40 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+/* ny navigation */
 header {
-    position: fixed;
-    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    height: 13vh;
+}
+
+header img {
+    margin: 2vh 0 0 2vw
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    align-items: center;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Resten af forside */
+
+.frontpage header {
+    position: absolute;
 }
 
 button {
@@ -27,7 +58,6 @@ button {
 footer {
     height: 20vh;
     background-color: #3B3B3B;
-    position: relative;
     color: white;
     display: grid;
     grid-template-areas: 
@@ -70,26 +100,6 @@ footer div {
 
 #logo {
     width: 7vw;
-}
-
-header img {
-    position: fixed;
-    margin-top: 2vh;
-    margin-left: 2vw;   
-}
-
-header ul {
-    margin-left: 45vw;
-    margin-top: 6vh;
-    list-style-type: none;
-}
-
-header ul li a {
-    color: white;
-    font-size: 1.3vw;
-    padding-left: 4.5vw;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* Styling for baggrundsbillede starter her */
@@ -227,24 +237,11 @@ header ul li a {
     background-color: #C0C0C0;
 }
 
-.bodyloesninger header {
-    position: absolute;
-}
-
-.bodyloesninger header img {
-    position: absolute;
-}
-
 .grid section {
     height: 40vh;
     width: 25vw;
     background-color: white;
     margin: 10vh auto 0 auto;
-}
-
-.margin {
-    position: relative;
-    transform: translate(0, 10vh);
 }
 
 .preview {
@@ -263,10 +260,6 @@ header ul li a {
 
 .videotext h1 {
     margin-bottom: 2vh;
-}
-
-.videotext p {
-
 }
 
 .video-container .grayscale-filter {
@@ -341,7 +334,7 @@ header ul li a {
     'bl bm br';
 }
 
-section div {
+.bodyloesninger section div {
     height: 20vh;
     width: 25vw;
 }
@@ -357,8 +350,9 @@ section div {
 }
 
 .cases {
-    padding-top: 15vh;
+    margin-top: 10vh;
     display: grid;
+    justify-content: space-evenly;
     grid-template-areas: 
     'tl tr'
     'bl br';
@@ -380,12 +374,27 @@ section div {
     grid-area: bl;
 }
 
-.cases section {
+.casebox {
     width: 30vw;
-    height: 50vh;
-    background-color: teal;
-    margin: auto auto 20vh auto;
+    height: 40vh;
+    background-color: rgb(92, 76, 148);
+    margin-bottom: 10vh;
+    text-align: center;
 }
+
+.caseboximg {
+    height: 20vh;
+    background-color: white;
+}
+
+.caseboxtext {
+    height: 20vh;
+    margin-top: 8vh;
+    font-size: 1vw;
+    color: white;
+}
+
+
 
 /* Styling for kontakt.html starter her */
 
@@ -487,4 +496,9 @@ section div {
 
 
 /* Styling for ate.html starter her */
+
+.bodyate {
+    background-color: #C0C0C0;
+    height: 200vh;
+}
 
