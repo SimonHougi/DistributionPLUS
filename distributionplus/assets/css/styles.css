@@ -183,14 +183,14 @@ header ul li a {
     margin-bottom: 8vh;
 }
 
-.video-container {
+#nyhedsbrev .video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.video-container video {
+#nyhedsbrev .video-container video {
     width: 100vw;
     height: 100%;
     filter: grayscale();
@@ -213,6 +213,47 @@ header ul li a {
     width: 25vw;
     background-color: white;
     margin: 15vh auto 0 auto;
+}
+
+.preview {
+    width: inherit;
+}
+
+.videobox {
+    overflow: hidden;
+}
+
+.videotext {
+    padding: 2vh 0 0 1vw;
+}
+
+.videotext h1 {
+    margin-bottom: 2vh;
+}
+
+.videotext p {
+
+}
+
+.video-container .grayscale-filter {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 250ms;
+}
+ 
+.video-container:hover .grayscale-filter {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.shadow {
+    box-shadow: 5px 5px 8px #888888;
 }
 
 .adressering {
