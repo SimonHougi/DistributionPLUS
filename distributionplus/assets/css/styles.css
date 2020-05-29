@@ -12,15 +12,15 @@ body {
 
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
 }
 
 button {
-    width: 10vw;
-    height: 5vh;
+    width: 15vw;
+    height: 7.5vh;
     border-radius: 1vw;
     border: none;
-    background-color: purple;
+    background-color: rgb(92, 76, 148);
     color: white;
 }
 
@@ -38,12 +38,24 @@ footer {
     grid-area: lf;
 }
 
+.leftfooter p {
+    padding-top: 2vh;
+}
+
 .middlefooter {
     grid-area: mf;
 }
 
 .rightfooter {
     grid-area: rf;
+}
+
+.rightfooter p {
+    padding-top: 3vh;
+}
+
+.rightfooter h3 {
+    padding-top: 1.5vh;
 }
 
 footer div {
@@ -104,13 +116,13 @@ header ul li a {
 /* Styling for midterste del af forside starter her */
 
 #top {
-    height: 30vh;
+    height: 45vh;
     background-color: rgb(92, 76, 148);
     text-align: center;
 }
 
 #top h2 {
-    padding-top: 9vh;
+    padding-top: 15vh;
     font-size: 2.5vw;
     text-shadow: 1.5px 1.5px rgb(34, 34, 34);
     color: white;
@@ -124,9 +136,10 @@ header ul li a {
 
 #left {
     width: 50vw;
-    height: 70vh;
+    height: 55vh;
     background-color: #3B3B3B;
-    text-align: center;
+    text-align: left;
+    padding-left: 8vw;
 }
 
 #left h2 {
@@ -136,10 +149,12 @@ header ul li a {
 }
 
 #left p {
-    margin-top: 6vh;
-    font-size: 2vw;
+    margin-top: 5vh;
+    font-size: 1.2vw;
     font-weight: normal;
     color: white;
+    width: 30vw;
+    line-height: 2vw;
 }
 
 #left button {
@@ -151,7 +166,7 @@ header ul li a {
 
 #map {
     width: 50vw;
-    height: 70vh;
+    height: 55vh;
     background-color: grey;
 }
 
@@ -337,14 +352,139 @@ section div {
 
 /* Styling for case.html starter her */
 
-.cases div {
-    width: 80vw;
-    height: 10vh;
-    background-color: teal;
-    margin: 10vh auto auto auto;
-    text-align: center;
+.bodycase {
+    background-color: #C0C0C0;
 }
 
-.cases div h1 {
-    padding: 2.5vh;
+.cases {
+    padding-top: 15vh;
+    display: grid;
+    grid-template-areas: 
+    'tl tr'
+    'bl br';
 }
+
+.bghunden {
+    grid-area: tl;
+}
+
+.bgaeldresagen {
+    grid-area: tr;
+}
+
+.bgskiltemagasinet {
+    grid-area: br;
+}
+
+.bgjaeger {
+    grid-area: bl;
+}
+
+.cases section {
+    width: 30vw;
+    height: 50vh;
+    background-color: teal;
+    margin: auto auto 20vh auto;
+}
+
+/* Styling for kontakt.html starter her */
+
+.bodykontakt {
+    background-color: #C0C0C0;
+}
+
+.kontakttop {
+    width: 100vw;
+    height: 30vh;
+    background-color: #3B3B3B;
+    color: white;
+    padding-left: 5vw;
+    font-size: 1.4vw;
+}
+
+.kontaktgrid {
+    display: grid;
+    grid-template-areas: 
+    'tl tm tr'
+    'ml mm mr'
+    'bl bm br'
+    'bl bm2 br2';
+    line-height: 2vw;
+}
+
+.kontaktgrid h2 {
+    color: rgb(92, 76, 148);;
+}
+
+.topright {
+    grid-area: tr;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.topmid {
+    grid-area: tm;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.topleft {
+    grid-area: tl;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.midleft {
+    grid-area: ml;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.midmid {
+    grid-area: mm;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.midright {
+    grid-area: mr;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.botleft {
+    grid-area: bl;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.botmid {
+    grid-area: bm;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.botright {
+    grid-area: br;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.botmid2 {
+    grid-area: bm2;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.botright2 {
+    grid-area: br2;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+
+/* Styling for ate.html starter her */
+
