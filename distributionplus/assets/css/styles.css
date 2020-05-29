@@ -8,7 +8,7 @@
 
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
 }
 
 button {
@@ -363,6 +363,98 @@ section div {
     background-color: #C0C0C0;
 }
 
-.kontaktgrid {
-    
+.kontakttop {
+    width: 100vw;
+    height: 30vh;
+    background-color: #3B3B3B;
+    color: white;
+    padding-left: 5vw;
+    font-size: 1.4vw;
 }
+
+.kontaktgrid {
+    display: grid;
+    grid-template-areas: 
+    'tl tm tr'
+    'ml mm mr'
+    'bl bm br'
+    'bl bm2 br2';
+    line-height: 2vw;
+}
+
+.kontaktgrid h2 {
+    color: rgb(92, 76, 148);;
+}
+
+.topright {
+    grid-area: tr;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.topmid {
+    grid-area: tm;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.topleft {
+    grid-area: tl;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.midleft {
+    grid-area: ml;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.midmid {
+    grid-area: mm;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.midright {
+    grid-area: mr;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.botleft {
+    grid-area: bl;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.botmid {
+    grid-area: bm;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.botright {
+    grid-area: br;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.botmid2 {
+    grid-area: bm2;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.botright2 {
+    grid-area: br2;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+
+/* Styling for ate.html starter her */
+

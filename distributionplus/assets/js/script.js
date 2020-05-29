@@ -26,3 +26,17 @@ videoContainerList.forEach(videoContainer => {
         })
     })
 })
+
+// Dette er javascript for pop up vindue //
+
+const overlay1 = "overlay1"
+const overlay2 = "overlay2"
+const overlay3 = "overlay3"
+
+function on(overlay) {
+  document.getElementById(overlay).style.display = "block";
+}
+
+function off(overlay) {
+  document.getElementById(overlay).style.display = "none";
+}
