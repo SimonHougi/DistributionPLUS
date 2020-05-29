@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
 header {
     position: fixed;
     z-index: 2;
@@ -183,14 +187,14 @@ header ul li a {
     margin-bottom: 8vh;
 }
 
-#nyhedsbrev .video-container {
+#nyhedsbrev .video-news {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-#nyhedsbrev .video-container video {
+#nyhedsbrev .video-news video {
     width: 100vw;
     height: 100%;
     filter: grayscale();
@@ -208,11 +212,24 @@ header ul li a {
     background-color: #C0C0C0;
 }
 
+.bodyloesninger header {
+    position: absolute;
+}
+
+.bodyloesninger header img {
+    position: absolute;
+}
+
 .grid section {
     height: 40vh;
     width: 25vw;
     background-color: white;
-    margin: 15vh auto 0 auto;
+    margin: 10vh auto 0 auto;
+}
+
+.margin {
+    position: relative;
+    transform: translate(0, 10vh);
 }
 
 .preview {
@@ -225,6 +242,8 @@ header ul li a {
 
 .videotext {
     padding: 2vh 0 0 1vw;
+    background-color: rgb(92, 76, 148);
+    color: white;
 }
 
 .videotext h1 {
@@ -253,7 +272,14 @@ header ul li a {
 }
 
 .shadow {
-    box-shadow: 5px 5px 8px #888888;
+    box-shadow: 3px 3px 15px #888888;
+    transition: transform .2s;
+}
+
+.shadow:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .adressering {
@@ -303,6 +329,10 @@ header ul li a {
 section div {
     height: 20vh;
     width: 25vw;
+}
+
+.bodyloesninger footer {
+    margin-top: 20vh;
 }
 
 /* Styling for case.html starter her */
