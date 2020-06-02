@@ -511,12 +511,12 @@ footer div {
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     z-index: 10;
-    background-image: url();
+    background-image: url(../images/hundenbg.jpg);
+    background-size: cover;
     width: 80vw;
     max-width: 92vw;
     height: 80vh;
 }
-
 
 .popup.active {
     transform: translate(-50%, -50%) scale(1);
@@ -530,8 +530,10 @@ footer div {
 }
 
 .popup-header .title {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
+    margin: auto;
+    color: white;
 }
 
 .popup-header .close-button {
@@ -547,3 +549,5 @@ footer div {
 .popup-body {
     padding: 1vw 1.5vw;
 }
+
+.popup-image
