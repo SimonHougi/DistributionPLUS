@@ -27,18 +27,35 @@ videoContainerList.forEach(videoContainer => {
     })
 })
 
-// Dette er javascript for pop up vindue //
 
-const overlay1 = "overlay1"
-const overlay2 = "overlay2"
-const overlay3 = "overlay3"
+// Her starter det rigitge popup //
 
-function on(overlay) {
-  document.getElementById(overlay).style.display = "block";
+const openPopupButtons = document.querySelectorAll('[data-popup-target]')
+const closePopupButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openPopupButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const popup = document.querySelector(button.dataset.popupTarget)
+        openPopup(popup)
+    })
+})
+
+closePopupButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const popup = button.closest('.popup')
+        closePopup(popup)
+    })
+})
+
+function openPopup(popup) {
+    if (popup == null) return
+    popup.classList.add('active')
+    overlay.classList.add('active')
 }
 
-function off(overlay) {
-  document.getElementById(overlay).style.display = "none";
+function closePopup(popup) {
+    if (popup == null) return
+    popup.classList.remove('active')
+    overlay.classList.remove('active')
 }
-
-
