@@ -416,6 +416,12 @@ footer div {
     grid-area: bl;
 }
 
+.hoverandclick:hover {
+    transform: scale(1.05);
+    transition: transform .25s;
+    cursor: pointer;
+}
+
 .casebox {
     width: 30vw;
     height: 40vh;
@@ -425,13 +431,30 @@ footer div {
 }
 
 .caseboximg {
-    height: 20vh;
-    background-color: white;
+    height: 30vh;
+    background-size: contain;
 }
 
+.casebox-bg-hunden {
+    background-image: url(../images/hunden.jpg);
+}
+
+.casebox-bg-aeldresagen {
+    background-image: url(../images/ældresagen.jpg);
+}
+
+.casebox-bg-jaeger {
+    background-image: url(../images/jægerblad.jpg);
+}
+
+.casebox-bg-skiltemagasinet {
+    background-image: url(../images/impulsblad.jpg);
+}
+
+
 .caseboxtext {
-    height: 20vh;
-    margin-top: 8vh;
+    height: 10vh;
+    margin-top: 2.5vh;
     font-size: 1vw;
     color: white;
 }
@@ -602,8 +625,7 @@ footer div {
 }
 
 .popup-image img {
-    width: 18vw;
-    height: 100%;
+    height: 50vh;
     margin: 5vh 10vw 0 0;
 }
 
