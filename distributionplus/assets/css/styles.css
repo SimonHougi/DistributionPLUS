@@ -47,35 +47,36 @@ nav ul li a {
 
 /* Dropdown hovermenu i navigationen */
 
-header > nav > ul > li > a:hover {
+header nav ul li a:hover {
     color: rgb(92, 76, 148);
 }
 
-header > nav > ul > li > ul {
-	display: none;
+header nav ul li ul {
+    display: none;
+    width: auto;
 	margin: 0;
-	padding-left: 2vw;
-	width: 12vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     position: absolute;
     background-color: rgba(92, 76, 148, 0.85);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    z-index: 999;
 }
 
-header > nav > ul > li:hover > ul {
+header nav ul li:hover > ul {
     display: block;
+    visibility: visible;
 }
 
-header > nav > ul > li > ul > li > a {
+header nav ul li ul li a {
 	text-decoration: none;
 	padding: 1.5vh 0;
 	color: #ffffff;
     display: block;
 }
 
-header > nav > ul > li > ul > li > a:hover {
+header nav ul li ul li a:hover {
     color: #C0C0C0;
 }
 
@@ -322,6 +323,7 @@ footer div {
 .shadow {
     box-shadow: 3px 3px 15px #888888;
     transition: transform .2s;
+    
 }
 
 .shadow:hover {
