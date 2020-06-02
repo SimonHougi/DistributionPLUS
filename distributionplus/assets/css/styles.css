@@ -11,7 +11,7 @@ body {
 }
 
 /* ny navigation */
-header {
+header nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -19,11 +19,12 @@ header {
     height: 13vh;
 }
 
-header img {
-    margin: 2vh 0 0 2vw
+header nav img {
+    margin: 2vh 10vw 0 2vw;
+    width: 20vw;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: space-evenly;
     width: 80vw;
@@ -31,12 +32,51 @@ ul {
     list-style-type: none;
 }
 
-li a {
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1vw;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+/* Dropdown hovermenu i navigationen */
+
+header > nav > ul > li > a:hover {
+    color: rgb(92, 76, 148);
+}
+
+header > nav > ul > li > ul {
+	display: none;
+	margin: 0;
+	padding-left: 2vw;
+	width: 12vw;
+    position: absolute;
+    background-color: rgba(92, 76, 148, 0.85);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 999;
+}
+
+header > nav > ul > li:hover > ul {
+    display: block;
+}
+
+header > nav > ul > li > ul > li > a {
+	text-decoration: none;
+	padding: 1.5vh 0;
+	color: #ffffff;
+    display: block;
+}
+
+header > nav > ul > li > ul > li > a:hover {
+    color: #C0C0C0;
 }
 
 
@@ -108,7 +148,7 @@ footer div {
     height: 100vh;
     padding: 30vh 0 0 60vw;
     text-align: center;
-    background-image: url("hero.jpg");
+    background-image: url("../images/Hero.jpg");
     background-size: cover;
 }
 
