@@ -542,3 +542,84 @@ footer div {
     height: 200vh;
 }
 
+/* Styling for popup vinduer starter her */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    width: 80vw;
+    max-width: 90vw;
+    height: 80vh;
+}
+
+.popup-bg-hunden {
+    background-image: url(../images/hundenbg.jpg);
+    background-size: cover;
+}
+
+.popup-bg-aeldresagen {
+    background-image: url(../images/ældresagenbg.jpg);
+    background-size: cover;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-top: 2vh;
+}
+
+.popup-header .title {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    margin-top: 4vh;
+}
+
+.popup-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 4vw;
+    color: white;
+    padding-left: 8vw;
+}
+
+.popup-body {
+    padding: 1vw 1.5vw;
+}
+
+.popup-image img {
+    width: 18vw;
+    height: 100%;
+    margin: 5vh 10vw 0 0;
+}
+
+.casesize {
+    margin: auto;
+    width: 40vw;
+    height: 40vh;
+}
+
+.casesize h2,p {
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.casesize h2 {
+    font-size: 1.5vw;
+}
+
+.casesize p {
+    font-size: 1.1vw;
+}
