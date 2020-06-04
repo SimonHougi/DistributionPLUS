@@ -764,3 +764,71 @@ footer div {
 .popup-bg-foliering .title {
     margin: 6vh auto 0 30vw;
 }
+
+
+/* Styling for omos.html starter her */
+
+.bodyomos {
+    background-color: #C0C0C0;
+}
+
+.omos-banner {
+    background-image: url(/distributionplus/assets/images/Hero.jpg);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.omos-missionandvision {
+    width: 100%;
+    height: 50vh;
+    background-color: #5C4C94;
+    color: white;
+}
+
+.omos-missionandvision div {
+    width: 40vw;
+    height: 40vh;
+    margin: auto;
+    line-height: 2;
+}
+
+.omos-missionandvision h1 {
+    text-align: center;
+    font-size: 3vw;
+}z
+
+.omos-missionandvision p {
+    font-style: italic;
+    font-size: 1.1vw;
+}
+
+.history h2 {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 5vh auto;
+}
+
+.history h3 {
+    color: #5C4C94;
+    font-size: 2vw;
+    margin: 10vh 0 3vh 5vw;
+}
+
+.history p {
+    color: black;
+    font-size: 1.1vw;
+    margin: 0 0 0 5vw;
+    line-height: 2;
+    width: 90vw;
+}
+
+.history ul {
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+    line-height: 2;
+    font-style: oblique;
+
+}
