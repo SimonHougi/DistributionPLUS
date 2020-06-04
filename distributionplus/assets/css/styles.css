@@ -283,7 +283,7 @@ footer div {
     height: 40vh;
     width: 25vw;
     background-color: white;
-    margin: 10vh auto 0 auto;
+    margin-top: 10vh;
 }
 
 .preview {
@@ -621,6 +621,7 @@ footer div {
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 3px;
 }
 
 .topate h1 {
