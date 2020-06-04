@@ -473,6 +473,7 @@ footer div {
     background-color: #3B3B3B;
     color: white;
     padding-left: 5vw;
+    padding-top: 5vh;
     font-size: 1.4vw;
 }
 
@@ -484,81 +485,124 @@ footer div {
     'bl bm br'
     'bl bm2 br2';
     line-height: 2vw;
+    justify-content: space-evenly;
+    margin: 5vh 0 5vh 0;
 }
 
 .kontaktgrid h2 {
-    color: rgb(92, 76, 148);;
+    color: rgb(92, 76, 148);
+}
+
+
+.kontaktgrid p {
+    margin: 0;
+    padding: 0;
+}
+
+.bold p:first-of-type {
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .topright {
     grid-area: tr;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 .topmid {
     grid-area: tm;
-    margin-left: 2vw;
     margin-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 .topleft {
     grid-area: tl;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 .midleft {
     grid-area: ml;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+
 }
 
 .midmid {
     grid-area: mm;
-    margin-left: 2vw;
     margin-bottom: 5vh;
 }
 
 .midright {
     grid-area: mr;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+
 }
 
 .botleft {
     grid-area: bl;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+
 }
 
 .botmid {
     grid-area: bm;
-    margin-left: 2vw;
     margin-bottom: 5vh;
+
 }
 
 .botright {
     grid-area: br;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+
 }
 
 .botmid2 {
     grid-area: bm2;
-    margin-left: 2vw;
-    margin-bottom: 5vh;
+
 }
 
 .botright2 {
     grid-area: br2;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+
 }
 
+.contactwrapper {
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.formular {
+    display: inline-block;
+    background-color: rgb(92, 76, 148);
+    width: 60vw;
+}
+
+.formular h3 {
+    color: white;
+    margin: 5vh 0 5vh 0;
+    letter-spacing: 3px;
+}
+
+.formular form label {
+    display: block;
+    text-align: left;
+    margin-left: 5vw;
+    margin-bottom: 0.3vh;
+    color: white;
+}
+
+.formular form input {
+    width: 50vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+
+}
+
+.formular form input:last-of-type {
+    height: 20vh;
+    padding-bottom: 15vh;
+}
+
+.formular button {
+    background-color: #3B3B3B;
+    margin: 2vh 0 5vh 0;
+    height: 5vh;
+    width: 10vw;
+}
 
 /* Styling for ate.html starter her */
 
