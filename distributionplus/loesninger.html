@@ -7,73 +7,157 @@
     <title>Løsninger</title>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
     <link rel="shortcut icon" href="assets/images/dpplogo.png" type="image/png">
-    <script src="assets/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2f6e4a59d9.js" crossorigin="anonymous"></script>
+    <!--Font awesome Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge Fonts -->
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body class="bodyloesninger">
     <header>
         <nav>
-        <a href="index.html"><img src="assets/images/dpplogo.png" id="logo" alt="Distribution PLUS logo"></a>
-        <ul>
-            <li>
-                <a href="loesninger.html">Løsninger</a>
-                <ul>
-                    <li><a href="#">Adressering</a></li>
-                    <li><a href="#">Foliering</a></li>
-                    <li><a href="#">Kuvertering</a></li>
-                    <li><a href="#">Databehandling</a></li>
-                    <li><a href="#">Fullfilment</a></li>
-                    <li><a href="#">Håndpakning</a></li>
-                    <li><a href="#">Papirindpakning</a></li>
-                    <li><a href="#">Print</a></li>
-                    <li><a href="#">Segmentering</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="case.html">Case</a>
-                <ul>
-                    <li><a href="#">Hunden</a></li>
-                    <li><a href="#">Ældresagen</a></li>
-                    <li><a href="#">Jæger</a></li>
-                    <li><a href="#">Skiltemagasinet Impuls</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="ate.html">Alt til Erhverv</a>
-            </li>
-            <li>
-                <a href="om.html">Om os</a>
-            </li>
-            <li>
-                <a href="kontakt.html">Kontakt</a>
-            </li>
-        </ul>
+            <a href="index.html"><img src="assets/images/dpplogo.png" id="logo" alt="Distribution PLUS logo"></a>
+            <ul>
+                <li>
+                    <a href="loesninger.html">Løsninger</a>
+                    <ul>
+                        <li><a href="#">Adressering</a></li>
+                        <li><a href="#">Foliering</a></li>
+                        <li><a href="#">Kuvertering</a></li>
+                        <li><a href="#">Databehandling</a></li>
+                        <li><a href="#">Fullfilment</a></li>
+                        <li><a href="#">Håndpakning</a></li>
+                        <li><a href="#">Papirindpakning</a></li>
+                        <li><a href="#">Print</a></li>
+                        <li><a href="#">Segmentering</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="case.html">Case</a>
+                    <ul>
+                        <li><a href="#">Hunden</a></li>
+                        <li><a href="#">Ældresagen</a></li>
+                        <li><a href="#">Jæger</a></li>
+                        <li><a href="#">Skiltemagasinet Impuls</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ate.html">Alt til Erhverv</a>
+                </li>
+                <li>
+                    <a href="om.html">Om os</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main class="margin">
         <div class="grid loesningerframe">
-            <section class="adressering shadow video-container hoverandclick">
+
+            <section data-popup-target="#popupadressering" class="adressering shadow video-container hoverandclick">
                 <div class="videobox">
                     <video class="preview grayscale-filter" src="assets/videos/adressering.mp4" loop muted></video>
                 </div>
                 <div class="videotext">
                     <h1>Adressering</h1>
-                    <p>Vi påtrykker adresser på alt 
-                        fra dine magasiner og reklamer til dine kuverter 
+                    <p>Vi påtrykker adresser på alt
+                        fra dine magasiner og reklamer til dine kuverter
                         og enkeltstående ark.</p>
                 </div>
             </section>
-            <section class="foliering shadow video-container hoverandclick">
+
+            <div class="popup" id="popupadressering">
+                <div class="popup-header popup-bg-adressering">
+                    <div class="title">Adressering</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-loesninger-text">
+                        <h2>Vi sætter adresse på</h2>
+                        <p>Med adressering er mulighederne store! Vi tilbyder påtrykning af adresse direkte på dine
+                            magasiner, kuverter og breve, men arbejder ligeledes med påtrykning på magasiners folie – og
+                            papirindpakning. En anden løsning for adressering udføres gennem print af adressebærende
+                            bilag, der vedlægges i sampakning.</p>
+                        <p>Vores adresseringsformater er udført gennem vores databehandling, og sikrer god håndtering af
+                            personfølsomme data. Ud over print af adresse kan vi tilbyde medfølgende print af frimærker,
+                            logoer, stregkoder eller andre skrifttyper, der omfavner flere løsninger og muligheder for
+                            din kampagne til kunderne. Tag et kig på vores forskelligartede adresseringsmuligheder, og
+                            bliv klogere på, hvilke løsninger, der passer til dine behov.</p>
+                    </div>
+                    <div class="popup-video">
+                        <video src=""></video>
+                    </div>
+                    <div>
+                        <h3 class="popup-h3-centered">Dine fordele ved forskellige typer adressering</h3>
+                        <div class="flexbox">
+                            <div class="popup-advantages">
+                                <p>Adressering direkte på magasin giver bedre leveringsikkerhed til rette modtager
+                                </p>
+                            </div>
+                            <div class="popup-advantages">
+                                <p>Adressering på folie med hvid stribe giver tydelig og læsbar tekst</p>
+                            </div>
+                            <div class="popup-advantages">
+                                <p>Adressering på papirindpakning muliggør forskellige typer layout og logo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section data-popup-target="#popupfoliering" class="foliering shadow video-container hoverandclick">
                 <div class="videobox">
                     <video class="preview grayscale-filter" src="assets/videos/foliering.mp4" loop muted></video>
                 </div>
                 <div class="videotext">
                     <h1>Foliering</h1>
-                    <p>Vi har flere års erfaring i kvalitetsbevidst 
+                    <p>Vi har flere års erfaring i kvalitetsbevidst
                         folieindpakning.</p>
                 </div>
             </section>
+
+            <div class="popup" id="popupfoliering">
+                <div class="popup-header popup-bg-foliering">
+                    <div class="title">Foliering</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-loesninger-text">
+                        <h2>Vi pakker i folie</h2>
+                        <p>Foliering er den type løsning, vi tilbyder, når din opgave kræver en sammenlægning af flere
+                            enkeltdele, såsom eksempelvis et magasin og et tilbudsark. Det kunne også være flere typer
+                            magasiner, der segmenteres alt efter modtagergruppe.</p>
+                        <p>Folien sikrer en solid og sikker indpakning, og findes med en hvid stribe på bagsiden til de
+                            opgaver, der kræver læsbar adressering af print. Modsat anvendes klar folie i de type
+                            opgaver, hvor der vedlæggedes et adressebærende bilag. Vi arbejder med folie, genbrugsfolie
+                            og biofolie, som anvendes ud fra, hvilken type, der passer bedst til både produkt og dine
+                            forventninger.</p>
+                    </div>
+                    <div class="popup-video">
+                        <video src=""></video>
+                    </div>
+                    <div>
+                        <h3 class="popup-h3-centered">Dine fordele ved foliering</h3>
+                        <div class="flexbox">
+                            <div class="popup-advantages">
+                                <p>Et alternativ til direkte adressering på bagsiden af dit magasin
+                                </p>
+                            </div>
+                            <div class="popup-advantages">
+                                <p>Mulighed for sampakning af flere magasiner, kataloger, tilbudsark og gimmicks.</p>
+                            </div>
+                            <div class="popup-advantages">
+                                <p>Giver et eksklusivt udseende til dit produkt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section class="kuvertering shadow video-container hoverandclick">
                 <div class="videobox">
                     <video class="preview grayscale-filter" src="assets/videos/kuvertering.mp4" loop muted></video>
@@ -89,7 +173,7 @@
                 </div>
                 <div class="videotext">
                     <h1>Databehandling</h1>
-                    <p>Vi sørger for sikker databehandling af dine 
+                    <p>Vi sørger for sikker databehandling af dine
                         forsendelser.</p>
                 </div>
             </section>
@@ -99,7 +183,7 @@
                 </div>
                 <div class="videotext">
                     <h1>Fulfillment</h1>
-                    <p>Vi kan hjælpe med opbevaring og eventuel 
+                    <p>Vi kan hjælpe med opbevaring og eventuel
                         efterforsendelse af tryksager. </p>
                 </div>
             </section>
@@ -119,7 +203,7 @@
                 </div>
                 <div class="videotext">
                     <h1>Papirindpakning</h1>
-                    <p>Som de eneste i Danmark tilbyder vi bæredygtig 
+                    <p>Som de eneste i Danmark tilbyder vi bæredygtig
                         papirindpakning.</p>
                 </div>
             </section>
@@ -152,8 +236,8 @@
         <div class="middlefooter">
             <p>Besøg os på</p>
             <div>
-                <i></i>
-                <i></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
             </div>
         </div>
         <div class="rightfooter">
