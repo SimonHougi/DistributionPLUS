@@ -30,6 +30,7 @@ nav ul {
     width: 80vw;
     align-items: center;
     list-style-type: none;
+    z-index: 999;
 }
 
 nav ul li:hover {
@@ -608,7 +609,53 @@ footer div {
 
 .bodyate {
     background-color: #C0C0C0;
-    height: 200vh;
+}
+
+.topate {
+    width: 90vw;
+    margin-left: 5vw;
+    background-color: #3B3B3B;
+    color: white;
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topate h1 {
+    font-size: 2em;
+    width: 100vw;
+}
+
+.ateinfo {
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+    width: 90vw;
+    background-color: white;
+}
+
+.ateinfo p {
+    color: black;
+    margin: 0;
+    line-height: 3vh;
+    width: 70vw;
+}
+
+.ateinfo h2 {
+    color: rgb(92, 76, 148);
+    padding-top: 5vh;
+    margin-bottom: 5px;
+}
+
+.ateinfo ul {
+    line-height: 3vh;
+    margin-left: 1vw;
+}
+
+.margin {
+    margin-left: 5vw;
 }
 
 /* Styling for popup vinduer starter her */
