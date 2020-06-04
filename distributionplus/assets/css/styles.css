@@ -567,7 +567,7 @@ footer div {
     height: 200vh;
 }
 
-/* Styling for popup vinduer starter her */
+/* Styling for popup vinduer på case.html starter her */
 
 .popup {
     position: fixed;
@@ -598,8 +598,6 @@ footer div {
 .popup-header {
     display: flex;
     justify-content: space-between;
-    margin-left: 10vw;
-    margin-top: 2vh;
 }
 
 .popup-header .title {
@@ -646,4 +644,79 @@ footer div {
 
 .casesize p {
     font-size: 1.1vw;
+}
+
+/* Styling for popup vinduer for loesninger.html starter her */
+
+
+/* Styling for popup adressering starter her */
+
+#popupadressering {
+    background-color: white;
+    overflow: scroll;
+}
+
+.popup-bg-adressering {
+    background-image: url(/distributionplus/assets/images/adressering.jpg);
+    background-size: inherit;
+    height: 20vh;
+}
+
+.popup-bg-adressering .title {
+    margin: 6vh auto 0 30vw;
+}
+
+.popup-loesninger-text p,h2 {
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 2vh;
+    
+}
+
+.popup-loesninger-text h2 {
+    color: rgba(92, 76, 148, 1);
+    font-size: 2vw;
+    margin-top: 4vh;
+}
+
+.popup-video {
+    background-color: grey;
+    width: 50vw;
+    height: 50vh;
+    margin: 6vh auto 6vh auto;
+}
+
+.popup-advantages {
+    width: 12.5vw;
+    height: 20vh;
+    background-color: rgba(92, 76, 148, 0.8);
+    margin: auto;
+    padding: 1.5vw;
+}
+
+.popup-advantages p {
+    color: white;
+}
+
+.popup-h3-centered {
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+/* Styling for popup foliering starter her */
+
+#popupfoliering {
+    background-color: white;
+    overflow: scroll;
+}
+
+.popup-bg-foliering {
+    background-image: url(/distributionplus/assets/images/foliering.jpg);
+    background-size: inherit;
+    height: 20vh;
+}
+
+.popup-bg-foliering .title {
+    margin: 6vh auto 0 30vw;
 }
