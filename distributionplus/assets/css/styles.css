@@ -825,7 +825,7 @@ footer div {
 }
 
 .omos-banner {
-    background-image: url(/distributionplus/assets/images/Hero.jpg);
+    background-image: url(../images/Hero.jpg);
     background-size: cover;
     height: 60vh;
     width: 100%;
