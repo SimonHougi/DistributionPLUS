@@ -749,7 +749,7 @@ footer div {
 }
 
 .popup-bg-adressering {
-    background-image: url(/distributionplus/assets/images/adressering.jpg);
+    background-image: url(../images/adressering.jpg);
     background-size: inherit;
     height: 20vh;
 }
@@ -804,7 +804,7 @@ footer div {
 }
 
 .popup-bg-foliering {
-    background-image: url(/distributionplus/assets/images/foliering.jpg);
+    background-image: url(../images/foliering.jpg);
     background-size: inherit;
     height: 20vh;
 }
