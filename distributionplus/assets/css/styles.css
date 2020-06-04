@@ -819,6 +819,10 @@ footer div {
     background-color: #C0C0C0;
 }
 
+.bodyomos header {
+    position: absolute;
+}
+
 .omos-banner {
     background-image: url(/distributionplus/assets/images/Hero.jpg);
     background-size: cover;
