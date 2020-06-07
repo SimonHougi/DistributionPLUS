@@ -130,6 +130,7 @@ footer {
 
 .leftfooter {
     grid-area: lf;
+    width: 33vw;
 }
 
 .leftfooter p {
@@ -142,6 +143,7 @@ footer {
 
 .middlefooter {
     grid-area: mf;
+    width: 33vw;
 }
 
 .middlefooter p {
@@ -150,6 +152,7 @@ footer {
 
 .rightfooter {
     grid-area: rf;
+    width: 33vw;
 }
 
 .rightfooter p {
@@ -790,7 +793,7 @@ footer div {
 }
 
 .popup-bg-adressering {
-    background-image: url(../images/adressering.jpg);
+    background-image: url(../images/adresseringbanner.jpg);
     background-size: inherit;
     height: 20vh;
 }
@@ -817,6 +820,10 @@ footer div {
     width: 50vw;
     height: 50vh;
     margin: 6vh auto 6vh auto;
+}
+
+.popup-video video {
+    width: 50vw;
 }
 
 .popup-advantages {
@@ -863,20 +870,22 @@ footer div {
 
 .bodyomos header {
     position: absolute;
+    z-index: 5;
 }
 
 .omos-banner {
-    background-image: url(../images/Hero.jpg);
+    background-image: url(../images/omoshero.jpg);
     background-size: cover;
     height: 60vh;
     width: 100%;
+    filter: brightness(50%);
 }
 
 .omos-missionandvision {
     width: 100%;
     height: 40vh;
     background-color: #5C4C94;
-    color: white;
+    color: white;;
 }
 
 .omos-missionandvision div {
@@ -927,4 +936,82 @@ footer div {
     margin-bottom: 10vh;
     line-height: 2;
     font-style: oblique;
+}
+
+.timelinewrapper {
+    text-align: center;
+    margin-bottom: 5vh;
+    width: 100vw;
+}
+
+.timeline-center {
+    display: inline-block;
+    position: relative;
+}
+
+.timeline-margin {
+    margin-left: 5vw;
+}
+
+.timeline-center h1 {
+    margin-bottom: 5vh;
+    color: rgb(92, 76, 148);
+    font-size: 2vw;
+}
+
+.timeline-border {
+    height: 86%;
+    width: 50%;
+    position: absolute;
+    border-right: 5px solid rgb(92, 76, 148);
+    margin: 0;
+}
+
+.dot-top {
+    background: rgb(92, 76, 148);
+    height: 20px;
+    width: 20px;
+    right: -12px;
+    top: 0;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-bottom {
+    background: rgb(92, 76, 148);
+    height: 20px;
+    width: 20px;
+    right: -12px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.timeline-singleborder {
+    border-bottom: 3px solid rgb(92, 76, 148);
+    margin-right: 10vw;
+}
+
+.border-left {
+    margin-left: 30vw;
+    width: 25vw;
+}
+
+.border-right {
+    margin-right: 25vw;
+    width: 30vw;
+}
+
+.timeline-singleborder h4 {
+    color: rgb(92, 76, 148);
+    font-size: 1.2vw;
+    margin-bottom: 0.5vh;
+}
+
+.timeline-singleborder h5 {
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 0.5vh;
 }

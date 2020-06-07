@@ -64,11 +64,11 @@ function closePopup(popup) {
 
 function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet //
 { 
-    let name = document.forms["info"]["Name"]; // Variabler oprettet for hver af inputfelterne //
+    let name = document.forms["info"]["Navn"]; // Variabler oprettet for hver af inputfelterne //
+    let company = document.forms["info"]["Virksomhed"];
+    let phonenumber = document.forms["info"]["Telefonnummer"];
     let email = document.forms["info"]["Email"];
-    let company = document.forms["info"]["Company"];
-    let phonenumber = document.forms["info"]["Phonenumber"];
-    let description = document.forms["info"]["Description"];
+    let description = document.forms["info"]["Beskrivelse"];
    
     if (name.value == "") // Hvis feltet er tomt //
     {
