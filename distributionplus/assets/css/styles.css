@@ -146,7 +146,7 @@ footer {
     width: 33vw;
 }
 
-.middlefooter p {
+.middlefooter h3 {
     margin-bottom: 2vh;
 }
 
@@ -1014,4 +1014,526 @@ footer div {
     color: white;
     font-size: 1vw;
     margin-bottom: 0.5vh;
+    
+/* Styling for tablet version starter her */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styling for index.html (tablet) starter her */
+
+    #backgroundimage {
+        width: 100vw;
+        height: 50vh;
+        padding: 12vh 0 0 25vw;
+    }
+
+    #backgroundimage h1 {
+        font-size: 60px;
+    }
+
+    #backgroundimage h2 {
+        display: none;
+    }
+    
+    #top {
+        display: none;
+    }
+
+    #left {
+        background-color: #C0C0C0;
+        padding: 0;
+    }
+
+    #left h2 {
+        margin: 0;
+        color: rgb(92, 76, 148);
+        font-size: 36px;
+        margin: 2vh;
+    }
+
+    #left p {
+        margin: 2vh;
+        width: 40vw;
+        color: black;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    #left button {
+        margin-left: 2vh;
+        margin-bottom: 2vh;
+        width: 30vw;
+        font-size: 20px;
+    }
+
+    .flexbox #left,#map {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #nyhedsbrev {
+        display: none;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    .icons i {
+        font-size: 50px;
+    }
+
+    /* Styling for loesninger.html (tablet) starter her */
+
+    .loesningerframe {
+        display: block;
+        width: 90vw;
+    }
+
+    .loesningerframe section {
+        width: 90vw;
+        height: 30vh;
+        margin: 5vh auto 5vh auto;
+    }
+
+    .videobox {
+        display: none;
+    }
+
+    .videotext {
+        background: none;
+        color: black;
+    }
+
+    .videotext p {
+        display: none;
+    }
+
+    /* Styling for loesninger.html (tablet) pop-up vinduer starter her */
+
+    .popup-header .close-button {
+        font-size: 10vw;
+        margin-right: 3vw;
+    }
+
+    .popup-loesninger-text {
+        font-size: 24px;
+        margin-left: 2vw;
+    }
+
+    .popup-loesninger-text h2 {
+        font-size: 40px;
+    }
+
+    .popup-video {
+        display: none;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    /* Styling for case.html (tablet) starter her */
+
+    .cases {
+        display: block;
+    }
+
+    .cases section {
+        width: 90vw;
+        height: 30vh;
+        margin: 0 auto 5vh auto ;
+    }
+
+    .caseboxtext h1 {
+        font-size: 60px;
+        position: relative;
+        bottom: 21.5vh;
+    }
+
+    /* Styling for case.html (tablet) pop-up vinduer starter her */
+
+    .popup-header .title {
+        margin-left: 3vw;
+        font-size: 60px;
+    }
+
+    .popup-body {
+        display: block;
+    }
+
+    .popup {
+        overflow: scroll;
+    }
+
+    .casesize {
+        margin: 3vh 0 0 2vw;
+    }
+
+    .casesize h2{
+        font-size: 36px;
+        width: 70vw;
+    }
+
+    .casesize p {
+        font-size: 24px;
+        width: 70vw;
+    }
+
+    .popup-image {
+        display: none;
+    }
+
+    /* Styling for omos.html (tablet) starter her */
+
+    .omos-banner {
+        display: none;
+    }
+
+    .omos-missionandvision {
+        display: block;
+        height: 40vh;
+    }
+
+    .omos-missionandvision div {
+        width: 80vw;
+        margin: auto;
+        height: 15vh;
+    }
+
+    .history h2 {
+        margin-top: 5vh;
+        font-size: 40px;
+    }
+
+    .history h3{
+        margin-top: 5vh;
+        font-size: 30px;
+    }
+
+    .history p {
+        font-size: 20px;
+    }
+
+    /* Styling for kontakt.html (tablet) starter her */
+
+    .kontakttop h1 {
+        font-size: 50px;
+        margin-bottom: 2vh;
+    }
+
+    .kontakttop p {
+        font-size: 24px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .kontaktgrid {
+        display: grid;
+        grid-template-areas: 
+        'tr tl'
+        'tm ml'
+        'mr mm'
+        'br bm'
+        'br2 bm2'
+        'bl bl';
+    }
+
+    .kontaktgrid div h2 {
+        margin-top: 2vh;
+    }
+
+    .kontaktgrid div p {
+        color: black;
+        margin-bottom: 2vh;
+    }
+}
+
+
+/* Styling for mobile version starter her */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* Styling for index.html (mobile) starter her */
+
+    #backgroundimage {
+        width: 100vw;
+        height: 35vh;
+        padding: 12vh 0 0 25vw;
+    }
+
+    #backgroundimage h1 {
+        font-size: 30px;
+    }
+
+    #backgroundimage h2 {
+        display: none;
+    }
+    
+    #top {
+        display: none;
+    }
+
+    .indexbody .flexbox {
+        display: block;
+    }
+
+    #left {
+        width: 100vw;
+        padding: 0;
+        height: 20vh;
+    }
+
+    #left h2 {
+        padding-top: 1vh;
+        padding-left: 10vw;
+        margin: 0;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    #left p {
+        padding-top: 1vh;
+        padding-left: 10vw;
+        width: 80vw;
+        font-size: 12px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    #left button {
+        margin-top: 2vh;
+        margin-left: 10vw;
+        width: 30vw;
+        font-size: 11px;
+        border-radius: 100px;
+    }
+
+    #map {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #nyhedsbrev {
+        display: none;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    footer p {
+        font-size: 9px;
+    }
+
+    .leftfooter,.middlefooter,.rightfooter {
+        height: 15vh;
+        width: 33.3vw;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    .icons i {
+        font-size: 30px;
+    }
+
+    .middlefooter {
+        padding-top: 4vh;
+    }
+
+    footer h3 {
+        font-size: 11px;
+    }
+
+    /* Styling for loesninger.html (mobile) starter her */
+
+    .loesningerframe {
+        display: block;
+        width: 90vw;
+    }
+
+    .loesningerframe section {
+        width: 90vw;
+        height: 20vh;
+        margin: 5vh auto 5vh auto;
+    }
+
+    .videobox {
+        display: none;
+    }
+
+    .videotext {
+        background: none;
+        color: black;
+    }
+
+    .videotext p {
+        display: none;
+    }
+
+    /* Styling for loesninger.html (mobile) pop-up vinduer starter her */
+
+    .popup {
+        width: 90vw;
+    }
+
+    .popup-header {
+        height: 10vh;
+    }
+
+    .popup-header .close-button {
+        font-size: 16vw;
+        margin: 0 5vw 0 0;
+    }
+
+    .popup .title {
+        font-size: 30px;
+        margin: 2.5vh 0 0 5vw;
+    }
+
+    .popup-loesninger-text {
+        font-size: 16px;
+        margin-left: 2vw;
+    }
+
+    .popup-loesninger-text h2 {
+        font-size: 24px;
+        color: black;
+    }
+
+    .popup-video {
+        display: none;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    /* Styling for case.html (mobile) starter her */
+
+    .cases {
+        display: block;
+    }
+
+    .cases section {
+        width: 90vw;
+        height: 30vh;
+        margin: 0 auto 5vh auto ;
+    }
+
+    .caseboxtext h1 {
+        font-size: 40px;
+        position: relative;
+        bottom: 20vh;
+    }
+
+    /* Styling for case.html (mobile) pop-up vinduer starter her */
+    
+    .popup-body {
+        display: block;
+    }
+
+    .popup {
+        overflow: scroll;
+    }
+
+    .casesize {
+        margin: 3vh 0 0 2vw;
+    }
+
+    .casesize h2{
+        font-size: 24px;
+        width: 90vw;
+    }
+
+    .casesize p {
+        font-size: 16px;
+        width: 70vw;
+    }
+
+    .popup-image {
+        display: none;
+    }
+
+    
+
+    /* Styling for omos.html (mobile) starter her */
+
+    .omos-banner {
+        display: none;
+    }
+
+    .omos-missionandvision {
+        display: block;
+        height: 80vh;
+    }
+
+    .omos-missionandvision div {
+        width: 80vw;
+        margin: auto;
+        height: 30vh;
+    }
+
+    .omos-missionandvision h1 {
+        font-size: 24px;
+    }
+
+    .history h2 {
+        margin-top: 5vh;
+        font-size: 40px;
+    }
+
+    .history h3{
+        margin-top: 5vh;
+        font-size: 30px;
+    }
+
+    .history p {
+        font-size: 20px;
+    }
+
+    /* Styling for kontakt.html (tablet) starter her */
+
+    .kontakttop h1 {
+        font-size: 30px;
+        margin-bottom: 2vh;
+    }
+
+    .kontakttop p {
+        font-size: 20px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .kontaktgrid {
+        display: grid;
+        grid-template-areas: 
+        'tr tl'
+        'tm ml'
+        'mr mm'
+        'br bm'
+        'br2 bm2'
+        'bl none';
+    }
+
+    .bold {
+        width: 46vw;
+        margin: auto;
+    }
+
+    .kontaktgrid div h2 {
+        margin-top: 2vh;
+        font-size: 16px;
+    }
+
+    .kontaktgrid div p {
+        color: black;
+        margin-bottom: 2vh;
+        font-size: 10px;
+    }
 }
