@@ -34,7 +34,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="case.html">Case</a>
+                    <a href="case.html">Cases</a>
                     <ul>
                         <li><a href="#">Hunden</a></li>
                         <li><a href="#">Ældresagen</a></li>
@@ -129,19 +129,25 @@
         <div class="contactwrapper">
             <div class="formular">
                 <h3>Kontakt DistributionPLUS</h3>
-                <form action="">
-                    <label for="fullname">Fulde navn</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Navn">
-                    <label for="company">Virksomhed</label>
-                    <input type="text" id="company" name="company" placeholder="Virksomhed">
-                    <label for="phonenumber">Telefonnummer</label>
-                    <input type="text" id="phonenumber" name="phonenumber" placeholder="Telefonnummer">
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="E-mail">
-                    <label for="description">Beskrivelse</label>
-                    <input type="text" id="description" name="description" placeholder="Beskrivelse">
+                <p>Udfyld venligst alle stjernemarkerede felter</p>
+                <form action="mailto:martin.s96@outlook.dk" enctype="text/plain" name="info" target="_blank" onsubmit="return validate()" method="post">
+                    <label for="name">Fulde navn*</label>
+                    <input type="text" name="Name" placeholder="Fulde navn">
+
+                    <label for="company">Virksomhed*</label>
+                    <input type="text" name="Company" placeholder="Virksomhed">
+
+                    <label for="phonenumber">Telefonnummer*</label>
+                    <input type="text" name="Phonenumber" placeholder="Telefonnummer">
+
+                    <label for="email">E-mail*</label>
+                    <input type="text" name="Email" placeholder="E-mail">
+
+                    <label for="description">Beskrivelse*</label>
+                    <input type="text" name="Description" placeholder="Beskrivelse">
+
+                    <button>Send</button>
                 </form>
-                <button>Send</button>
             </div>
         </div>
     </main>
