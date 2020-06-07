@@ -59,3 +59,51 @@ function closePopup(popup) {
     popup.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+// Script til udfyldning af formular //
+
+function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet //
+{ 
+    let name = document.forms["info"]["Name"]; // Variabler oprettet for hver af inputfelterne //
+    let email = document.forms["info"]["Email"];
+    let company = document.forms["info"]["Company"];
+    let phonenumber = document.forms["info"]["Phonenumber"];
+    let description = document.forms["info"]["Description"];
+   
+    if (name.value == "") // Hvis feltet er tomt //
+    {
+        window.alert("Navn* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
+        name.focus();
+        return false;
+    }
+
+    if (company.value == "")
+    {
+        window.alert("Virksomhed* skal udfyldes");
+        company.focus();
+        return false;
+    }
+
+    if (phonenumber.value == "")
+    {
+        window.alert("Telefonnummer* skal udfyldes");
+        phonenumber.focus();
+        return false;
+    }
+   
+    if (email.value == "") // Samme som ovenstående //
+    {
+        window.alert("Email* skal udfyldes");
+        email.focus();
+        return false;
+    }
+
+    if (description.value == "")
+    {
+        window.alert("Beskrivelse* skal udfyldes");
+        description.focus();
+        return false;
+    }
+
+    return true; // Hvis felterne med stjerne er udfyldt, så kan man trykke på sendknappen //
+}
