@@ -928,3 +928,198 @@ footer div {
     line-height: 2;
     font-style: oblique;
 }
+
+/* Styling for tablet version starter her */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styling for index.html (tablet) starter her */
+
+    #backgroundimage {
+        width: 100vw;
+        height: 50vh;
+        padding: 12vh 0 0 25vw;
+    }
+
+    #backgroundimage h1 {
+        font-size: 60px;
+    }
+
+    #backgroundimage h2 {
+        display: none;
+    }
+    
+    #top {
+        display: none;
+    }
+
+    #left {
+        background-color: #C0C0C0;
+        padding: 0;
+    }
+
+    #left h2 {
+        margin: 0;
+        color: rgb(92, 76, 148);
+        font-size: 36px;
+        margin: 2vh;
+    }
+
+    #left p {
+        margin: 2vh;
+        width: 40vw;
+        color: black;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    #left button {
+        margin-left: 2vh;
+        margin-bottom: 2vh;
+        width: 30vw;
+        font-size: 20px;
+    }
+   
+
+    .flexbox #left,#map {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #nyhedsbrev {
+        display: none;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    .icons i {
+        font-size: 50px;
+    }
+
+    /* Styling for loesninger.html (tablet) starter her */
+
+    .loesningerframe {
+        display: block;
+        width: 90vw;
+    }
+
+    .loesningerframe section {
+        width: 90vw;
+        height: 30vh;
+        margin: 5vh auto 5vh auto;
+    }
+
+    .videobox {
+        display: none;
+    }
+
+    .videotext {
+        background: none;
+        color: black;
+    }
+
+    .videotext p {
+        display: none;
+    }
+
+    /* Styling for loesninger.html (tablet) pop-up vinduer starter her */
+
+    .popup-header .close-button {
+        font-size: 10vw;
+        margin-right: 3vw;
+    }
+
+    .popup-loesninger-text {
+        font-size: 24px;
+        margin-left: 2vw;
+    }
+
+    .popup-loesninger-text h2 {
+        font-size: 40px;
+    }
+
+    .popup-video {
+        display: none;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    /* Styling for case.html (tablet) starter her */
+
+    .cases {
+        display: block;
+    }
+
+    .cases section {
+        width: 90vw;
+        height: 30vh;
+        margin: 0 auto 5vh auto ;
+    }
+
+    .caseboxtext h1 {
+        font-size: 60px;
+        position: relative;
+        bottom: 21.5vh;
+    }
+
+    /* Styling for case.html (tablet) pop-up vinduer starter her */
+
+    .popup-header .title {
+        margin-left: 3vw;
+        font-size: 60px;
+    }
+
+    .popup-body {
+        display: block;
+    }
+
+    .popup {
+        overflow: scroll;
+    }
+
+    .casesize {
+        margin: 3vh 0 0 2vw;
+    }
+
+    .casesize h2{
+        font-size: 36px;
+        width: 70vw;
+    }
+
+    .casesize p {
+        font-size: 24px;
+        width: 70vw;
+    }
+
+    .popup-image {
+        display: none;
+    }
+
+    /* Styling for omos.html (tablet) starter her */
+
+    .omos-banner {
+        display: none;
+    }
+
+    .omos-missionandvision {
+        display: block;
+        height: 40vh;
+    }
+
+    .omos-missionandvision div {
+        width: 90vw;
+        margin: 0;
+        height: 20vh;
+    }
+}
+
+
+/* Styling for mobile version starter her */
+
+/* Styling for index.html (mobile) starter her */
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
