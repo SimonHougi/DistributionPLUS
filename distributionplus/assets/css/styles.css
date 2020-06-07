@@ -10,7 +10,7 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
-/* ny navigation */
+/* Navigation */
 header nav{
     display: flex;
     justify-content: space-between;
@@ -44,6 +44,10 @@ nav ul li a {
     font-size: 1vw;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.selected {
+    color: rgb(92, 76, 148);
 }
 
 /* Dropdown hovermenu i navigationen */
@@ -89,16 +93,19 @@ header nav ul li ul li a:hover {
 }
 
 button {
-    width: 15vw;
-    height: 7.5vh;
+    width: 10vw;
+    height: 5vh;
     border-radius: 1vw;
     border: none;
     background-color: rgb(92, 76, 148);
     color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8vw;
 }
 
 footer {
-    height: 20vh;
     background-color: #3B3B3B;
     color: white;
     display: grid;
@@ -106,16 +113,39 @@ footer {
     'lf mf rf';
 }
 
+.icons a {
+    text-decoration: none;
+    margin: 0 0.25vw 0 0.25vw;
+}
+
+.fa-linkedin {
+    color: rgb(92, 76, 148);
+    font-size: 2vw;
+}
+
+.fa-youtube{
+    color: rgb(92, 76, 148);
+    font-size: 2vw;
+}
+
 .leftfooter {
     grid-area: lf;
 }
 
 .leftfooter p {
-    padding-top: 2vh;
+    padding-top: 0vh;
+}
+
+.leftfooter img {
+    margin-top: 2vh;
 }
 
 .middlefooter {
     grid-area: mf;
+}
+
+.middlefooter p {
+    margin-bottom: 2vh;
 }
 
 .rightfooter {
@@ -127,7 +157,7 @@ footer {
 }
 
 .rightfooter h3 {
-    padding-top: 1.5vh;
+    margin-top: 4vh;
 }
 
 footer div {
@@ -168,13 +198,13 @@ footer div {
 /* Styling for midterste del af forside starter her */
 
 #top {
-    height: 45vh;
+    height: 50vh;
     background-color: rgb(92, 76, 148);
     text-align: center;
 }
 
 #top h2 {
-    padding-top: 15vh;
+    padding-top: 17vh;
     font-size: 2.5vw;
     text-shadow: 1.5px 1.5px rgb(34, 34, 34);
     color: white;
@@ -188,7 +218,7 @@ footer div {
 
 #left {
     width: 50vw;
-    height: 55vh;
+    height: 50vh;
     background-color: #3B3B3B;
     text-align: left;
     padding-left: 8vw;
@@ -209,16 +239,12 @@ footer div {
     line-height: 2vw;
 }
 
-#left button {
-    margin-top: 6vh;
-}
-
 
 /* Styling for den højre side af den midterste del starter her */
 
 #map {
     width: 50vw;
-    height: 55vh;
+    height: 50vh;
     background-color: grey;
 }
 
@@ -237,21 +263,26 @@ footer div {
 #nyhedsbrev h2 {
     font-size: 3vw;
     color: white;
+
 }
 
 #nyhedsbrev #label {
     margin-top: 4vh;
     font-size: 1.5vw;
-    color: white;
+    color: rgb(92, 76, 148);
+    font-weight: bold;
 }
 
 #nyhedsbrev input {
-    margin: 1vh 0 1vh 0;
+    margin: 1vh 0 5vh 0;
     width: 15vw;
     height: 4vh;
     font-size: 1vw;
     color: black;
-    margin-bottom: 8vh;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
 }
 
 #nyhedsbrev .video-news {
@@ -264,7 +295,7 @@ footer div {
 #nyhedsbrev .video-news video {
     width: 100vw;
     height: 100%;
-    filter: grayscale();
+    filter: grayscale(100%) brightness(40%);
 }
 
 .arrangeforward {
@@ -272,6 +303,10 @@ footer div {
 }
 
 /* Styling for loesninger.html starts here */
+
+.highlight {
+    color: white;
+}
 
 /* Styling for Løsninger boxes starts here */
 
@@ -433,7 +468,9 @@ footer div {
 
 .caseboximg {
     height: 30vh;
-    background-size: contain;
+    background-size: cover;
+    background-position: center 35%;
+
 }
 
 .casebox-bg-hunden {
@@ -603,6 +640,10 @@ footer div {
     margin: 2vh 0 5vh 0;
     height: 5vh;
     width: 10vw;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8vw;
 }
 
 /* Styling for ate.html starter her */
@@ -707,7 +748,7 @@ footer div {
     background: none;
     font-size: 4vw;
     color: white;
-    padding-left: 8vw;
+    margin-top: 2vh;
 }
 
 .popup-body {
@@ -855,6 +896,10 @@ footer div {
     font-size: 1.1vw;
 }
 
+.history {
+    margin: 0 5vw 0 5vw;
+}
+
 .history h2 {
     color: white;
     text-align: center;
@@ -866,19 +911,19 @@ footer div {
 .history h3 {
     color: #5C4C94;
     font-size: 2vw;
-    margin: 10vh 0 3vh 5vw;
+    margin: 10vh 0 3vh 0;
 }
 
 .history p {
     color: black;
     font-size: 1.1vw;
-    margin: 0 0 0 5vw;
     line-height: 2;
+    margin: 0;
     width: 90vw;
 }
 
 .history ul {
-    margin-left: 5vw;
+    margin-left: 1vw;
     margin-bottom: 10vh;
     line-height: 2;
     font-style: oblique;
