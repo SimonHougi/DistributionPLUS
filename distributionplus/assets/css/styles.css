@@ -1110,9 +1110,58 @@ footer div {
     }
 
     .omos-missionandvision div {
-        width: 90vw;
-        margin: 0;
-        height: 20vh;
+        width: 80vw;
+        margin: auto;
+        height: 15vh;
+    }
+
+    .history h2 {
+        margin-top: 5vh;
+        font-size: 40px;
+    }
+
+    .history h3{
+        margin-top: 5vh;
+        font-size: 30px;
+    }
+
+    .history p {
+        font-size: 20px;
+    }
+
+    /* Styling for kontakt.html (tablet) starter her */
+
+    .kontakttop h1 {
+        font-size: 50px;
+        margin-bottom: 2vh;
+    }
+
+    .kontakttop p {
+        font-size: 24px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .kontaktgrid {
+        display: grid;
+        grid-template-areas: 
+        'tr tl'
+        'tm ml'
+        'mr mm'
+        'br bm'
+        'br2 bm2'
+        'bl bl';
+    }
+
+    .kontaktgrid div h2 {
+        margin-top: 2vh;
+    }
+
+    .kontaktgrid div p {
+        color: black;
+        margin-bottom: 2vh;
     }
 }
 
