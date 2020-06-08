@@ -50,6 +50,10 @@ nav ul li a {
     color: rgb(92, 76, 148);
 }
 
+.desktop-none {
+    display: none;
+}
+
 /* Dropdown hovermenu i navigationen */
 
 header nav ul li a:hover {
@@ -902,7 +906,7 @@ footer div {
 
 .omos-missionandvision p {
     font-style: italic;
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 .history {
@@ -925,7 +929,7 @@ footer div {
 
 .history p {
     color: black;
-    font-size: 1.1vw;
+    font-size: 1vw;
     line-height: 2;
     margin: 0;
     width: 90vw;
@@ -1018,9 +1022,17 @@ footer div {
 
 /* Styling for tablet version starter her */
 
-/* Styling for index.html (tablet) starter her */
-
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .desktop-none {
+        display: block;
+        position: absolute;
+        margin: 1vh 0 0 2vw;
+    }
+
+    .none {
+        display: none;
+    }
 
     /* Burgermenu */
 
@@ -1034,12 +1046,7 @@ footer div {
         position: absolute;
     }
 
-
-
-
-
-
-    /* Forside */
+    /* Styling for index.html (tablet) starter her */
 
     #backgroundimage {
         width: 100vw;
@@ -1104,6 +1111,15 @@ footer div {
     }
 
     /* Styling for loesninger.html (tablet) starter her */
+
+    .loesningerframe .video-container {
+        background-color: rgb(92, 76, 148);
+        font-size: 4vw;
+    }
+
+    .videotext h1 {
+        color: white;
+    }
 
     .loesningerframe {
         display: block;
@@ -1232,7 +1248,7 @@ footer div {
     }
 
     .history p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Styling for kontakt.html (tablet) starter her */
@@ -1244,10 +1260,6 @@ footer div {
 
     .kontakttop p {
         font-size: 24px;
-    }
-
-    .none {
-        display: none;
     }
 
     .kontaktgrid {
@@ -1275,6 +1287,16 @@ footer div {
 /* Styling for mobile version starter her */
 
 @media (min-width: 320px) and (max-width: 767px) {
+
+    .desktop-none {
+        display: block;
+        position: absolute;
+        margin: 1vh 0 0 2vw;
+    }
+
+    .none {
+        display: none;
+    }
 
     /* Styling for index.html (mobile) starter her */
 
@@ -1374,6 +1396,15 @@ footer div {
     }
 
     /* Styling for loesninger.html (mobile) starter her */
+
+    .loesningerframe .video-container {
+        background-color: rgb(92, 76, 148);
+        font-size: 4vw;
+    }
+
+    .videotext h1 {
+        color: white;
+    }
 
     .loesningerframe {
         display: block;
