@@ -1022,6 +1022,25 @@ footer div {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    /* Burgermenu */
+
+    header nav ul {
+        display: none;
+    }
+
+    #burgerMenuButtonWrapper {
+        display: block;
+        text-align: right;
+        position: absolute;
+    }
+
+
+
+
+
+
+    /* Forside */
+
     #backgroundimage {
         width: 100vw;
         height: 50vh;
