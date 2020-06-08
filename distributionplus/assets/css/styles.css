@@ -173,7 +173,7 @@ footer div {
 
 /* Styling for header starter her */
 
-#logo {
+.logo {
     width: 7vw;
 }
 
@@ -953,7 +953,7 @@ footer div {
     margin-left: 5vw;
 }
 
-.timeline-center h1 {
+.timeline-center h3 {
     margin-bottom: 5vh;
     color: rgb(92, 76, 148);
     font-size: 2vw;
@@ -1095,7 +1095,7 @@ footer div {
         display: none;
     }
 
-    #logo {
+    .logo {
         width: 120px;
     }
 
@@ -1353,7 +1353,7 @@ footer div {
         width: 33.3vw;
     }
 
-    #logo {
+    .logo {
         width: 80px;
     }
 
@@ -1467,7 +1467,7 @@ footer div {
 
     .casesize h2{
         font-size: 24px;
-        width: 90vw;
+        width: 70vw;
     }
 
     .casesize p {
@@ -1479,7 +1479,6 @@ footer div {
         display: none;
     }
 
-    
 
     /* Styling for omos.html (mobile) starter her */
 

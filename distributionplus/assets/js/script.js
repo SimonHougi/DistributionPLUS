@@ -72,7 +72,7 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
    
     if (name.value == "") // Hvis feltet er tomt //
     {
-        window.alert("Navn* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
+        window.alert("Fulde navn* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
         name.focus();
         return false;
     }
@@ -93,7 +93,7 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
    
     if (email.value == "") // Samme som ovenstående //
     {
-        window.alert("Email* skal udfyldes");
+        window.alert("E-mail* skal udfyldes");
         email.focus();
         return false;
     }
