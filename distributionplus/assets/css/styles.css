@@ -1016,6 +1016,11 @@ footer div {
     margin-bottom: 0.5vh;
 }
 
+#burgerMenuButtonWrapper,
+#burgermenuCloseButtonWrapper {
+	display: none;
+}
+
 /* Styling for tablet version starter her */
 
 /* Styling for index.html (tablet) starter her */
@@ -1024,20 +1029,118 @@ footer div {
 
     /* Burgermenu */
 
-    header nav ul {
-        display: none;
+    header img {
+        display: inline-block;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 25px;
+        background-color: rgb(92, 76, 148);
+        border-radius: 10%;
+        height: 5vh;
+        width: 10vw;
+        text-align: center;
+        padding-top: 0.5vh;
+        color: white;
+        transition: box-shadow .2s ease-out;
+    }
+
+    .btn-close {
+        color: rgb(92, 76, 148);
+        background-color: white;
+        padding-top: 1vh;
+        font-weight: bold;
     }
 
     #burgerMenuButtonWrapper {
-        display: block;
+		display: block;
+		text-align: right;
+		position: fixed;
+        width: 98vw;
+        top: 0;
+	}
+	
+	#burgerMenuButtonWrapper a {
+		display: inline-block;
+		margin: 2vw;
+	}
+	
+	#burgermenuCloseButtonWrapper {
+		display: block;
         text-align: right;
-        position: absolute;
+        margin-right: 5vw;
+        margin-left: 5vw;
+	}
+
+	#burgermenuCloseButtonWrapper a {
+		display: inline-block;
+		margin: 2vw;
+    }
+    
+    .logo {
+        display: none;
     }
 
+    footer .logo {
+        display: block;
+        margin-left: 10vw;
+    }
 
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
+	header nav {
+		background-color: rgb(92, 76, 148);
+        width: 100vw;
+        height: 100vh;
+		z-index: 1;
+		transform: translateX(100%);
+		transition: transform .3s ease-out;
+        position: fixed;
+        top: 0;
+	}
+	
+	header nav.active {
+		transform: translateX(0);
+	}
 
+	header nav ul {
+		display: block;
+        width: 100vw;
+	}
 
+	header nav ul li {
+        display: block;
+        border-top: 2px solid white;
+    }
+    
+    header nav ul li:first-of-type {
+        border: none;
+    }
+
+	header nav ul li:last-child {
+		border-bottom: 2px solid white;
+	}
+
+	header nav ul li > a {
+		display: block;
+        padding: 5vw;
+        font-size: 3vw;
+	}
+	
+	header nav ul li:hover > ul {
+		position: relative;
+		display: block;
+		width: 100vw;
+	}
+	
+	header nav > ul > li > ul > li > a {
+		padding: 5vw 0 5vw 10vw;
+	}
 
     /* Forside */
 
@@ -1276,10 +1379,120 @@ footer div {
 
 @media (min-width: 320px) and (max-width: 767px) {
 
+    /* Burgermenu */
+
+    header img {
+        display: inline-block;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        background-color: rgb(92, 76, 148);
+        border-radius: 10%;
+        height: 5vh;
+        width: 15vw;
+        text-align: center;
+        padding-top: 1vh;
+        color: white;
+        transition: box-shadow .2s ease-out;
+    }
+
+    .btn-close {
+        color: rgb(92, 76, 148);
+        background-color: white;
+        padding-top: 1vh;
+        font-weight: bold;
+    }
+
+    #burgerMenuButtonWrapper {
+		display: block;
+		text-align: right;
+		position: fixed;
+        width: 98vw;
+        top: 0;
+	}
+	
+	#burgerMenuButtonWrapper a {
+		display: inline-block;
+		margin: 2vw;
+	}
+	
+	#burgermenuCloseButtonWrapper {
+		display: block;
+        text-align: right;
+        margin-right: 5vw;
+        margin-left: 5vw;
+	}
+
+	#burgermenuCloseButtonWrapper a {
+		display: inline-block;
+		margin: 2vw;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+	header nav {
+        background-color: rgb(92, 76, 148);
+        width: 100vw;
+        height: 100vh;
+		z-index: 1;
+		transform: translateX(100%);
+		transition: transform .3s ease-out;
+        position: fixed;
+        top: 0;
+	}
+	
+	header nav.active {
+		transform: translateX(0);
+	}
+
+	header nav ul {
+		display: block;
+		width: 100vw;
+	}
+
+	header nav ul li {
+        display: block;
+        border-top: 1px solid white;
+    }
+    
+    header nav ul li:first-of-type {
+        border: none;
+    }
+
+	header nav ul li:last-child {
+		border-bottom: 1px solid white;
+	}
+
+	header nav ul li a {
+		display: block;
+        padding: 5vw;
+        font-size: 3vw;
+	}
+	
+	header nav ul li:hover > ul {
+		position: relative;
+		display: block;
+		width: 100vw;
+	}
+	
+	header nav ul li ul li a {
+		padding: 5vw 0 5vw 10vw;
+	}
+
     /* Styling for index.html (mobile) starter her */
 
     header nav ul {
-        display: none;
+        display: block;
     }
 
     #backgroundimage {
@@ -1359,6 +1572,11 @@ footer div {
 
     .logo {
         width: 80px;
+    }
+
+    footer .logo {
+        display: block;
+        margin-left: 10vw;
     }
 
     .icons i {
@@ -1559,5 +1777,15 @@ footer div {
         color: black;
         margin-bottom: 2vh;
         font-size: 10px;
+    }
+
+    .rightfooter p {
+        padding: 0;
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+
+    .leftfooter p {
+        margin-bottom: 0;
     }
 }

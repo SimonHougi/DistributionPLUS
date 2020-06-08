@@ -16,42 +16,46 @@
 <body class="bodyate">
 
     <header>
+        <div id="burgerMenuButtonWrapper">
+            <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">menu</a>
+        </div>
         <nav>
-        <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
-        <ul>
-            <li>
-                <a href="loesninger.html">Løsninger</a>
-                <ul>
-                    <li><a href="#">Adressering</a></li>
-                    <li><a href="#">Foliering</a></li>
-                    <li><a href="#">Kuvertering</a></li>
-                    <li><a href="#">Databehandling</a></li>
-                    <li><a href="#">Fullfilment</a></li>
-                    <li><a href="#">Håndpakning</a></li>
-                    <li><a href="#">Papirindpakning</a></li>
-                    <li><a href="#">Print</a></li>
-                    <li><a href="#">Segmentering</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="case.html">Cases</a>
-                <ul>
-                    <li><a href="#">Hunden</a></li>
-                    <li><a href="#">Ældresagen</a></li>
-                    <li><a href="#">Jæger</a></li>
-                    <li><a href="#">Skiltemagasinet Impuls</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="selected" href="ate.html">Alt til Erhverv</a>
-            </li>
-            <li>
-                <a href="omos.html">Om os</a>
-            </li>
-            <li>
-                <a href="kontakt.html">Kontakt</a>
-            </li>
-        </ul>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Close</a></div>
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
+            <ul>
+                <li>
+                    <a href="loesninger.html">Løsninger</a>
+                    <ul>
+                        <li><a href="#">Adressering</a></li>
+                        <li><a href="#">Foliering</a></li>
+                        <li><a href="#">Kuvertering</a></li>
+                        <li><a href="#">Databehandling</a></li>
+                        <li><a href="#">Fullfilment</a></li>
+                        <li><a href="#">Håndpakning</a></li>
+                        <li><a href="#">Papirindpakning</a></li>
+                        <li><a href="#">Print</a></li>
+                        <li><a href="#">Segmentering</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="case.html">Case</a>
+                    <ul>
+                        <li><a href="#">Hunden</a></li>
+                        <li><a href="#">Ældresagen</a></li>
+                        <li><a href="#">Jæger</a></li>
+                        <li><a href="#">Skiltemagasinet Impuls</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ate.html">Alt til Erhverv</a>
+                </li>
+                <li>
+                    <a href="omos.html">Om os</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>

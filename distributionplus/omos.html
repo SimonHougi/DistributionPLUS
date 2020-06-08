@@ -15,7 +15,11 @@
 
 <body class="bodyomos">
     <header>
+        <div id="burgerMenuButtonWrapper">
+            <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">menu</a>
+        </div>
         <nav>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Close</a></div>
             <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
             <ul>
                 <li>
@@ -33,7 +37,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="case.html">Cases</a>
+                    <a href="case.html">Case</a>
                     <ul>
                         <li><a href="#">Hunden</a></li>
                         <li><a href="#">Ældresagen</a></li>
@@ -45,7 +49,7 @@
                     <a href="ate.html">Alt til Erhverv</a>
                 </li>
                 <li>
-                    <a class="selected" href="omos.html">Om os</a>
+                    <a href="omos.html">Om os</a>
                 </li>
                 <li>
                     <a href="kontakt.html">Kontakt</a>

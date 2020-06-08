@@ -107,3 +107,10 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
 
     return true; // Hvis felterne med stjerne er udfyldt, så kan man trykke på sendknappen //
 }
+
+
+// Script til burgermenu //
+
+function toggleClass(selector, className){
+    document.querySelector(selector).classList.toggle(className);
+}

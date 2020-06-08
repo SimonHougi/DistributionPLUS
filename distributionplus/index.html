@@ -18,7 +18,11 @@
 
 <body class="frontpage">
     <header>
+        <div id="burgerMenuButtonWrapper">
+            <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">menu</a>
+        </div>
         <nav>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Close</a></div>
             <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
             <ul>
                 <li>
