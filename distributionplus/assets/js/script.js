@@ -29,10 +29,8 @@ videoContainerList.forEach(videoContainer => {
 
 
 // Her starter det rigitge popup //
-
 const openPopupButtons = document.querySelectorAll('[data-popup-target]')
 const closePopupButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
 
 openPopupButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -50,15 +48,39 @@ closePopupButtons.forEach(button => {
 
 function openPopup(popup) {
     if (popup == null) return
-    popup.classList.add('active')
-    overlay.classList.add('active')
+    popup.classList.add('active');
+    window.location.hash = popup.id;
+}
+function openPopupByHash(hash) {
+    var popup = null;
+
+    if (hash) {
+        window.location.hash = hash;
+    }
+
+    var popupSelector = window.location.hash.substr(1);
+    popup = document.getElementById(popupSelector);
+
+    if (popup) {
+        openPopup(popup);
+    }
+}
+
+function openPopupFromMenu(e) {
+    e.preventDefault();
+    openPopupByHash(e.target.hash);
 }
 
 function closePopup(popup) {
-    if (popup == null) return
-    popup.classList.remove('active')
-    overlay.classList.remove('active')
+    if (popup == null) return;
+    popup.classList.remove('active');
+    window.location.hash = '';
 }
+
+if (window.location.hash && window.location.hash.startsWith('#popup')) {
+    openPopupByHash();
+}
+
 
 // Script til udfyldning af formular //
 

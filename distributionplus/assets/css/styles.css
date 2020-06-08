@@ -902,11 +902,11 @@ footer div {
 .omos-missionandvision h1 {
     text-align: center;
     font-size: 3vw;
-}z
+}
 
 .omos-missionandvision p {
     font-style: italic;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 .history {
@@ -1043,7 +1043,7 @@ footer div {
 
     main .desktop-none {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         margin-top: 1vh;
         position: fixed;
@@ -1093,8 +1093,9 @@ footer div {
 	#burgermenuCloseButtonWrapper {
 		display: block;
         text-align: right;
-        margin-right: 5vw;
+        margin-right: 2vw;
         margin-left: 5vw;
+        margin-top: 1vh;
 	}
 
 	#burgermenuCloseButtonWrapper a {
@@ -1412,7 +1413,7 @@ footer div {
 
     .desktop-none {
         display: block;
-        position: absolute;
+        position: fixed;
         margin: 1vh 0 0 2vw;
     }
 
@@ -1462,8 +1463,9 @@ footer div {
 	#burgermenuCloseButtonWrapper {
 		display: block;
         text-align: right;
-        margin-right: 5vw;
+        margin-right: 2vw;
         margin-left: 5vw;
+        margin-top: 1vh;
 	}
 
 	#burgermenuCloseButtonWrapper a {
@@ -1777,17 +1779,24 @@ footer div {
 
     .omos-missionandvision {
         display: block;
-        height: 80vh;
+        height: 55vh;
     }
 
     .omos-missionandvision div {
         width: 80vw;
         margin: auto;
-        height: 30vh;
+        height: 25vh;
     }
 
     .omos-missionandvision h1 {
         font-size: 24px;
+        padding-top: 0vh;
+        margin: 0;
+    }
+
+    .omos-missionandvision p {
+        font-size: 3vw;
+        padding-bottom: 5vh;
     }
 
     .timelinewrapper {
