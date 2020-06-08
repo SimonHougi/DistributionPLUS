@@ -1278,6 +1278,10 @@ footer div {
 
     /* Styling for index.html (mobile) starter her */
 
+    header nav ul {
+        display: none;
+    }
+
     #backgroundimage {
         width: 100vw;
         height: 35vh;
