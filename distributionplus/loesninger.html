@@ -20,29 +20,29 @@
         </div>
         <nav>
             <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Close</a></div>
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none" alt="Distribution PLUS logo"></a>
             <ul>
                 <li>
-                    <a href="loesninger.html">Løsninger</a>
+                    <a class="selected" href="loesninger.html">Løsninger</a>
                     <ul>
-                        <li><a href="#">Adressering</a></li>
-                        <li><a href="#">Foliering</a></li>
-                        <li><a href="#">Kuvertering</a></li>
-                        <li><a href="#">Databehandling</a></li>
-                        <li><a href="#">Fullfilment</a></li>
-                        <li><a href="#">Håndpakning</a></li>
-                        <li><a href="#">Papirindpakning</a></li>
-                        <li><a href="#">Print</a></li>
-                        <li><a href="#">Segmentering</a></li>
+                        <li><a href="#popupadressering" onclick="openPopupFromMenu(event)">Adressering</a></li>
+                        <li><a href="#popupfoliering" onclick="openPopupFromMenu(event)">Foliering</a></li>
+                        <li><a href="#popupkuvertering" onclick="openPopupFromMenu(event)">Kuvertering</a></li>
+                        <li><a href="#popupdatabehandling" onclick="openPopupFromMenu(event)">Databehandling</a></li>
+                        <li><a href="#popupfulfillment" onclick="openPopupFromMenu(event)">Fullfilment</a></li>
+                        <li><a href="#popuphaandpakning" onclick="openPopupFromMenu(event)">Håndpakning</a></li>
+                        <li><a href="#popuppapirindpakning" onclick="openPopupFromMenu(event)">Papirindpakning</a></li>
+                        <li><a href="#popupprint" onclick="openPopupFromMenu(event)">Print</a></li>
+                        <li><a href="#popupsegmentering" onclick="openPopupFromMenu(event)">Segmentering</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="case.html">Case</a>
                     <ul>
-                        <li><a href="#">Hunden</a></li>
-                        <li><a href="#">Ældresagen</a></li>
-                        <li><a href="#">Jæger</a></li>
-                        <li><a href="#">Skiltemagasinet Impuls</a></li>
+                        <li><a href="case.html#popuphunden">Hunden</a></li>
+                        <li><a href="case.html#popupaeldresagen">Ældresagen</a></li>
+                        <li><a href="case.html#popupjaeger">Jæger</a></li>
+                        <li><a href="case.html#popupskiltemagasinetimpuls">Skiltemagasinet Impuls</a></li>
                     </ul>
                 </li>
                 <li>
@@ -58,7 +58,7 @@
         </nav>
     </header>
     <main class="margin">
-
+        <a href="index.html"><img src="assets/images/dpplogo.png" class="logo desktop-none" alt="Distribution PLUS logo"></a>
         <div class="grid loesningerframe">
 
             <section data-popup-target="#popupadressering" class="adressering shadow video-container hoverandclick">

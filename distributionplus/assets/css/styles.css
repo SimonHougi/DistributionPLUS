@@ -50,6 +50,10 @@ nav ul li a {
     color: rgb(92, 76, 148);
 }
 
+main .desktop-none {
+    display: none;
+}
+
 /* Dropdown hovermenu i navigationen */
 
 header nav ul li a:hover {
@@ -902,7 +906,7 @@ footer div {
 
 .omos-missionandvision p {
     font-style: italic;
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 .history {
@@ -925,7 +929,7 @@ footer div {
 
 .history p {
     color: black;
-    font-size: 1.1vw;
+    font-size: 1vw;
     line-height: 2;
     margin: 0;
     width: 90vw;
@@ -1023,14 +1027,32 @@ footer div {
 
 /* Styling for tablet version starter her */
 
-/* Styling for index.html (tablet) starter her */
-
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Generelt */
+
+    .desktop-none {
+        display: block;
+        position: absolute;
+        margin: 1vh 0 0 2vw;
+    }
+
+    .none {
+        display: none;
+    }
+
+    main .desktop-none {
+        display: block;
+        position: absolute;
+        top: 0;
+        margin-top: 1vh;
+        position: fixed;
+    }
 
     /* Burgermenu */
 
-    header img {
-        display: inline-block;
+    .selected {
+        color: white;
     }
 
     .btn {
@@ -1060,6 +1082,7 @@ footer div {
 		position: fixed;
         width: 98vw;
         top: 0;
+        margin-top: 1vh;
 	}
 	
 	#burgerMenuButtonWrapper a {
@@ -1143,6 +1166,7 @@ footer div {
 	}
 
     /* Forside */
+    /* Styling for index.html (tablet) starter her */
 
     #backgroundimage {
         width: 100vw;
@@ -1207,6 +1231,15 @@ footer div {
     }
 
     /* Styling for loesninger.html (tablet) starter her */
+
+    .loesningerframe .video-container {
+        background-color: rgb(92, 76, 148);
+        font-size: 4vw;
+    }
+
+    .videotext h1 {
+        color: white;
+    }
 
     .loesningerframe {
         display: block;
@@ -1335,7 +1368,7 @@ footer div {
     }
 
     .history p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Styling for kontakt.html (tablet) starter her */
@@ -1347,10 +1380,6 @@ footer div {
 
     .kontakttop p {
         font-size: 24px;
-    }
-
-    .none {
-        display: none;
     }
 
     .kontaktgrid {
@@ -1381,8 +1410,18 @@ footer div {
 
     /* Burgermenu */
 
-    header img {
-        display: inline-block;
+    .desktop-none {
+        display: block;
+        position: absolute;
+        margin: 1vh 0 0 2vw;
+    }
+
+    main .desktop-none {
+        display: block;
+        position: absolute;
+        top: 0;
+        margin-top: 1vh;
+        position: fixed;
     }
 
     .btn {
@@ -1412,6 +1451,7 @@ footer div {
 		position: fixed;
         width: 98vw;
         top: 0;
+        margin-top: 1vh;
 	}
 	
 	#burgerMenuButtonWrapper a {
@@ -1489,10 +1529,28 @@ footer div {
 		padding: 5vw 0 5vw 10vw;
 	}
 
+    .desktop-none {
+        display: block;
+        position: absolute;
+        margin: 1vh 0 0 2vw;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .desktop-none {
+        display: block;
+    }
+
     /* Styling for index.html (mobile) starter her */
 
     header nav ul {
         display: block;
+    }
+
+    .selected {
+        color: white;
     }
 
     #backgroundimage {
@@ -1592,6 +1650,15 @@ footer div {
     }
 
     /* Styling for loesninger.html (mobile) starter her */
+
+    .loesningerframe .video-container {
+        background-color: rgb(92, 76, 148);
+        font-size: 4vw;
+    }
+
+    .videotext h1 {
+        color: white;
+    }
 
     .loesningerframe {
         display: block;
@@ -1721,6 +1788,10 @@ footer div {
 
     .omos-missionandvision h1 {
         font-size: 24px;
+    }
+
+    .timelinewrapper {
+        display: none;
     }
 
     .history h2 {
