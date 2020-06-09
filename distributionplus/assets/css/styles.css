@@ -185,21 +185,24 @@ footer div {
 
 #backgroundimage {
     height: 100vh;
-    padding: 30vh 0 0 60vw;
+    padding: 30vh 0 0 58vw;
     text-align: center;
     background-image: url("../images/Hero.jpg");
     background-size: cover;
 }
 
 #backgroundimage h1 {
-    font-size: 2.5vw;
-    margin-bottom: 3vh;
+    font-size: 5vw;
+    margin-bottom: 1vh;
+    margin-right: 10vw;
     color: white;
 }
 
 #backgroundimage h2 {
     font-size: 1.5vw;
     color: white;
+    margin: 0;
+    margin-right: 3.5vw;
 }
 
 /* Styling for midterste del af forside starter her */
@@ -290,6 +293,7 @@ footer div {
     border: none;
     border-radius: 5px;
     outline: none;
+    padding-left: 1vw;
 }
 
 #nyhedsbrev .video-news {
@@ -618,8 +622,8 @@ footer div {
 
 .formular h3 {
     color: white;
+    font-size: 2vw;
     margin: 5vh 0 5vh 0;
-    letter-spacing: 3px;
 }
 
 .formular form label {
@@ -634,6 +638,7 @@ footer div {
     width: 50vw;
     height: 5vh;
     margin-bottom: 2vh;
+    padding-left: 1vw;
 
 }
 
