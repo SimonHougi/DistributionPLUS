@@ -1366,6 +1366,10 @@ footer div {
         height: 15vh;
     }
 
+    .omos-missionandvision p {
+        font-size: 2vw;
+    }
+
     .history h2 {
         margin-top: 5vh;
         font-size: 40px;
