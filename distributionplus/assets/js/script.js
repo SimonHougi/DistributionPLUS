@@ -133,7 +133,7 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
 }
 
 
-// Script til burgermenu - inspiration fra workshop med DAHG //
+// Script til burgermenu - hentet inspiration og hjælp fra workshop med DAHG //
 
 function toggleClass(selector, className){
     document.querySelector(selector).classList.toggle(className); // Dette script er en togglefunction, således nogle classer bliver aktive/inaktive //
