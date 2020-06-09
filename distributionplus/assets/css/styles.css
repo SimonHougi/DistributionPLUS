@@ -906,7 +906,7 @@ footer div {
 
 .omos-missionandvision p {
     font-style: italic;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .history {
@@ -1367,6 +1367,10 @@ footer div {
         width: 80vw;
         margin: auto;
         height: 15vh;
+    }
+
+    .omos-missionandvision p {
+        font-size: 2vw;
     }
 
     .history h2 {
