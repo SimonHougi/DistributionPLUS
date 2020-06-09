@@ -906,7 +906,7 @@ footer div {
 
 .omos-missionandvision p {
     font-style: italic;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .history {
@@ -1080,9 +1080,10 @@ footer div {
 		display: block;
 		text-align: right;
 		position: fixed;
-        width: 98vw;
+        width: 40vw;
         top: 0;
         margin-top: 1vh;
+        margin-left: 58vw;
 	}
 	
 	#burgerMenuButtonWrapper a {
@@ -1105,12 +1106,9 @@ footer div {
 
     .omosheader {
         height: 10vh;
-        width: 100vw;
+        width: 80vw;
         background-color: #C0C0C0;
-    }
-    
-    .index9000 {
-        z-index: 5;
+        margin-left: 0;
     }
 
     .logo {
@@ -1164,7 +1162,6 @@ footer div {
 		display: block;
         padding: 5vw;
         font-size: 3vw;
-        margin-left: 15vw;
 	}
 	
 	header nav ul li:hover ul {
@@ -1461,9 +1458,10 @@ footer div {
 		display: block;
 		text-align: right;
 		position: fixed;
-        width: 98vw;
+        width: 40vw;
         top: 0;
         margin-top: 1vh;
+        margin-left: 58vw;
 	}
 	
 	#burgerMenuButtonWrapper a {
@@ -1486,12 +1484,8 @@ footer div {
 
     .omosheader {
         height: 10vh;
-        width: 100vw;
+        width: 80vw;
         background-color: #C0C0C0;
-    }
-    
-    .index9000 {
-        z-index: 5;
     }
     
     .logo {
@@ -1540,7 +1534,6 @@ footer div {
 		display: block;
         padding: 5vw;
         font-size: 3vw;
-        margin-left: 25vw;
 	}
 	
 	header nav ul li:hover ul {
