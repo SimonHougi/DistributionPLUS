@@ -184,33 +184,37 @@ footer div {
 /* Styling for baggrundsbillede starter her */
 
 #backgroundimage {
-    height: 100vh;
-    padding: 30vh 0 0 58vw;
+    height: 65vh;
     text-align: center;
     background-image: url("../images/Hero.jpg");
-    background-size: cover;
+    background-size: center;
 }
 
 #backgroundimage h1 {
     font-size: 5vw;
-    margin-bottom: 1vh;
-    margin-right: 10vw;
     color: white;
 }
 
 #backgroundimage h2 {
     font-size: 1.5vw;
     color: white;
-    margin: 0;
-    margin-right: 3.5vw;
+}
+
+#backgroundimage .hero-left {
+    padding-top: 15vh;
+    margin-left: 60vw;
+}
+
+#backgroundimage .hero-right {
+    padding-top: 15vh;
+    padding-right: 50vw;
 }
 
 /* Styling for midterste del af forside starter her */
 
-#top {
-    height: 50vh;
+.splitline {
+    height: 1.5vh;
     background-color: rgb(92, 76, 148);
-    text-align: center;
 }
 
 #top h2 {
@@ -309,8 +313,30 @@ footer div {
     filter: grayscale(100%) brightness(40%);
 }
 
-.arrangeforward {
+.frontpage-boxcontainer {
     z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    color: rgb(92, 76, 148);
+    text-align: center;
+}
+
+.categorybox {
+    width: 20vw;
+    padding: 25px;
+    height: 30vh;
+    background-image: url("../images/Hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    border-radius: 0.2vw;
+}
+
+.categorybox h4 {
+    margin-top: 20%;
+    opacity: 100%;
+    font-size: 2rem;
 }
 
 /* Styling for loesninger.html starts here */

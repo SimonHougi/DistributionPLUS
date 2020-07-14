@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DistributionPLUS, De komplette løsning fra adressering til postkasse. DistributionPLUS tilbyder produkter og services for virksomheder i alle størrelser">
+    <meta name="description"
+        content="DistributionPLUS, De komplette løsning fra adressering til postkasse. DistributionPLUS tilbyder produkter og services for virksomheder i alle størrelser">
     <meta name="keywords" content="Forside, Se løsninger, adresse, tilmeld nyhedsbrev">
     <meta name="author" content="Lisette Hansen, Martin Sørensen, Nivin Tayeb, Simon Hougaard">
     <title>DistributionPLUS</title>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <link rel="shortcut icon" href="assets/images/dpplogo.png" type="image/png"> <!--Tab ikon-->
+    <link rel="shortcut icon" href="assets/images/dpplogo.png" type="image/png">
+    <!--Tab ikon-->
     <script src="https://kit.fontawesome.com/2f6e4a59d9.js" crossorigin="anonymous"></script>
     <!--Font awesome Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge Fonts -->
@@ -17,14 +20,17 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJSBbAMDVGRgXDsL1w-YjcYCpUKFEYpE&callback=initMap"></script>
     <!--Google maps API-->
 </head>
+
 <body class="frontpage">
     <header>
         <div id="burgerMenuButtonWrapper">
             <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
         </div>
         <nav>
-            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none" alt="Distribution PLUS logo"></a>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#"
+                    onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
+                    alt="Distribution PLUS logo"></a>
             <ul>
                 <li>
                     <a href="loesninger.html">Løsninger</a>
@@ -62,47 +68,35 @@
         </nav>
     </header>
     <main class="indexbody">
-        <a href="index.html"><img src="assets/images/dpplogo.png" class="logo desktop-none" alt="Distribution PLUS logo"></a>
+        <a href="index.html"><img src="assets/images/dpplogo.png" class="logo desktop-none"
+                alt="Distribution PLUS logo"></a>
         <div id="backgroundimage">
-            <h1>DistributionPLUS</h1>
-            <h2>Den komplette løsning fra adressering til postkasse</h2>
-        </div>
-        <div>
-            <div id="top">
+            <div class="hero-right">
+                <h1>DistributionPLUS</h1>
+                <h2>Den komplette løsning fra adressering til postkasse</h2>
+            </div>
+            <div class="hero-left">
                 <h2>DistributionPLUS tilbyder produkter og services
                     <br>for virksomheder i alle størrelser</h2>
             </div>
-            <div class="flexbox">
-                <section id="left">
-                    <h2>Din nye distributør</h2>
-                    <p>DistributionPLUS er et af landet største pakkerier med hovedvægten på færdigbehandling af
-                        kataloger, magasiner, breve og kasser.</p>
-                    <form action="loesninger.html">
-                        <button>Se vores løsninger</button>
-                    </form>
-                </section>
-                <section id="map">
-                    <!--Her skal kortet være-->
-                </section>
-            </div>
         </div>
+            <div class="splitline"></div>
         <div id="nyhedsbrev">
             <div class="video-news">
                 <video autoplay loop muted>
                     <source src="assets/videos/baggrundvideo.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="arrangeforward">
-                <h2>Tilmeld nyhedsbrev</h2>
-                <div id="label">
-                    <label for="email">Indtast e-mail her</label>
+            <div class="frontpage-boxcontainer">
+                <div class="categorybox">
+                    <h4>Helt nye muligheder til dig</h4>
                 </div>
-                <div id="input">
-                    <input type="text" id="email" name="email" placeholder="E-mail">
+                <div class="categorybox">
+                    <h4>Gå op opdagelse i vores løsninger og bliv overrasket / alt bliv inspireret</h4>
                 </div>
-                <form action="get">
-                    <button id="tilmeld">Tilmeld</button>
-                </form>
+                <div class="categorybox">
+                    <h4>Find den rigtige at tale med…………</h4>
+                </div>
             </div>
         </div>
     </main>
