@@ -22,26 +22,63 @@
             <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
         </div>
         <nav>
-            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none" alt="Distribution PLUS logo"></a>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#"
+                    onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
+                    alt="Distribution PLUS logo"></a>
             <ul>
                 <li>
                     <a class="selected" href="loesninger.html">Løsninger</a>
                     <ul>
-                        <li><a href="#popupadressering" onclick="openPopupFromMenu(event)">Adressering</a></li>
-                        <li><a href="#popupfoliering" onclick="openPopupFromMenu(event)">Foliering</a></li>
-                        <li><a href="#popupkuvertering" onclick="openPopupFromMenu(event)">Kuvertering</a></li>
-                        <li><a href="#popupdatabehandling" onclick="openPopupFromMenu(event)">Databehandling</a></li>
-                        <li><a href="#popupfulfillment" onclick="openPopupFromMenu(event)">Fullfilment</a></li>
-                        <li><a href="#popuphaandpakning" onclick="openPopupFromMenu(event)">Håndpakning</a></li>
-                        <li><a href="#popuppapirindpakning" onclick="openPopupFromMenu(event)">Papirindpakning</a></li>
-                        <li><a href="#popupprint" onclick="openPopupFromMenu(event)">Print</a></li>
-                        <li><a href="#popupsegmentering" onclick="openPopupFromMenu(event)">Segmentering</a></li>
+                        <div class="dropdown-wrapper">
+                            <h2>Vores løsninger</h2>
+                            <div class="dropdown-category">
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Dataservice</h3>
+                                    </div>
+                                    <a href="">Adressekøb</a>
+                                    <a href="">Databehandling</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Adressering og pakning</h3>
+                                    </div>
+                                    <a href="">Adressering</a>
+                                    <a href="">Foliering/indpakning</a>
+                                    <a href="">Paper wrapping</a>
+                                    <a href="">Bundt foliering</a>
+                                    <a href="">Segmentering</a>
+                                    <a href="">Indstik</a>
+                                    <a href="">Manuel pålægning</a>
+                                    <a href="">Labes påsætning</a>
+                                    <a href="">Kuvertering</a>
+                                    <a href="">Pakning af kasser</a>
+                                    <a href="">Print</a>
+                                    <a href="">Lagerhotel</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Distribution</h3>
+                                    </div>
+                                    <a href="">Rådgivning</a>
+                                    <a href="">Magasiner</a>
+                                    <a href="">Breve</a>
+                                    <a href="">Pakker</a>
+                                    <a href="">Adresseløst</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>De nye</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </li>
                 <li>
                     <a href="case.html">Cases</a>
-                    <ul>
+                    <ul class="width">
                         <li><a href="case.html#popuphunden">Hunden</a></li>
                         <li><a href="case.html#popupaeldresagen">Ældresagen</a></li>
                         <li><a href="case.html#popupjaeger">Jæger</a></li>

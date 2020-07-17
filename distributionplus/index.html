@@ -16,12 +16,10 @@
     <!--Font awesome Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge Fonts -->
     <script src="assets/js/script.js" defer></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJSBbAMDVGRgXDsL1w-YjcYCpUKFEYpE&callback=initMap"></script>
-    <!--Google maps API-->
 </head>
 
 <body class="frontpage">
+    <div class="dropdown-dark-background"></div>
     <header>
         <div id="burgerMenuButtonWrapper">
             <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
@@ -35,24 +33,59 @@
                 <li>
                     <a href="loesninger.html">Løsninger</a>
                     <ul>
-                        <li><a href="loesninger.html#popupadressering">Adressering</a></li>
-                        <li><a href="loesninger.html#popupfoliering">Foliering</a></li>
-                        <li><a href="loesninger.html#popupkuvertering">Kuvertering</a></li>
-                        <li><a href="loesninger.html#popupdatabehandling">Databehandling</a></li>
-                        <li><a href="loesninger.html#popupfulfillment">Fullfilment</a></li>
-                        <li><a href="loesninger.html#popuphaandpakning">Håndpakning</a></li>
-                        <li><a href="loesninger.html#popuppapirindpakning">Papirindpakning</a></li>
-                        <li><a href="loesninger.html#popupprint">Print</a></li>
-                        <li><a href="loesninger.html#popupsegmentering">Segmentering</a></li>
+                        <div class="dropdown-wrapper">
+                            <h2>Vores løsninger</h2>
+                            <div class="dropdown-category">
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Dataservice</h3>
+                                    </div>
+                                    <a href="">Adressekøb</a>
+                                    <a href="">Databehandling</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Adressering og pakning</h3>
+                                    </div>
+                                    <a href="">Adressering</a>
+                                    <a href="">Foliering/indpakning</a>
+                                    <a href="">Paper wrapping</a>
+                                    <a href="">Bundt foliering</a>
+                                    <a href="">Segmentering</a>
+                                    <a href="">Indstik</a>
+                                    <a href="">Manuel pålægning</a>
+                                    <a href="">Labes påsætning</a>
+                                    <a href="">Kuvertering</a>
+                                    <a href="">Pakning af kasser</a>
+                                    <a href="">Print</a>
+                                    <a href="">Lagerhotel</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Distribution</h3>
+                                    </div>
+                                    <a href="">Rådgivning</a>
+                                    <a href="">Magasiner</a>
+                                    <a href="">Breve</a>
+                                    <a href="">Pakker</a>
+                                    <a href="">Adresseløst</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>De nye</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </li>
                 <li>
                     <a href="case.html">Cases</a>
-                    <ul>
-                        <li><a href="case.html#popuphunden">Hunden</a></li>
-                        <li><a href="case.html#popupaeldresagen">Ældresagen</a></li>
-                        <li><a href="case.html#popupjaeger">Jæger</a></li>
-                        <li><a href="case.html#popupskiltemagasinetimpuls">Skiltemagasinet Impuls</a></li>
+                    <ul class="width">
+                        <li><a href="">Hunden</a></li>
+                        <li><a href="">Ældresagen</a></li>
+                        <li><a href="">Jæger</a></li>
+                        <li><a href="">Skiltemagasinet Impuls</a></li>
                     </ul>
                 </li>
                 <li>
@@ -80,7 +113,7 @@
                     <br>for virksomheder i alle størrelser</h2>
             </div>
         </div>
-            <div class="splitline"></div>
+        <div class="splitline"></div>
         <div id="nyhedsbrev">
             <div class="video-news">
                 <video autoplay loop muted>

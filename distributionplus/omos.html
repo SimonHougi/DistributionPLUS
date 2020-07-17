@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DistributionPLUS A/S blev etableret d. 1. november 2007 ved at sammelægge de to hidtidige konsolideringsaftaler i en organisation, der i sit daglige virke er helt uafhængige af ejernes aktiviteter. DistributionPLUS A/S er ejet af Aller Media A/S og Stibo Graphic A/S.">
-    <meta name="keywords" content="Mission, Vision, DistributionPLUS' historie, Startskuddet, Etablering, DistributionPLUS i dag, Tidslinje over DistributionPLUS">
+    <meta name="description"
+        content="DistributionPLUS A/S blev etableret d. 1. november 2007 ved at sammelægge de to hidtidige konsolideringsaftaler i en organisation, der i sit daglige virke er helt uafhængige af ejernes aktiviteter. DistributionPLUS A/S er ejet af Aller Media A/S og Stibo Graphic A/S.">
+    <meta name="keywords"
+        content="Mission, Vision, DistributionPLUS' historie, Startskuddet, Etablering, DistributionPLUS i dag, Tidslinje over DistributionPLUS">
     <meta name="author" content="Lisette Hansen, Martin Sørensen, Nivin Tayeb, Simon Hougaard">
     <title>Om os | DistributionPLUS</title>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
@@ -22,26 +24,63 @@
             <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
         </div>
         <nav>
-            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#" onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none" alt="Distribution PLUS logo"></a>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#"
+                    onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
+                    alt="Distribution PLUS logo"></a>
             <ul>
                 <li>
                     <a href="loesninger.html">Løsninger</a>
                     <ul>
-                        <li><a href="loesninger.html#popupadressering">Adressering</a></li>
-                        <li><a href="loesninger.html#popupfoliering">Foliering</a></li>
-                        <li><a href="loesninger.html#popupkuvertering">Kuvertering</a></li>
-                        <li><a href="loesninger.html#popupdatabehandling">Databehandling</a></li>
-                        <li><a href="loesninger.html#popupfulfillment">Fullfilment</a></li>
-                        <li><a href="loesninger.html#popuphaandpakning">Håndpakning</a></li>
-                        <li><a href="loesninger.html#popuppapirindpakning">Papirindpakning</a></li>
-                        <li><a href="loesninger.html#popupprint">Print</a></li>
-                        <li><a href="loesninger.html#popupsegmentering">Segmentering</a></li>
+                        <div class="dropdown-wrapper">
+                            <h2>Vores løsninger</h2>
+                            <div class="dropdown-category">
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Dataservice</h3>
+                                    </div>
+                                    <a href="">Adressekøb</a>
+                                    <a href="">Databehandling</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Adressering og pakning</h3>
+                                    </div>
+                                    <a href="">Adressering</a>
+                                    <a href="">Foliering/indpakning</a>
+                                    <a href="">Paper wrapping</a>
+                                    <a href="">Bundt foliering</a>
+                                    <a href="">Segmentering</a>
+                                    <a href="">Indstik</a>
+                                    <a href="">Manuel pålægning</a>
+                                    <a href="">Labes påsætning</a>
+                                    <a href="">Kuvertering</a>
+                                    <a href="">Pakning af kasser</a>
+                                    <a href="">Print</a>
+                                    <a href="">Lagerhotel</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>Distribution</h3>
+                                    </div>
+                                    <a href="">Rådgivning</a>
+                                    <a href="">Magasiner</a>
+                                    <a href="">Breve</a>
+                                    <a href="">Pakker</a>
+                                    <a href="">Adresseløst</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <div class="dropdown-category-sectionboxes">
+                                        <h3>De nye</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </li>
                 <li>
                     <a href="case.html">Cases</a>
-                    <ul>
+                    <ul class="width">
                         <li><a href="case.html#popuphunden">Hunden</a></li>
                         <li><a href="case.html#popupaeldresagen">Ældresagen</a></li>
                         <li><a href="case.html#popupjaeger">Jæger</a></li>
@@ -63,52 +102,64 @@
 
     <main>
         <div class="omosheader">
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo desktop-none" alt="Distribution PLUS logo"></a>
-        </div>
-        
-        <div class="omos-banner"></div>
-        <div class="flexbox omos-missionandvision">
-            <div>
-                <h1>Mission</h1>
-                <p>DistributionPLUS’ mission er at arbejde for og tilbyde den højeste kvalitet i pakning og distribution
-                    af trykt materiale til den lavest mulige pris for at sikre største mulig trykt volumen på det
-                    nordiske marked. DistributionPLUS’ løsninger er åbne for alle.</p>
+            <img src="assets/images/omoshero.jpg" alt="">
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo desktop-none"
+                    alt="Distribution PLUS logo"></a>
+            <div class="omos-banner">
+                <div class="flexbox omos-missionandvision">
+                    <div>
+                        <h1>Mission</h1>
+                        <p>DistributionPLUS’ mission er at arbejde for og tilbyde den højeste kvalitet i pakning og
+                            distribution
+                            af trykt materiale til den lavest mulige pris for at sikre største mulig trykt volumen på
+                            det
+                            nordiske marked. DistributionPLUS’ løsninger er åbne for alle.</p>
+                    </div>
+                    <div>
+                        <h1>Vision</h1>
+                        <p>DP+ vision er at være den største danske aktør på markedet for fullfilment og distribution af
+                            magasiner og toneangivende for udviklingen af dette marked. DP+ har en vision om at udvikle
+                            nye
+                            løsninger for pakning og distribution af printet materiale til modtagere i hele Norden. DP+
+                            vil
+                            arbejde for en fortsat konsolidering af markedet for fullfilment og distribution for at
+                            sikre
+                            opfyldelse af vores mission. </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h1>Vision</h1>
-                <p>DP+ vision er at være den største danske aktør på markedet for fullfilment og distribution af
-                    magasiner og toneangivende for udviklingen af dette marked. DP+ har en vision om at udvikle nye
-                    løsninger for pakning og distribution af printet materiale til modtagere i hele Norden. DP+ vil
-                    arbejde for en fortsat konsolidering af markedet for fullfilment og distribution for at sikre
-                    opfyldelse af vores mission. </p>
-            </div>
         </div>
+        <div class="splitline"></div>
+
         <div class="history">
             <h2>DistributionPLUS’ historie</h2>
-            <div>
-                <h3>Startskuddet</h3>
-                <p>Med Finansloven for 2004 fjernedes portotilskuddet til distribution af magasiner, hvilket betød en
-                    stigning i distributionsprisen på omkring 300%. Denne udvikling blev startskuddet til en række
-                    konsolideringsløsninger, med det formål at søge en afbødning af dele af denne stigning.
-                    DistributionPLUS A/S er en fortsættelse af de to stærkeste af disse konsolideringsordninger, der
-                    blev etableret af TJECK Magazine A/S og Portogruppen Aps.
-                </p>
-            </div>
-            <div>
-                <h3>Etablering</h3>
-                <p>DistributionPLUS A/S blev etableret d. 1. november 2007 ved at sammelægge de to hidtidige
-                    konsolideringsaftaler i en organisation, der i sit daglige virke er helt uafhængige af ejernes
-                    aktiviteter. DistributionPLUS A/S er ejet af Aller Media A/S og Stibo Graphic A/S.</p>
-            </div>
-            <div>
-                <h3>DistributionPLUS i dag</h3>
-                <p>DistributionPLUS A/S bestyrelse består i dag af følgende medlemmer:</p>
-                <ul>
-                    <li>Fomand Adm. Dir. Carsten Christensen, Stibo A/S</li>
-                    <li>Økonomichef Christian Papa, Aller Media A/S</li>
-                    <li>Adm. Dir. Søren Henriksen, Stibo Graphic A/S</li>
-                    <li>DistributionPLUS A/S er fysisk repræsenteret i Vadum.</li>
-                </ul>
+            <div class="flexbox space-evenly">
+                <div class="width">
+                    <h3>Startskuddet</h3>
+                    <p>Med Finansloven for 2004 fjernedes portotilskuddet til distribution af magasiner, hvilket betød
+                        en
+                        stigning i distributionsprisen på omkring 300%. Denne udvikling blev startskuddet til en række
+                        konsolideringsløsninger, med det formål at søge en afbødning af dele af denne stigning.
+                        DistributionPLUS A/S er en fortsættelse af de to stærkeste af disse konsolideringsordninger, der
+                        blev etableret af TJECK Magazine A/S og Portogruppen Aps.
+                    </p>
+                </div>
+                <div class="width">
+                    <h3>Etablering</h3>
+                    <p>DistributionPLUS A/S blev etableret d. 1. november 2007 ved at sammelægge de to hidtidige
+                        konsolideringsaftaler i en organisation, der i sit daglige virke er helt uafhængige af ejernes
+                        aktiviteter. DistributionPLUS A/S er ejet af Aller Media A/S og Stibo Graphic A/S.</p>
+                </div>
+                <div class="width">
+                    <h3>DistributionPLUS i dag</h3>
+                    <p>DistributionPLUS A/S bestyrelse består i dag af følgende medlemmer:</p>
+                    <ul>
+                        <li>Fomand Adm. Dir. Carsten Christensen, Stibo A/S</li>
+                        <li>Økonomichef Christian Papa, Aller Media A/S</li>
+                        <li>Adm. Dir. Søren Henriksen, Stibo Graphic A/S</li>
+                        <li>DistributionPLUS A/S er fysisk repræsenteret i Vadum.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <section class="timelinewrapper">
@@ -121,50 +172,50 @@
                 <div class="timeline-margin">
                     <div class="timeline-singleborder border-right">
                         <div>
-                            <h4 class="year">2007</h4>
-                            <h5 class="headline">Etablering af DistributionPLUS</h5>
+                            <h4 class="year">2020</h4>
+                            <h5 class="headline">Køb af to PM maskiner</h5>
                         </div>
                     </div>
                     <div class="timeline-singleborder border-left">
                         <div>
-                            <h4 class="year">2011</h4>
-                            <h5 class="headline">Opkøb af S-Mail A/S (40%)</h5>
+                            <h4 class="year">2019</h4>
+                            <h5 class="headline">Køb og opsætning af Sitma Papir</h5>                          
                         </div>
                     </div>
                     <div class="timeline-singleborder border-right">
                         <div>
-                            <h4 class="year">2013</h4>
-                            <h5 class="headline">Opkøb af S-Mail A/S (100%)</h5>
+                            <h4 class="year">2018</h4>
+                            <h5 class="headline">Start af ATE og SMP STOR</h5>                           
                         </div>
                     </div>
                     <div class="timeline-singleborder border-left">
-                        <div>
-                            <h4 class="year">2014</h4>
-                            <h5 class="headline">Virksomheden flytter til Vadum</h5>
-                        </div>
-                    </div>
-                    <div class="timeline-singleborder border-right">
                         <div>
                             <h4 class="year">2017</h4>
                             <h5 class="headline">Køb af PM Maskiner</h5>
                         </div>
                     </div>
+                    <div class="timeline-singleborder border-right">
+                        <div>
+                            <h4 class="year">2014</h4>
+                            <h5 class="headline">Virksomheden flytter til Vadum</h5>
+                        </div>
+                    </div>
                     <div class="timeline-singleborder border-left">
                         <div>
-                            <h4 class="year">2018</h4>
-                            <h5 class="headline">Start af ATE og SMP STOR</h5>
+                            <h4 class="year">2013</h4>
+                            <h5 class="headline">Opkøb af S-Mail A/S (100%)</h5>
                         </div>
                     </div>
                     <div class="timeline-singleborder border-right">
                         <div>
-                            <h4 class="year">2019</h4>
-                            <h5 class="headline">Køb og opsætning af Sitma Papir</h5>
+                            <h4 class="year">2011</h4>
+                            <h5 class="headline">Opkøb af S-Mail A/S (40%)</h5>
                         </div>
                     </div>
                     <div class="timeline-singleborder border-left">
                         <div>
-                            <h4 class="year">2020</h4>
-                            <h5 class="headline">Køb af to PM maskiner</h5>
+                            <h4 class="year">2007</h4>
+                            <h5 class="headline">Etablering af DistributionPLUS</h5>
                         </div>
                     </div>
                 </div>

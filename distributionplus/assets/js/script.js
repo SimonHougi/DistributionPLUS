@@ -28,6 +28,8 @@ videoContainerList.forEach(videoContainer => {
 })
 
 
+
+
 // Her starter det rigitge popup //
 const openPopupButtons = document.querySelectorAll('[data-popup-target]')
 const closePopupButtons = document.querySelectorAll('[data-close-button]')

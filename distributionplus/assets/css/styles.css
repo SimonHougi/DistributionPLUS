@@ -30,7 +30,7 @@ nav ul {
     width: 79vw;
     align-items: center;
     list-style-type: none;
-    z-index: 999;
+    z-index: 100;
 }
 
 nav ul li:hover {
@@ -56,16 +56,10 @@ main .desktop-none {
 
 /* Dropdown hovermenu i navigationen */
 
-header nav ul li a:hover {
-    color: rgb(92, 76, 148);
-}
-
 header nav ul li ul {
     display: none;
     width: auto;
 	margin: 0;
-    padding-left: 2vw;
-    padding-right: 2vw;
     position: absolute;
     background-color: rgba(92, 76, 148, 0.85);
     border-bottom-left-radius: 10px;
@@ -87,6 +81,72 @@ header nav ul li ul li a {
 
 header nav ul li ul li a:hover {
     color: #C0C0C0;
+}
+
+.dropdown-wrapper {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.dropdown-wrapper h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1vh;
+}
+
+.dropdown-wrapper h3 {
+    font-size: 1rem;
+}
+
+.dropdown-category {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-category-sectionboxes {
+    height: 12vh;
+    width: 12vw;
+    background: white;
+}
+
+.dropdown-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 15px
+}
+
+.dropdown-column a {
+    margin-top: 7px;
+    margin-left: 0.5vw;
+}
+
+.dropdown-column a:hover {
+    transform: scale(1.05);
+    transition: transform .25s;
+    color: #C0C0C0;
+}
+
+.width li {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.dropdown-column a:last-child {
+    margin-bottom: 10px;
+}
+
+.dropdown-category-sectionboxes h3 {
+    color: black;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.dropdown-dark-background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 50;
 }
 
 /* Styling for buttons */
@@ -228,39 +288,6 @@ footer div {
     display: flex;
 }
 
-/* Styling for den vestre side af den midterste del starter her */
-
-#left {
-    width: 50vw;
-    height: 50vh;
-    background-color: #3B3B3B;
-    text-align: left;
-    padding-left: 8vw;
-}
-
-#left h2 {
-    margin-top: 8vh;
-    font-size: 3vw;
-    color: white;
-}
-
-#left p {
-    margin-top: 5vh;
-    font-size: 1.2vw;
-    font-weight: normal;
-    color: white;
-    width: 30vw;
-    line-height: 2vw;
-}
-
-
-/* Styling for den højre side af den midterste del starter her */
-
-#map {
-    width: 50vw;
-    height: 50vh;
-    background-color: grey;
-}
 
 /* Styling for nyhedsbrev og footer på forsiden starter her */
 
@@ -278,26 +305,6 @@ footer div {
     font-size: 3vw;
     color: white;
 
-}
-
-#nyhedsbrev #label {
-    margin-top: 4vh;
-    font-size: 1.5vw;
-    color: rgb(92, 76, 148);
-    font-weight: bold;
-}
-
-#nyhedsbrev input {
-    margin: 1vh 0 5vh 0;
-    width: 15vw;
-    height: 4vh;
-    font-size: 1vw;
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    padding-left: 1vw;
 }
 
 #nyhedsbrev .video-news {
@@ -908,35 +915,36 @@ footer div {
     z-index: 5;
 }
 
-.omos-banner {
-    background-image: url(../images/omoshero.jpg);
-    background-size: cover;
-    height: 60vh;
-    width: 100%;
+.omosheader img {
     filter: brightness(50%);
+    height: 65vh;
+    width: 100%;
+}
+
+.omosheader {
+    height: 65vh;
 }
 
 .omos-missionandvision {
     width: 100%;
-    height: 40vh;
-    background-color: #5C4C94;
-    color: white;;
+    color: white;
+    position: absolute;
+    top: 325px;
+    text-shadow: 1.5px 1.5px grey;
 }
 
 .omos-missionandvision div {
-    width: 40vw;
-    height: 40vh;
+    width: 45vw;
     margin: 5vh auto;
     line-height: 2;
 }
 
 .omos-missionandvision h1 {
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .omos-missionandvision p {
-    font-style: italic;
     font-size: 1vw;
 }
 
@@ -947,15 +955,20 @@ footer div {
 .history h2 {
     color: white;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
-    margin: 10vh auto 0 auto;
+    margin: 5vh auto 5vh auto;
+}
+
+.width {
+    width: 30vw;
 }
 
 .history h3 {
+    text-align: center;
     color: #5C4C94;
-    font-size: 2vw;
-    margin: 10vh 0 3vh 0;
+    font-size: 1.2vw;
+    margin: 2vh 0 3vh 0;
 }
 
 .history p {
@@ -963,7 +976,18 @@ footer div {
     font-size: 1vw;
     line-height: 2;
     margin: 0;
-    width: 90vw;
+}
+
+.width {
+    width: 25vw;
+    padding: 10px 10px;
+    border: 2px solid rgb(92, 76, 148);
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
 
 .history ul {
