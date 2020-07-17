@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +10,8 @@ body {
 }
 
 /* Navigation */
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -63,7 +63,7 @@ header nav ul li a:hover {
 header nav ul li ul {
     display: none;
     width: auto;
-	margin: 0;
+    margin: 0;
     padding-left: 2vw;
     padding-right: 2vw;
     position: absolute;
@@ -79,9 +79,9 @@ header nav ul li:hover ul {
 }
 
 header nav ul li ul li a {
-	text-decoration: none;
-	padding: 1.5vh 0;
-	color: #ffffff;
+    text-decoration: none;
+    padding: 1.5vh 0;
+    color: #ffffff;
     display: block;
 }
 
@@ -110,8 +110,7 @@ footer {
     background-color: #3B3B3B;
     color: white;
     display: grid;
-    grid-template-areas: 
-    'lf mf rf';
+    grid-template-areas: 'lf mf rf';
 }
 
 /* Styling for icons */
@@ -126,7 +125,7 @@ footer {
     font-size: 2vw;
 }
 
-.fa-youtube{
+.fa-youtube {
     color: rgb(92, 76, 148);
     font-size: 2vw;
 }
@@ -167,7 +166,6 @@ footer div {
     margin: auto;
     text-align: center;
 }
-
 
 /* Styling for landingpage starts here */
 
@@ -253,7 +251,6 @@ footer div {
     line-height: 2vw;
 }
 
-
 /* Styling for den højre side af den midterste del starter her */
 
 #map {
@@ -277,7 +274,6 @@ footer div {
 #nyhedsbrev h2 {
     font-size: 3vw;
     color: white;
-
 }
 
 #nyhedsbrev #label {
@@ -341,39 +337,35 @@ footer div {
 
 /* Styling for loesninger.html starts here */
 
-.highlight {
-    color: white;
-}
-
-/* Styling for Løsninger boxes starts here */
+/* Styling for the different solutions starts here */
 
 .bodyloesninger {
     background-color: #C0C0C0;
 }
 
 .grid section {
-    height: 40vh;
-    width: 25vw;
-    background-color: white;
-    margin-top: 10vh;
+    width: 15vw;
+    margin-top: 4vh;
+}
+
+.video-container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px black;
 }
 
 .preview {
     width: inherit;
-}
-
-.videobox {
-    overflow: hidden;
-}
-
-.videotext {
-    padding: 2vh 0 0 1vw;
-    background-color: rgb(92, 76, 148);
-    color: white;
-}
-
-.videotext h1 {
-    margin-bottom: 2vh;
 }
 
 .video-container .grayscale-filter {
@@ -384,7 +376,7 @@ footer div {
     filter: grayscale(100%);
     transition: filter 250ms;
 }
- 
+
 .video-container:hover .grayscale-filter {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -396,7 +388,6 @@ footer div {
 .shadow {
     box-shadow: 3px 3px 15px #888888;
     transition: transform .2s;
-    
 }
 
 .shadow:hover {
@@ -405,57 +396,147 @@ footer div {
     transform: scale(1.05);
 }
 
-.adressering {
-    grid-area: tl;
-}
-
-.foliering {
-    grid-area: tm;
-}
-
-.kuvertering {
-    grid-area: tr;
+.adressekoeb {
+    grid-area: top1;
 }
 
 .databehandling {
-    grid-area: ml;
+    grid-area: top2;
 }
 
-.fulfillment {
-    grid-area: mm;
+.adressering {
+    grid-area: top3;
 }
 
-.haandpakning {
-    grid-area: mr;
+.foliering {
+    grid-area: top4;
 }
 
-.papirindpakning {
-    grid-area: bl;
+.paperwrapping {
+    grid-area: top5;
 }
 
-.print {
-    grid-area: bm;
+.bundtfoliering {
+    grid-area: mid1;
 }
 
 .segmentering {
-    grid-area: br;
+    grid-area: mid2;
+}
+
+.indstik {
+    grid-area: mid3;
+}
+
+.manuelpaalaegning {
+    grid-area: mid4;
+}
+
+.labelspaasaetning {
+    grid-area: mid5;
+}
+
+.kuvertering {
+    grid-area: mid6;
+}
+
+.pakningafkasser {
+    grid-area: mid7;
+}
+
+.print {
+    grid-area: mid8;
+}
+
+.lagerhotel {
+    grid-area: mid9;
+}
+
+.raadgivning {
+    grid-area: mid10;
+}
+
+.magasiner {
+    grid-area: bot1;
+}
+
+.breve {
+    grid-area: bot2;
+}
+
+.pakker {
+    grid-area: bot3;
+}
+
+.adresseloest {
+    grid-area: bot4;
 }
 
 .grid {
     display: grid;
     grid-template-areas: 
-    'tl tm tr'
-    'ml mm mr'
-    'bl bm br';
-}
-
-.bodyloesninger section div {
-    height: 20vh;
-    width: 25vw;
+    'top1 top2 top3 top4 top5' 
+    'mid1 mid2 mid3 mid4 mid5' 
+    'mid6 mid7 mid8 mid9 mid10' 
+    'bot1 bot2 bot3 bot4 bot5';
+    gap: 15px;
+    width: 86vw;
+    margin: auto;
 }
 
 .bodyloesninger footer {
     margin-top: 20vh;
+}
+
+/* Styling for the different solution pages starts here */
+
+.greybg {
+    background-color: #888888;
+}
+
+.solutions-h1 {
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+    font-weight: normal;
+    font-size: 2.2vw;
+}
+
+.solutions-h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2vw;
+}
+
+.solutions-flex {
+    width: 90vw;
+    margin: auto;
+}
+
+.solutions-text {
+    width: 40vw;
+    margin-right: 2.5vw;
+    font-size: 1vw;
+    line-height: 2;
+}
+
+.solutions-video {
+    width: 40vw;
+    margin-left: 5vw;
+}
+
+.advantages {
+    color: white;
+    width: 12.5vw;
+    height: 15vh;
+    background-color: #6F619F;
+    margin: auto;
+    padding: 1.5vw;
+}
+
+.advantages-flex {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 7vh;
 }
 
 /* Styling for case.html starter her */
@@ -468,9 +549,7 @@ footer div {
     margin-top: 10vh;
     display: grid;
     justify-content: space-evenly;
-    grid-template-areas: 
-    'tl tr'
-    'bl br';
+    grid-template-areas: 'tl tr' 'bl br';
 }
 
 .bghunden {
@@ -507,7 +586,6 @@ footer div {
     height: 30vh;
     background-size: cover;
     background-position: center 35%;
-
 }
 
 .casebox-bg-hunden {
@@ -526,15 +604,12 @@ footer div {
     background-image: url(../images/impulsblad.jpg);
 }
 
-
 .caseboxtext {
     height: 10vh;
     margin-top: 2.5vh;
     font-size: 1vw;
     color: white;
 }
-
-
 
 /* Styling for kontakt.html starter her */
 
@@ -553,11 +628,7 @@ footer div {
 
 .kontaktgrid {
     display: grid;
-    grid-template-areas: 
-    'tl tm tr'
-    'ml mm mr'
-    'bl bm br'
-    'bl bm2 br2';
+    grid-template-areas: 'tl tm tr' 'ml mm mr' 'bl bm br' 'bl bm2 br2';
     line-height: 2vw;
     justify-content: space-evenly;
     margin: 5vh 0 5vh 0;
@@ -566,7 +637,6 @@ footer div {
 .kontaktgrid h2 {
     color: rgb(92, 76, 148);
 }
-
 
 .kontaktgrid p {
     margin: 0;
@@ -593,7 +663,6 @@ footer div {
 
 .midleft {
     grid-area: ml;
-
 }
 
 .midmid {
@@ -603,33 +672,27 @@ footer div {
 
 .midright {
     grid-area: mr;
-
 }
 
 .botleft {
     grid-area: bl;
-
 }
 
 .botmid {
     grid-area: bm;
     margin-bottom: 5vh;
-
 }
 
 .botright {
     grid-area: br;
-
 }
 
 .botmid2 {
     grid-area: bm2;
-
 }
 
 .botright2 {
     grid-area: br2;
-
 }
 
 .contactwrapper {
@@ -663,7 +726,6 @@ footer div {
     height: 5vh;
     margin-bottom: 2vh;
     padding-left: 1vw;
-
 }
 
 .formular form input:last-of-type {
@@ -732,169 +794,6 @@ footer div {
     margin-left: 1vw;
 }
 
-.margin {
-    margin-left: 5vw;
-}
-
-/* Styling for popup vinduer på case.html starter her */
-
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    z-index: 10;
-    width: 80vw;
-    max-width: 90vw;
-    height: 80vh;
-}
-
-.popup-bg-hunden {
-    background-image: url(../images/hundenbg.jpg);
-    background-size: cover;
-}
-
-.popup-bg-aeldresagen {
-    background-image: url(../images/ældresagenbg.jpg);
-    background-size: cover;
-}
-
-.popup.active {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.popup-header .title {
-    font-size: 3vw;
-    font-weight: bold;
-    margin: auto;
-    color: white;
-    margin-top: 4vh;
-}
-
-.popup-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vw;
-    color: white;
-    margin-top: 2vh;
-}
-
-.popup-body {
-    padding: 1vw 1.5vw;
-}
-
-.popup-image img {
-    height: 50vh;
-    margin: 5vh 10vw 0 0;
-}
-
-.casesize {
-    margin: auto;
-    width: 40vw;
-    height: 40vh;
-}
-
-.casesize h2,p {
-    margin-bottom: 5vh;
-    color: white;
-}
-
-.casesize h2 {
-    font-size: 1.5vw;
-}
-
-.casesize p {
-    font-size: 1.1vw;
-}
-
-/* Styling for popup vinduer for loesninger.html starter her */
-
-
-/* Styling for popup adressering starter her */
-
-#popupadressering {
-    background-color: white;
-    overflow: scroll;
-}
-
-.popup-bg-adressering {
-    background-image: url(../images/adresseringbanner.jpg);
-    background-size: inherit;
-    height: 20vh;
-}
-
-.popup-bg-adressering .title {
-    margin: 6vh auto 0 30vw;
-}
-
-.popup-loesninger-text p,h2 {
-    color: black;
-    line-height: 1.5;
-    margin-bottom: 2vh;
-    
-}
-
-.popup-loesninger-text h2 {
-    color: rgba(92, 76, 148, 1);
-    font-size: 2vw;
-    margin-top: 4vh;
-}
-
-.popup-video {
-    background-color: grey;
-    width: 50vw;
-    height: 50vh;
-    margin: 6vh auto 10vh auto;
-}
-
-.popup-video video {
-    width: 50vw;
-}
-
-.popup-advantages {
-    width: 12.5vw;
-    height: 20vh;
-    background-color: rgba(92, 76, 148, 0.8);
-    margin: auto;
-    padding: 1.5vw;
-}
-
-.popup-advantages p {
-    color: white;
-}
-
-.popup-h3-centered {
-    font-size: 2vw;
-    text-align: center;
-    margin-bottom: 6vh;
-}
-
-/* Styling for popup foliering starter her */
-
-#popupfoliering {
-    background-color: white;
-    overflow: scroll;
-}
-
-.popup-bg-foliering {
-    background-image: url(../images/foliering.jpg);
-    background-size: inherit;
-    height: 20vh;
-}
-
-.popup-bg-foliering .title {
-    margin: 6vh auto 0 30vw;
-}
-
-
 /* Styling for omos.html starter her */
 
 .bodyomos {
@@ -918,7 +817,8 @@ footer div {
     width: 100%;
     height: 40vh;
     background-color: #5C4C94;
-    color: white;;
+    color: white;
+    ;
 }
 
 .omos-missionandvision div {
@@ -1048,29 +948,24 @@ footer div {
     margin-bottom: 0.5vh;
 }
 
- /* Hentet inspiration og hjælp fra lektion med DAHG (workshop) i forhold til navigationens burgermenu på mediaqueries */
+/* Hentet inspiration og hjælp fra lektion med DAHG (workshop) i forhold til navigationens burgermenu på mediaqueries */
 
-#burgerMenuButtonWrapper,
-#burgermenuCloseButtonWrapper {
-	display: none;
+#burgerMenuButtonWrapper, #burgermenuCloseButtonWrapper {
+    display: none;
 }
 
 /* Styling for tablet version starter her */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
     /* Generelt */
-
     .desktop-none {
         display: block;
         position: absolute;
         margin: 1vh 0 0 2vw;
     }
-
     .none {
         display: none;
     }
-
     main .desktop-none {
         display: block;
         position: fixed;
@@ -1078,13 +973,10 @@ footer div {
         margin-top: 1vh;
         position: fixed;
     }
-
     /* Burgermenu */
-
     .selected {
         color: white;
     }
-
     .btn {
         display: inline-block;
         text-decoration: none;
@@ -1098,148 +990,121 @@ footer div {
         color: white;
         transition: box-shadow .2s ease-out;
     }
-
     .btn-close {
         color: rgb(92, 76, 148);
         background-color: white;
         font-weight: bold;
     }
-
     #burgerMenuButtonWrapper {
-		display: block;
-		text-align: right;
-		position: fixed;
+        display: block;
+        text-align: right;
+        position: fixed;
         width: 40vw;
         top: 0;
         margin-top: 1vh;
         margin-left: 58vw;
-	}
-	
-	#burgerMenuButtonWrapper a {
-		display: inline-block;
-		margin: 2vw;
-	}
-	
-	#burgermenuCloseButtonWrapper {
-		display: block;
+    }
+    #burgerMenuButtonWrapper a {
+        display: inline-block;
+        margin: 2vw;
+    }
+    #burgermenuCloseButtonWrapper {
+        display: block;
         text-align: right;
         margin-right: 2vw;
         margin-left: 5vw;
         margin-top: 1vh;
-	}
-
-	#burgermenuCloseButtonWrapper a {
-		display: inline-block;
+    }
+    #burgermenuCloseButtonWrapper a {
+        display: inline-block;
         margin: 2vw;
     }
-
     .omosheader {
         height: 10vh;
         width: 80vw;
         background-color: #C0C0C0;
         margin-left: 0;
     }
-
     .logo {
         display: none;
     }
-
     footer .logo {
         display: block;
         margin-left: 10vw;
     }
-
     nav {
         display: flex;
         flex-direction: row-reverse;
     }
-
-	header nav {
-		background-color: rgb(92, 76, 148);
+    header nav {
+        background-color: rgb(92, 76, 148);
         width: 100vw;
         height: 100vh;
-		z-index: 1;
-		transform: translateX(100%);
-		transition: transform .3s ease-out;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform .3s ease-out;
         position: fixed;
         top: 0;
-	}
-	
-	header nav.active {
-		transform: translateX(0);
-	}
-
-	header nav ul {
-		display: block;
+    }
+    header nav.active {
+        transform: translateX(0);
+    }
+    header nav ul {
+        display: block;
         width: 100vw;
-	}
-
-	header nav ul li {
+    }
+    header nav ul li {
         display: block;
         border-top: 2px solid white;
     }
-    
     header nav ul li:first-of-type {
         border: none;
     }
-
-	header nav ul li:last-child {
-		border-bottom: 2px solid white;
-	}
-
-	header nav ul li a {
-		display: block;
+    header nav ul li:last-child {
+        border-bottom: 2px solid white;
+    }
+    header nav ul li a {
+        display: block;
         padding: 5vw;
         font-size: 3vw;
-	}
-	
-	header nav ul li:hover ul {
-		position: relative;
-		display: block;
+    }
+    header nav ul li:hover ul {
+        position: relative;
+        display: block;
         width: 100vw;
     }
-
     header nav ul li a:hover {
         color: #C0C0C0;
     }
-    
     header nav ul li ul {
-        display: none !important; 
+        display: none !important;
     }
-
     /* Forside */
     /* Styling for index.html (tablet) starter her */
-
     #backgroundimage {
         width: 100vw;
         height: 55vh;
         padding: 12vh 0 0 25vw;
     }
-
     #backgroundimage h1 {
         font-size: 60px;
     }
-
     #backgroundimage h2 {
         display: none;
     }
-    
     #top {
         display: none;
     }
-
     #left {
         background-color: #C0C0C0;
         padding: 0;
     }
-
     #left h2 {
         margin: 0;
         color: rgb(92, 76, 148);
         font-size: 36px;
         margin: 2vh;
     }
-
     #left p {
         margin: 2vh;
         width: 40vw;
@@ -1247,221 +1112,166 @@ footer div {
         font-size: 20px;
         line-height: 1.2;
     }
-
     #left button {
         margin-left: 2vh;
         margin-bottom: 2vh;
         width: 30vw;
         font-size: 20px;
     }
-
-    .flexbox #left,#map {
+    .flexbox #left, #map {
         width: 100vw;
         height: 30vh;
     }
-
     #nyhedsbrev {
         display: none;
     }
-
     .logo {
         width: 120px;
     }
-
     .icons i {
         font-size: 50px;
     }
-
     /* Styling for loesninger.html (tablet) starter her */
-
     .loesningerframe .video-container {
         background-color: rgb(92, 76, 148);
         font-size: 4vw;
     }
-
     .videotext h1 {
         color: white;
     }
-
     .loesningerframe {
         display: block;
         width: 90vw;
     }
-
     .loesningerframe section {
         width: 90vw;
         height: 30vh;
         margin: 5vh auto 5vh auto;
     }
-
     .videobox {
         display: none;
     }
-
     .videotext {
         background: none;
         color: black;
     }
-
     .videotext p {
         display: none;
     }
-
     /* Styling for loesninger.html (tablet) pop-up vinduer starter her */
-
     .popup-header .close-button {
         font-size: 10vw;
         margin-right: 3vw;
     }
-
     .popup-loesninger-text {
         font-size: 24px;
         margin-left: 2vw;
     }
-
     .popup-loesninger-text h2 {
         font-size: 40px;
     }
-
     .popup-video {
         display: none;
     }
-
     .advantages {
         display: none;
     }
-
     /* Styling for case.html (tablet) starter her */
-
     .cases {
         display: block;
     }
-
     .cases section {
         width: 90vw;
         height: 30vh;
-        margin: 0 auto 5vh auto ;
+        margin: 0 auto 5vh auto;
     }
-
     .caseboxtext h1 {
         font-size: 60px;
         position: relative;
         bottom: 21.5vh;
     }
-
     /* Styling for case.html (tablet) pop-up vinduer starter her */
-
     .popup-header .title {
         margin-left: 3vw;
         font-size: 60px;
     }
-
     .popup-body {
         display: block;
     }
-
     .popup {
         overflow: scroll;
     }
-
     .casesize {
         margin: 3vh 0 0 2vw;
     }
-
-    .casesize h2{
+    .casesize h2 {
         font-size: 36px;
         width: 70vw;
     }
-
     .casesize p {
         font-size: 24px;
         width: 70vw;
     }
-
     .popup-image {
         display: none;
     }
-
     /* Styling for omos.html (tablet) starter her */
-
     .omos-banner {
         display: none;
     }
-
     .omos-missionandvision {
         display: block;
         height: 40vh;
     }
-
     .omos-missionandvision div {
         width: 80vw;
         margin: auto;
         height: 15vh;
     }
-
     .omos-missionandvision p {
         font-size: 2vw;
     }
-
     .history h2 {
         margin-top: 5vh;
         font-size: 40px;
     }
-
-    .history h3{
+    .history h3 {
         margin-top: 5vh;
         font-size: 30px;
     }
-
     .history p {
         font-size: 16px;
     }
-
     /* Styling for kontakt.html (tablet) starter her */
-
     .kontakttop h1 {
         font-size: 50px;
         margin-bottom: 2vh;
     }
-
     .kontakttop p {
         font-size: 24px;
     }
-
     .kontaktgrid {
         display: grid;
-        grid-template-areas: 
-        'tr tl'
-        'tm ml'
-        'mr mm'
-        'br bm'
-        'br2 bm2'
-        'bl bl';
+        grid-template-areas: 'tr tl' 'tm ml' 'mr mm' 'br bm' 'br2 bm2' 'bl bl';
     }
-
     .kontaktgrid div h2 {
         margin-top: 2vh;
     }
-
     .kontaktgrid div p {
         color: black;
         margin-bottom: 2vh;
     }
 }
 
-
 /* Styling for mobile version starter her */
 
 @media (min-width: 320px) and (max-width: 767px) {
-
     /* Burgermenu */
-
     .desktop-none {
         display: block;
         position: fixed;
         margin: 1vh 0 0 2vw;
     }
-
     main .desktop-none {
         display: block;
         position: absolute;
@@ -1469,7 +1279,6 @@ footer div {
         margin-top: 1vh;
         position: fixed;
     }
-
     .btn {
         display: inline-block;
         text-decoration: none;
@@ -1483,166 +1292,134 @@ footer div {
         color: white;
         transition: box-shadow .2s ease-out;
     }
-
     .btn-close {
         color: rgb(92, 76, 148);
         background-color: white;
         padding-top: 1vh;
         font-weight: bold;
     }
-
     #burgerMenuButtonWrapper {
-		display: block;
-		text-align: right;
-		position: fixed;
+        display: block;
+        text-align: right;
+        position: fixed;
         width: 40vw;
         top: 0;
         margin-top: 1vh;
         margin-left: 58vw;
-	}
-	
-	#burgerMenuButtonWrapper a {
-		display: inline-block;
-		margin: 2vw;
-	}
-	
-	#burgermenuCloseButtonWrapper {
-		display: block;
+    }
+    #burgerMenuButtonWrapper a {
+        display: inline-block;
+        margin: 2vw;
+    }
+    #burgermenuCloseButtonWrapper {
+        display: block;
         text-align: right;
         margin-right: 2vw;
         margin-left: 5vw;
         margin-top: 1vh;
-	}
-
-	#burgermenuCloseButtonWrapper a {
-		display: inline-block;
-		margin: 2vw;
     }
-
+    #burgermenuCloseButtonWrapper a {
+        display: inline-block;
+        margin: 2vw;
+    }
     .omosheader {
         height: 10vh;
         width: 80vw;
         background-color: #C0C0C0;
     }
-    
     .logo {
         display: none;
     }
-
     nav {
         display: flex;
         flex-direction: row-reverse;
     }
-
-	header nav {
+    header nav {
         background-color: rgb(92, 76, 148);
         width: 100vw;
         height: 100vh;
-		z-index: 1;
-		transform: translateX(100%);
-		transition: transform .3s ease-out;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform .3s ease-out;
         position: fixed;
         top: 0;
-	}
-	
-	header nav.active {
-		transform: translateX(0);
-	}
-
-	header nav ul {
-		display: block;
-		width: 100vw;
-	}
-
-	header nav ul li {
+    }
+    header nav.active {
+        transform: translateX(0);
+    }
+    header nav ul {
+        display: block;
+        width: 100vw;
+    }
+    header nav ul li {
         display: block;
         border-top: 1px solid white;
     }
-    
     header nav ul li:first-of-type {
         border: none;
     }
-
-	header nav ul li:last-child {
-		border-bottom: 1px solid white;
-	}
-
-	header nav ul li a {
-		display: block;
+    header nav ul li:last-child {
+        border-bottom: 1px solid white;
+    }
+    header nav ul li a {
+        display: block;
         padding: 5vw;
         font-size: 3vw;
-	}
-	
-	header nav ul li:hover ul {
-		position: relative;
-		display: block;
-		width: 100vw;
-	}
-	
-	header nav ul li ul li a {
-		padding: 5vw 0 5vw 10vw;
     }
-    
+    header nav ul li:hover ul {
+        position: relative;
+        display: block;
+        width: 100vw;
+    }
+    header nav ul li ul li a {
+        padding: 5vw 0 5vw 10vw;
+    }
     header nav ul li a:hover {
         color: #C0C0C0;
     }
-    
     header nav ul li ul {
-        display: none !important; 
+        display: none !important;
     }
-
     .desktop-none {
         display: block;
         position: absolute;
         margin: 1vh 0 0 2vw;
     }
-
     .none {
         display: none;
     }
-
     .desktop-none {
         display: block;
     }
-
     /* Styling for index.html (mobile) starter her */
-
     header nav ul {
         display: block;
     }
-
     .selected {
         color: white;
     }
-
     #backgroundimage {
         width: 100vw;
         height: 35vh;
         padding: 12vh 0 0 25vw;
     }
-
     #backgroundimage h1 {
         font-size: 30px;
     }
-
     #backgroundimage h2 {
         display: none;
     }
-    
     #top {
         display: none;
     }
-
     .indexbody .flexbox {
         display: block;
     }
-
     #left {
         width: 100vw;
         padding: 0;
         height: 20vh;
     }
-
     #left h2 {
         padding-top: 1vh;
         padding-left: 10vw;
@@ -1650,7 +1427,6 @@ footer div {
         font-size: 20px;
         font-weight: normal;
     }
-
     #left p {
         padding-top: 1vh;
         padding-left: 10vw;
@@ -1659,7 +1435,6 @@ footer div {
         line-height: 1.2;
         margin: 0;
     }
-
     #left button {
         margin-top: 2vh;
         margin-left: 10vw;
@@ -1667,264 +1442,199 @@ footer div {
         font-size: 11px;
         border-radius: 100px;
     }
-
     #map {
         width: 100vw;
         height: 30vh;
     }
-
     #nyhedsbrev {
         display: none;
     }
-
     footer {
         height: 15vh;
     }
-
     footer p {
         font-size: 9px;
     }
-
-    .leftfooter,.middlefooter,.rightfooter {
+    .leftfooter, .middlefooter, .rightfooter {
         height: 15vh;
         width: 33.3vw;
     }
-
     .logo {
         width: 80px;
     }
-
     footer .logo {
         display: block;
         margin-left: 10vw;
     }
-
     .icons i {
         font-size: 30px;
     }
-
     .middlefooter {
         padding-top: 4vh;
     }
-
     footer h3 {
         font-size: 11px;
     }
-
     /* Styling for loesninger.html (mobile) starter her */
-
     .loesningerframe .video-container {
         background-color: rgb(92, 76, 148);
         font-size: 4vw;
     }
-
     .videotext h1 {
         color: white;
     }
-
     .loesningerframe {
         display: block;
         width: 90vw;
     }
-
     .loesningerframe section {
         width: 90vw;
         height: 20vh;
         margin: 5vh auto 5vh auto;
     }
-
     .videobox {
         display: none;
     }
-
     .videotext {
         background: none;
         color: black;
     }
-
     .videotext p {
         display: none;
     }
-
     /* Styling for loesninger.html (mobile) pop-up vinduer starter her */
-
     .popup {
         width: 90vw;
     }
-
     .popup-header {
         height: 10vh;
     }
-
     .popup-header .close-button {
         font-size: 16vw;
         margin: 0 5vw 0 0;
     }
-
     .popup .title {
         font-size: 30px;
         margin: 2.5vh 0 0 5vw;
     }
-
     .popup-loesninger-text {
         font-size: 16px;
         margin-left: 2vw;
     }
-
     .popup-loesninger-text h2 {
         font-size: 24px;
         color: black;
     }
-
     .popup-video {
         display: none;
     }
-
     .advantages {
         display: none;
     }
-
     /* Styling for case.html (mobile) starter her */
-
     .cases {
         display: block;
     }
-
     .cases section {
         width: 90vw;
         height: 30vh;
-        margin: 0 auto 5vh auto ;
+        margin: 0 auto 5vh auto;
     }
-
     .caseboxtext h1 {
         font-size: 40px;
         position: relative;
         bottom: 20vh;
     }
-
     /* Styling for case.html (mobile) pop-up vinduer starter her */
-    
     .popup-body {
         display: block;
     }
-
     .popup {
         overflow: scroll;
     }
-
     .casesize {
         margin: 3vh 0 0 2vw;
     }
-
-    .casesize h2{
+    .casesize h2 {
         font-size: 24px;
         width: 70vw;
     }
-
     .casesize p {
         font-size: 16px;
         width: 70vw;
     }
-
     .popup-image {
         display: none;
     }
-
-
     /* Styling for omos.html (mobile) starter her */
-
     .omos-banner {
         display: none;
     }
-
     .omos-missionandvision {
         display: block;
         height: 55vh;
     }
-
     .omos-missionandvision div {
         width: 80vw;
         margin: auto;
         height: 25vh;
     }
-
     .omos-missionandvision h1 {
         font-size: 24px;
         padding-top: 0vh;
         margin: 0;
     }
-
     .omos-missionandvision p {
         font-size: 3vw;
         padding-bottom: 5vh;
     }
-
     .timelinewrapper {
         display: none;
     }
-
     .history h2 {
         margin-top: 5vh;
         font-size: 40px;
     }
-
-    .history h3{
+    .history h3 {
         margin-top: 5vh;
         font-size: 30px;
     }
-
     .history p {
         font-size: 20px;
     }
-
     /* Styling for kontakt.html (tablet) starter her */
-
     .kontakttop h1 {
         font-size: 30px;
         margin-bottom: 2vh;
     }
-
     .kontakttop p {
         font-size: 20px;
     }
-
     .none {
         display: none;
     }
-
     .kontaktgrid {
         display: grid;
-        grid-template-areas: 
-        'tr tl'
-        'tm ml'
-        'mr mm'
-        'br bm'
-        'br2 bm2'
-        'bl none';
+        grid-template-areas: 'tr tl' 'tm ml' 'mr mm' 'br bm' 'br2 bm2' 'bl none';
     }
-
     .bold {
         width: 46vw;
         margin: auto;
     }
-
     .kontaktgrid div h2 {
         margin-top: 2vh;
         font-size: 16px;
     }
-
     .kontaktgrid div p {
         color: black;
         margin-bottom: 2vh;
         font-size: 10px;
     }
-
     .rightfooter p {
         padding: 0;
         margin-top: 2vh;
         margin-bottom: 0;
     }
-
     .leftfooter p {
         margin-bottom: 0;
     }
