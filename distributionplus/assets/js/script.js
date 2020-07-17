@@ -1,14 +1,3 @@
-// Initialize and add the map
-function initMap() {
-    // Lokationen af DistributionPLUS
-    var DistributionPLUS = {lat: 57.112277, lng: 9.852163};
-    // Kortet centreret ved DistributionPLUS
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 17, center: DistributionPLUS});
-    // Markøren placeret ved DistributionPLUS
-    var marker = new google.maps.Marker({ position: DistributionPLUS, map: map });
-};
-
 // Video preview i loesninger //
 
 let videoContainerList = document.querySelectorAll(".video-container"); // Her findes alle div'er med classen .video-container //
