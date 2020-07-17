@@ -27,7 +27,7 @@ header nav img {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    width: 80vw;
+    width: 79vw;
     align-items: center;
     list-style-type: none;
     z-index: 999;
@@ -89,12 +89,7 @@ header nav ul li ul li a:hover {
     color: #C0C0C0;
 }
 
-
-/* Resten af forside */
-
-.frontpage header {
-    position: absolute;
-}
+/* Styling for buttons */
 
 button {
     width: 10vw;
@@ -109,6 +104,8 @@ button {
     font-size: 0.8vw;
 }
 
+/* Styling for footer */
+
 footer {
     background-color: #3B3B3B;
     color: white;
@@ -116,6 +113,8 @@ footer {
     grid-template-areas: 
     'lf mf rf';
 }
+
+/* Styling for icons */
 
 .icons a {
     text-decoration: none;
@@ -134,7 +133,6 @@ footer {
 
 .leftfooter {
     grid-area: lf;
-    width: 33vw;
 }
 
 .leftfooter p {
@@ -147,7 +145,6 @@ footer {
 
 .middlefooter {
     grid-area: mf;
-    width: 33vw;
 }
 
 .middlefooter h3 {
@@ -156,7 +153,6 @@ footer {
 
 .rightfooter {
     grid-area: rf;
-    width: 33vw;
 }
 
 .rightfooter p {
@@ -173,15 +169,19 @@ footer div {
 }
 
 
-/* Styling for forside starter her */
+/* Styling for landingpage starts here */
 
-/* Styling for header starter her */
+/* Styling for header starts here */
 
 .logo {
     width: 7vw;
 }
 
-/* Styling for baggrundsbillede starter her */
+.frontpage header {
+    position: absolute;
+}
+
+/* Styling for backgroundimage starts here */
 
 #backgroundimage {
     height: 100vh;
@@ -517,7 +517,6 @@ footer div {
 }
 
 .kontakttop {
-    width: 100vw;
     height: 30vh;
     background-color: #3B3B3B;
     color: white;
@@ -609,7 +608,6 @@ footer div {
 
 .contactwrapper {
     text-align: center;
-    width: 100vw;
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
@@ -828,7 +826,7 @@ footer div {
     background-color: grey;
     width: 50vw;
     height: 50vh;
-    margin: 6vh auto 6vh auto;
+    margin: 6vh auto 10vh auto;
 }
 
 .popup-video video {
@@ -950,7 +948,6 @@ footer div {
 .timelinewrapper {
     text-align: center;
     margin-bottom: 5vh;
-    width: 100vw;
 }
 
 .timeline-center {

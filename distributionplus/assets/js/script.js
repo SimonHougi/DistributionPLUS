@@ -54,7 +54,7 @@ function openPopup(popup) {
     window.location.hash = popup.id;
 }
 function openPopupByHash(hash) {
-    var popup = null;
+    let popup = null;
 
     if (hash) {
         window.location.hash = hash;
@@ -70,7 +70,7 @@ function openPopupByHash(hash) {
 
 function openPopupFromMenu(e) { // Dette stykke gør, at siden ikke reloades, hvis den tilgås fra samme side, som den står på, men derimod bare åbner popupvinduet //
     e.preventDefault();
-    openPopupByHash(e.target.hash);
+    openPopupByHash(e.target.hash); 
 }
 
 function closePopup(popup) {
