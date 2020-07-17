@@ -314,7 +314,7 @@ footer div {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
-    color: rgb(92, 76, 148);
+    color: white;
     text-align: center;
 }
 
@@ -322,17 +322,19 @@ footer div {
     width: 20vw;
     padding: 25px;
     height: 30vh;
-    background-image: url("../images/Hero.jpg");
+    background: rgb(92, 76, 148);
+    /* background-image: url("../images/Hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    */
     opacity: 90%;
-    border-radius: 0.2vw;
+    border-radius: 0.1vw;
 }
 
 .categorybox h4 {
-    margin-top: 20%;
+    margin-top: 5%;
     opacity: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Styling for loesninger.html starts here */
