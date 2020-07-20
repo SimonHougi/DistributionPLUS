@@ -59,7 +59,7 @@ main .desktop-none {
 header nav ul li ul {
     display: none;
     width: auto;
-	margin: 0;
+    margin: 0;
     position: absolute;
     background-color: rgba(92, 76, 148, 0.85);
     border-bottom-left-radius: 10px;
@@ -294,7 +294,6 @@ footer div {
     display: flex;
 }
 
-
 /* Styling for nyhedsbrev og footer på forsiden starter her */
 
 #nyhedsbrev {
@@ -492,11 +491,7 @@ footer div {
 
 .grid {
     display: grid;
-    grid-template-areas: 
-    'top1 top2 top3 top4 top5' 
-    'mid1 mid2 mid3 mid4 mid5' 
-    'mid6 mid7 mid8 mid9 mid10' 
-    'bot1 bot2 bot3 bot4 bot5';
+    grid-template-areas: 'top1 top2 top3 top4 top5' 'mid1 mid2 mid3 mid4 mid5' 'mid6 mid7 mid8 mid9 mid10' 'bot1 bot2 bot3 bot4 bot5';
     gap: 15px;
     width: 86vw;
     margin: auto;
@@ -557,33 +552,93 @@ footer div {
     margin-bottom: 7vh;
 }
 
-/* Styling for case.html starter her */
+/* Styling for case.html starts here */
 
 .bodycase {
     background-color: #C0C0C0;
 }
 
+.filter {
+    width: 84vw;
+    margin: auto;
+    height: 10vh;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2.5vh;
+}
+
 .cases {
-    margin-top: 10vh;
     display: grid;
     justify-content: space-evenly;
-    grid-template-areas: 'tl tr' 'bl br';
+    grid-template-areas: 'top1 top2 top3 top4 top5' 'mid1 mid2 mid3 mid4 mid5' 'bot1 bot2 bot3 bot4 bot5';
+    gap: 1.5vw;
+    width: 84vw;
+    margin: 10vh auto 10vh auto;
 }
 
-.bghunden {
-    grid-area: tl;
+.cases a {
+    text-decoration: none;
 }
 
-.bgaeldresagen {
-    grid-area: tr;
+.hunden {
+    grid-area: top1;
 }
 
-.bgskiltemagasinet {
-    grid-area: br;
+.case2 {
+    grid-area: top2;
 }
 
-.bgjaeger {
-    grid-area: bl;
+.skiltemagasinet {
+    grid-area: top3;
+}
+
+.jaeger {
+    grid-area: top4;
+}
+
+.case5 {
+    grid-area: top5;
+}
+
+.case6 {
+    grid-area: mid1;
+}
+
+.case7 {
+    grid-area: mid2;
+}
+
+.case8 {
+    grid-area: mid3;
+}
+
+.case9 {
+    grid-area: mid4;
+}
+
+.case10 {
+    grid-area: mid5;
+}
+
+.case11 {
+    grid-area: bot1;
+}
+
+.case12 {
+    grid-area: bot2;
+}
+
+.case13 {
+    grid-area: bot3;
+}
+
+.case14 {
+    grid-area: bot4;
+}
+
+.case15 {
+    grid-area: bot5;
 }
 
 .hoverandclick:hover {
@@ -593,17 +648,15 @@ footer div {
 }
 
 .casebox {
-    width: 30vw;
-    height: 40vh;
-    background-color: rgb(92, 76, 148);
-    margin-bottom: 10vh;
+    width: 15vw;
+    height: 30vh;
     text-align: center;
+    background-size: contain;
+    padding-top: 12.5vh;
 }
 
-.caseboximg {
-    height: 30vh;
-    background-size: cover;
-    background-position: center 35%;
+.casebox h1 {
+    color: white;
 }
 
 .casebox-bg-hunden {
@@ -622,11 +675,57 @@ footer div {
     background-image: url(../images/impulsblad.jpg);
 }
 
-.caseboxtext {
-    height: 10vh;
-    margin-top: 2.5vh;
-    font-size: 1vw;
+/* Styling for the different cases pages starts here */
+
+.specific-cases {
     color: white;
+    padding-top: 10vh;
+}
+
+.specific-cases h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.specific-cases h2 {
+    font-size: 2vw;
+    margin: 10vh 0 8vh 9.5vw;
+}
+
+.specific-cases-content {
+    width: 90vw;
+    margin: auto;
+    padding-left: 5vw;
+    padding-bottom: 15vh;
+}
+
+.specific-cases-text {
+    width: 40vw;
+    margin-right: 2.5vw;
+    font-size: 1.2vw;
+    line-height: 2;
+}
+
+.specific-cases-img {
+    width: 40vw;
+    margin: auto;
+}
+
+.specific-cases-img img {
+    width: 25vw;
+    margin-left: 5vw;
+}
+
+/* Styling for hunden.html starts here */
+
+.hunden-bg-image {
+    background-image: url(../images/hundenbg.jpg);
+}
+
+/* Styling for aeldresagen.html starts here */
+
+.aeldresagen-bg-image {
+    background-image: url(../images/ældresagenbg.jpg);
 }
 
 /* Styling for kontakt.html starter her */

@@ -16,27 +16,6 @@ videoContainerList.forEach(videoContainer => {
     })
 })
 
-
-
-
-// Her starter det rigitge popup //
-const openPopupButtons = document.querySelectorAll('[data-popup-target]')
-const closePopupButtons = document.querySelectorAll('[data-close-button]')
-
-openPopupButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const popup = document.querySelector(button.dataset.popupTarget) // Dette script her er lavet for at åbne et popup vindue //
-        openPopup(popup)
-    })
-})
-
-closePopupButtons.forEach(button => {
-    button.addEventListener('click', () => { // Scriptet her lukker popup vinduet //
-        const popup = button.closest('.popup')
-        closePopup(popup)
-    })
-})
-
 // Script for at dropdownmenuen åbner popupmenuen på de respektive sider //
 
 function openPopup(popup) {
