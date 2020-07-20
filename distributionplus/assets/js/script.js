@@ -11,16 +11,16 @@ function initMap() {
 
 // Video preview i loesninger //
 
-let videoContainerList = document.querySelectorAll(".video-container"); // Her findes alle div'er med classen .video-container //
+let videoContainerList = document.querySelectorAll(".video-container"); 
 
 videoContainerList.forEach(videoContainer => {
-    videoContainer.addEventListener("mouseover", function () { // Dette afsnit gør, at når classen er blevet fundet, og der laves en mouseover på div'en, så afspilles videoen //
+    videoContainer.addEventListener("mouseover", function () { 
         this.querySelectorAll("video").forEach(video => {
             video.play()
         })
     })
     
-    videoContainer.addEventListener("mouseout", function () { // Ligeledes stoppes videoen, når musen flyttes væk fra div'en igen //
+    videoContainer.addEventListener("mouseout", function () { 
         this.querySelectorAll("video").forEach(video => {
             video.pause()
         })
@@ -60,7 +60,7 @@ function openPopupByHash(hash) {
         window.location.hash = hash;
     }
 
-    let popupSelector = window.location.hash.substr(1); // Her findes Hashtagget og deler det, således at hashtagget og navnet står hver for sig, dette er gjort for at scriptet kan åbne de rigtige sider //
+    let popupSelector = window.location.hash.substr(1); 
     popup = document.getElementById(popupSelector);
 
     if (popup) {
@@ -68,7 +68,7 @@ function openPopupByHash(hash) {
     }
 }
 
-function openPopupFromMenu(e) { // Dette stykke gør, at siden ikke reloades, hvis den tilgås fra samme side, som den står på, men derimod bare åbner popupvinduet //
+function openPopupFromMenu(e) { 
     e.preventDefault();
     openPopupByHash(e.target.hash);
 }
@@ -79,9 +79,10 @@ function closePopup(popup) {
     window.location.hash = '';
 }
 
-if (window.location.hash && window.location.hash.startsWith('#popup')) { // Hvis begge udfald er rigtige, at der er en lokation med hashtag, og hashtagget starter med #popup, så åbnes popupvinduet //
+if (window.location.hash && window.location.hash.startsWith('#popup')) { 
     openPopupByHash();
 }
+
 
 
 // Script til udfyldning af formular //
