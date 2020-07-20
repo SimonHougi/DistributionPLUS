@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DistributionPLUS, De komplette løsning fra adressering til postkasse. DistributionPLUS tilbyder produkter og services for virksomheder i alle størrelser">
+    <meta name="keywords" content="Forside, Se løsninger, adresse, tilmeld nyhedsbrev">
+    <meta name="author" content="Lisette Hansen, Martin Sørensen, Nivin Tayeb, Simon Hougaard">
+    <title>DistributionPLUS</title>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="assets/images/dpplogo.png" type="image/png">
+    <!--Tab ikon-->
+    <script src="https://kit.fontawesome.com/2f6e4a59d9.js" crossorigin="anonymous"></script>
+    <!--Font awesome Icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge Fonts -->
+    <script src="assets/js/script.js" defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJSBbAMDVGRgXDsL1w-YjcYCpUKFEYpE&callback=initMap"></script>
+    <!--Google maps API-->
+</head>
+
+<body>
+    <header>
+        <div id="burgerMenuButtonWrapper">
+            <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
+        </div>
+        <nav class="greybg">
+            <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#"
+                    onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
+                    alt="Distribution PLUS logo"></a>
+            <ul>
+                <li>
+                    <a href="loesninger.html">Løsninger</a>
+                    <ul>
+                        <li><a href="#popupadressering" onclick="openPopupFromMenu(event)">Adressering</a></li>
+                        <li><a href="#popupfoliering" onclick="openPopupFromMenu(event)">Foliering</a></li>
+                        <li><a href="#popupkuvertering" onclick="openPopupFromMenu(event)">Kuvertering</a></li>
+                        <li><a href="#popupdatabehandling" onclick="openPopupFromMenu(event)">Databehandling</a></li>
+                        <li><a href="#popupfulfillment" onclick="openPopupFromMenu(event)">Fullfilment</a></li>
+                        <li><a href="#popuphaandpakning" onclick="openPopupFromMenu(event)">Håndpakning</a></li>
+                        <li><a href="#popuppapirindpakning" onclick="openPopupFromMenu(event)">Papirindpakning</a></li>
+                        <li><a href="#popupprint" onclick="openPopupFromMenu(event)">Print</a></li>
+                        <li><a href="#popupsegmentering" onclick="openPopupFromMenu(event)">Segmentering</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="case.html">Cases</a>
+                    <ul>
+                        <li><a href="case.html#popuphunden">Hunden</a></li>
+                        <li><a href="case.html#popupaeldresagen">Ældresagen</a></li>
+                        <li><a href="case.html#popupjaeger">Jæger</a></li>
+                        <li><a href="case.html#popupskiltemagasinetimpuls">Skiltemagasinet Impuls</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ate.html">Alt til Erhverv</a>
+                </li>
+                <li>
+                    <a href="omos.html">Om os</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="solutions-h1">Vi segmenterer for dig!</h1>
+
+        <div class="flexbox solutions-flex">
+            <div class="solutions-text">
+                <h2 class="solutions-h2">Vores teknologiske maskiner kan varetage sikker sammenpakning af forskellige
+                    magasiner. Vi pakker op til 260 varianter ned til en samlet levering til distributøren
+                </h2>
+                <br>
+                <p>Vi tilbyder segmenteret pakning i form af sammenpakning af forskellige magasiner, reklamebilag,
+                    kalendere osv. Denne form for pakning kræver maskiner, der besidder mange feedere, der kan kombinere
+                    de forskellige varianter. Som eksempel kan en opgave bestå af et hovedbilag, som segmenteres med
+                    flere forskellige lokalbilag alt efter hvilken lokalafdeling modtageren er medlem i. Du kan dermed
+                    henvende dig med forskellige budskaber og/eller indhold til mange forskellige segmenter af din
+                    samlede modtagergruppe.</p>
+                <br>
+                <p>Segmentering kræver en meget sikker databehandling, en stor maskinkapacitet og dygtige
+                    produktionsfolk for at sikre at alt pakkes korrekt til hver enkelt modtager og det samlede oplag
+                    lever op til distributørernes krav for at DU får den billigste distribution med højeste kvalitet.
+                </p>
+            </div>
+            <div>
+                <video src="assets/videos/adresseringvideo.mp4" controls class="solutions-video"></video>
+            </div>
+        </div>
+        <div>
+            <h1 class="solutions-h1">Fordele ved Segmentering:</h1>
+            <div class="flexbox advantages-flex">
+                <div class="advantages">
+                    <p>Segmentering er optimal for sampakning og henvendelse til bestemte målgrupper.
+                    </p>
+                </div>
+                <div class="advantages">
+                    <p>Segmentering kan give samarbejdsmuligheder med andre annoncører.</p>
+                </div>
+                <div class="advantages">
+                    <p>Segmentering benyttes i både folie- og papirindpakning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="leftfooter">
+            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
+            <p>Charles Lindberghsvej 9 <br> 9430 Vadum</p>
+        </div>
+        <div class="middlefooter">
+            <h3>Besøg os på</h3>
+            <div class="icons">
+                <a href="https://www.linkedin.com/company/7284873" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC4aq7tY_xKgGExoBsfx15IA" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="rightfooter">
+            <h3>Kontakt os</h3>
+            <p>E-mail: info@distributionplus.dk <br> Tlf: 31 38 43 45</p>
+        </div>
+    </footer>
+</body>
+
+</html>
