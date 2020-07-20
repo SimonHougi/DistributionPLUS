@@ -135,7 +135,7 @@ header nav ul li ul li a:hover {
 .width-dropdown {
     width: 10vw;
     padding-left: 1vw;
-    padding-right: 1vw;
+    padding-right: 5vw;
 }
 
 .dropdown-column a:last-child {
@@ -157,6 +157,39 @@ header nav ul li ul li a:hover {
 }
 
 /* Styling for buttons */
+
+.subscribe {
+    width: 10vw;
+    z-index: 2;
+}
+
+.subscribe-dropdown {
+    width: 15vw;
+    text-align: center;
+    color: white;
+}
+
+.subscribe-dropdown h4 {
+    margin: 1vh 0 1vh 0;
+}
+
+.subscribe-dropdown input {
+    width: 14vw;
+}
+
+.subscribe-dropdown input[type=submit] {
+    background-color: #3B3B3B;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin: 1vh 0 1vh 0;
+    height: 5vh;
+    width: 10vw;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
 
 button {
     width: 10vw;
