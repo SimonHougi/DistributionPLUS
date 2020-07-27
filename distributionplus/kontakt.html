@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mangler du svar på dine spørgsmål? Ring endelig eller udfyld nedenstående formular. Vi står klar til at besvare dine spørgsmål hurtigst muligt.">
+    <meta name="description"
+        content="Mangler du svar på dine spørgsmål? Ring endelig eller udfyld nedenstående formular. Vi står klar til at besvare dine spørgsmål hurtigst muligt.">
     <meta name="keywords" content="Adm. direktør, Produktionschef, Daglig leder, Salgs- og distributionskoordinator, Datahåndtering, Projektleder, Adresseløse forsendelser, Kontakt DistributionPLUS>
-    <meta name="author" content="Lisette Hansen, Martin Sørensen, Nivin Tayeb, Simon Hougaard">
+    <meta name=" author" content="Lisette Hansen, Martin Sørensen, Nivin Tayeb, Simon Hougaard">
     <title>Kontakt | DistributionPLUS</title>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
     <link rel="shortcut icon" href="assets/images/dpplogo.png" type="image/png">
@@ -17,7 +18,7 @@
 </head>
 
 <body class="bodykontakt">
-
+    <div class="dropdown-dark-background"></div>
     <header>
         <div id="burgerMenuButtonWrapper">
             <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
@@ -28,7 +29,7 @@
             <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
                     alt="Distribution PLUS logo"></a>
             <ul>
-                <li>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
                     <a href="loesninger.html">Løsninger</a>
                     <ul>
                         <div class="dropdown-wrapper">
@@ -77,7 +78,7 @@
                         </div>
                     </ul>
                 </li>
-                <li>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
                     <a href="case.html">Cases</a>
                     <ul class="width-dropdown">
                         <li><a href="hunden.html">Hunden</a></li>
@@ -93,15 +94,15 @@
                     <a href="omos.html">Om os</a>
                 </li>
                 <li>
-                    <a href="kontakt.html">Kontakt</a>
+                    <a class="selected" href="kontakt.html">Kontakt</a>
                 </li>
-                <li>
-                    <button class="subscribe">Tilmeld nyhedsbrev</button>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
+                    <a href="kontakt.html#signup-direct"><button class="subscribe">Tilmeld nyhedsbrev</button></a>
                     <ul>
                         <div class="subscribe-dropdown">
                             <h4>Indtast e-mail</h4>
                             <form method="POST" action="mailto:martin.s96@outlook.dk">
-                                <input type="email">
+                                <input type="email" placeholder="Skriv E-mail her...">
                                 <input type="submit" value="Tilmeld">
                             </form>
                         </div>
@@ -181,28 +182,38 @@
                 <p>E-mail: mob@dpplus.dk</p>
             </div>
         </div>
-        <div class="contactwrapper none">
-            <div class="formular">
-                <h3>Kontakt DistributionPLUS</h3>
-                <p>Udfyld venligst alle stjernemarkerede felter</p>
-                <form action="mailto:martin.s96@outlook.dk" enctype="text/plain" name="info" target="_blank" onsubmit="return validate()" method="post">
-                    <label>Fulde navn*</label>
-                    <input type="text" name="Navn" placeholder="Fulde navn">
+        <div id="signup-direct">
+            <div class="contactwrapper none">
+                <div class="formular">
+                    <h3>Kontakt DistributionPLUS</h3>
+                    <p>Udfyld venligst alle stjernemarkerede felter</p>
+                    <form action="mailto:martin.s96@outlook.dk" enctype="text/plain" name="info" target="_blank"
+                        onsubmit="return validate()" method="post">
+                        <label>Fulde navn*</label>
+                        <input type="text" name="Navn" placeholder="Fulde navn">
 
-                    <label>Virksomhed*</label>
-                    <input type="text" name="Virksomhed" placeholder="Virksomhed">
+                        <label>Virksomhed*</label>
+                        <input type="text" name="Virksomhed" placeholder="Virksomhed">
 
-                    <label>Telefonnummer*</label>
-                    <input type="text" name="Telefonnummer" placeholder="Telefonnummer">
+                        <label>Telefonnummer*</label>
+                        <input type="text" name="Telefonnummer" placeholder="Telefonnummer">
 
-                    <label>E-mail*</label>
-                    <input type="email" name="Email" placeholder="E-mail">
+                        <label>E-mail*</label>
+                        <input type="email" name="Email" placeholder="E-mail">
 
-                    <label>Beskrivelse*</label>
-                    <input type="text" name="Beskrivelse" placeholder="Beskrivelse">
+                        <label>Beskrivelse*</label>
+                        <input type="text" name="Beskrivelse" placeholder="Beskrivelse">
 
-                    <button>Send</button>
-                </form>
+                        <button>Send</button>
+                    </form>
+                </div>
+                <div class="signup">
+                    <h2>Tilmeld nyhedsbrev</h2>
+                    <form method="POST" action="mailto:martin.s96@outlook.dk">
+                        <input type="email" placeholder="Skriv E-mail her..."> </br>
+                        <input type="submit" value="Tilmeld">
+                    </form>
+                </div>
             </div>
         </div>
     </main>

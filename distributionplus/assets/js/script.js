@@ -1,15 +1,15 @@
 // Video preview i loesninger //
 
-let videoContainerList = document.querySelectorAll(".video-container"); 
+let videoContainerList = document.querySelectorAll(".video-container");
 
 videoContainerList.forEach(videoContainer => {
-    videoContainer.addEventListener("mouseover", function () { 
+    videoContainer.addEventListener("mouseover", function () {
         this.querySelectorAll("video").forEach(video => {
             video.play()
         })
     })
-    
-    videoContainer.addEventListener("mouseout", function () { 
+
+    videoContainer.addEventListener("mouseout", function () {
         this.querySelectorAll("video").forEach(video => {
             video.pause()
         })
@@ -30,7 +30,7 @@ function openPopupByHash(hash) {
         window.location.hash = hash;
     }
 
-    let popupSelector = window.location.hash.substr(1); 
+    let popupSelector = window.location.hash.substr(1);
     popup = document.getElementById(popupSelector);
 
     if (popup) {
@@ -38,9 +38,9 @@ function openPopupByHash(hash) {
     }
 }
 
-function openPopupFromMenu(e) { 
+function openPopupFromMenu(e) {
     e.preventDefault();
-    openPopupByHash(e.target.hash); 
+    openPopupByHash(e.target.hash);
 }
 
 function closePopup(popup) {
@@ -49,7 +49,7 @@ function closePopup(popup) {
     window.location.hash = '';
 }
 
-if (window.location.hash && window.location.hash.startsWith('#popup')) { 
+if (window.location.hash && window.location.hash.startsWith('#popup')) {
     openPopupByHash();
 }
 
@@ -58,13 +58,13 @@ if (window.location.hash && window.location.hash.startsWith('#popup')) {
 // Script til udfyldning af formular //
 
 function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet //
-{ 
+{
     let name = document.forms["info"]["Navn"]; // Variabler oprettet for hver af inputfelterne //
     let company = document.forms["info"]["Virksomhed"];
     let phonenumber = document.forms["info"]["Telefonnummer"];
     let email = document.forms["info"]["Email"];
     let description = document.forms["info"]["Beskrivelse"];
-   
+
     if (name.value == "") // Hvis feltet er tomt //
     {
         window.alert("Fulde navn* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
@@ -72,29 +72,25 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
         return false;
     }
 
-    if (company.value == "")
-    {
+    if (company.value == "") {
         window.alert("Virksomhed* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
         company.focus();
         return false;
     }
 
-    if (phonenumber.value == "")
-    {
+    if (phonenumber.value == "") {
         window.alert("Telefonnummer* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
         phonenumber.focus();
         return false;
     }
-   
-    if (email.value == "") 
-    {
+
+    if (email.value == "") {
         window.alert("E-mail* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
         email.focus();
         return false;
     }
 
-    if (description.value == "")
-    {
+    if (description.value == "") {
         window.alert("Beskrivelse* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
         description.focus();
         return false;
@@ -106,6 +102,19 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
 
 // Script til burgermenu - hentet inspiration og hjælp fra workshop med DAHG //
 
-function toggleClass(selector, className){
+function toggleClass(selector, className) {
     document.querySelector(selector).classList.toggle(className); // Dette script er en togglefunction, således nogle classer bliver aktive/inaktive //
+}
+
+function handleOverlay(showOverlay) {
+
+    // Find body
+    var body = document.body;
+    if (showOverlay) {
+        body.classList.add('showmenu');
+    } else {
+        body.classList.remove('showmenu');
+
+        // samme bare remove show menu
+    }
 }

@@ -17,6 +17,7 @@
 </head>
 
 <body class="bodycase">
+    <div class="dropdown-dark-background"></div>
     <header>
         <div id="burgerMenuButtonWrapper">
             <a class="btn" href="#" onclick="toggleClass('header > nav', 'active');return false">Menu</a>
@@ -27,7 +28,7 @@
             <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
                     alt="Distribution PLUS logo"></a>
             <ul>
-                <li>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
                     <a href="loesninger.html">Løsninger</a>
                     <ul>
                         <div class="dropdown-wrapper">
@@ -76,8 +77,8 @@
                         </div>
                     </ul>
                 </li>
-                <li>
-                    <a href="case.html">Cases</a>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
+                    <a class="selected" href="case.html">Cases</a>
                     <ul class="width-dropdown">
                         <li><a href="hunden.html">Hunden</a></li>
                         <li><a href="aeldresagen.html">Ældresagen</a></li>
@@ -94,13 +95,13 @@
                 <li>
                     <a href="kontakt.html">Kontakt</a>
                 </li>
-                <li>
-                    <button class="subscribe">Tilmeld nyhedsbrev</button>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
+                    <a href="kontakt.html#signup-direct"><button class="subscribe">Tilmeld nyhedsbrev</button></a>
                     <ul>
                         <div class="subscribe-dropdown">
                             <h4>Indtast e-mail</h4>
                             <form method="POST" action="mailto:martin.s96@outlook.dk">
-                                <input type="email">
+                                <input type="email" placeholder="Skriv E-mail her...">
                                 <input type="submit" value="Tilmeld">
                             </form>
                         </div>
