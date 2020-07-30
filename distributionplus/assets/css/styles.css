@@ -725,6 +725,22 @@ footer div {
     background-image: url(../images/impulsblad.jpg);
 }
 
+.casebox-bg-pinksolbriller {
+    background-image: url(../images/pinksolbriller.jpg);
+}
+
+.casebox-bg-bruntpapir {
+    background-image: url(../images/bruntpapir.jpg);
+}
+
+.casebox-bg-hvidtpapir {
+    background-image: url(../images/hvidtpapir.jpg);
+}
+
+.casebox-bg-printcase {
+    background-image: url(../images/printcase.jpg);
+}
+
 /* Styling for the different cases pages starts here */
 
 .specific-cases {
