@@ -1023,7 +1023,7 @@ footer div {
 
 .bodyomos header {
     position: absolute;
-    z-index: 5;
+    z-index: 99;
 }
 
 .omosheader img {
@@ -1033,15 +1033,17 @@ footer div {
 }
 
 .omosheader {
+    background: url(../images/omoshero.jpg);
     margin: 0;
     height: 65vh;
+    background-size: cover;
 }
 
 .omos-missionandvision {
     width: 100%;
     color: white;
     position: absolute;
-    top: 325px;
+    top: 32vh;
     text-shadow: 1.5px 1.5px grey;
 }
 
