@@ -749,6 +749,22 @@ footer div {
     background-image: url(../images/printcase.jpg);
 }
 
+.casebox-bg-sclerose {
+    background-image: url(../images/scleroseforeningen.jpg);
+}
+
+.casebox-bg-shapeup {
+    background-image: url(../images/shapeup.jpg);
+}
+
+.casebox-bg-costume {
+    background-image: url(../images/costume.jpg);
+}
+
+.casebox-bg-kingmagazine {
+    background-image: url(../images/kingmagazine.jpg);
+}
+
 /* Styling for the different cases pages starts here */
 
 .specific-cases {
