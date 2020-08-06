@@ -108,13 +108,42 @@ function toggleClass(selector, className) {
 
 function handleOverlay(showOverlay) {
 
-    // Find body
+    // Find body //
     var body = document.body;
     if (showOverlay) {
         body.classList.add('showmenu');
     } else {
         body.classList.remove('showmenu');
 
-        // samme bare remove show menu
+        // samme bare remove show menu //
     }
 }
+
+
+// Script til filtersystem på case.html starts here //
+
+function toggleList(kategori) {
+    let kategoriArray = document.getElementsByClassName(kategori);
+    for (let i = 0; i < kategoriArray.length; i++)
+      {
+        kategoriArray[i].classList.toggle("invisible");
+      }
+  }
+  
+  let hide = document.getElementById("hide");
+  let show = document.getElementById("show");
+  
+  function myFunction() {
+    let x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      hide.style.display = "block"
+      show.style.display = "none"
+  
+    } else {
+      x.style.display = "block";
+      hide.style.display = "none"
+      show.style.display = "block"
+    }
+  }
+  

@@ -626,6 +626,22 @@ footer div {
     padding: 2.5vh;
 }
 
+.filter button {
+    margin: 0 2.8vw;
+}
+
+.invisible {
+    display: none;
+}
+
+.filter button:hover {
+    background-color: rgb(75, 64, 110);
+}
+
+.filter button:active {
+    background-color: rgb(48, 41, 71);
+}
+
 .cases {
     display: grid;
     justify-content: space-evenly;
