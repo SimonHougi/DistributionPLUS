@@ -391,11 +391,16 @@ footer div {
     text-align: center;
 }
 
+.frontpage-boxcontainer a {
+    text-decoration: none;
+}
+
 .categorybox {
     width: 20vw;
     padding: 25px;
     height: 30vh;
     background: rgb(92, 76, 148);
+    color: white;
     /* background-image: url("../images/Hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -549,7 +554,11 @@ footer div {
 
 .grid {
     display: grid;
-    grid-template-areas: 'top1 top2 top3 top4 top5' 'mid1 mid2 mid3 mid4 mid5' 'mid6 mid7 mid8 mid9 mid10' 'bot1 bot2 bot3 bot4 bot5';
+    grid-template-areas:
+    'top1 top2 top3 top4 top5'
+    'mid1 mid2 mid3 mid4 mid5'
+    'mid6 mid7 mid8 mid9 mid10'
+    'bot1 bot2 bot3 bot4 bot5';
     gap: 15px;
     width: 86vw;
     margin: auto;
@@ -995,49 +1004,42 @@ footer div {
     background-color: #C0C0C0;
 }
 
-.topate {
-    width: 90vw;
-    margin-left: 5vw;
-    background-color: #3B3B3B;
-    color: white;
-    text-align: center;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 3px;
+.bodyate header {
+    position: absolute;
 }
 
-.topate h1 {
-    font-size: 2em;
-    width: 100vw;
-}
-
-.ateinfo {
-    margin-left: 5vw;
-    margin-bottom: 5vh;
-    padding-bottom: 5vh;
-    width: 90vw;
-    background-color: white;
-}
-
-.ateinfo p {
-    color: black;
+.ateheader {
+    background: url(../images/Hero.jpg);
     margin: 0;
-    line-height: 3vh;
-    width: 70vw;
+    height: 65vh;
+    background-size: cover;
 }
 
-.ateinfo h2 {
-    color: rgb(92, 76, 148);
-    padding-top: 5vh;
-    margin-bottom: 5px;
+.center {
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.ateinfo ul {
-    line-height: 3vh;
-    margin-left: 1vw;
+.ate-banner h1 {
+    font-size: 3rem;
 }
+
+.fixedmenu-right {
+    height: 25vh;
+    width: 10vw;
+    background-color: orange;
+    position: fixed;
+    right: 1vw;
+    bottom: 1vh;
+}
+
+.atemain {
+    height: 200vh;
+}
+
 
 /* Styling for omos.html starter her */
 
