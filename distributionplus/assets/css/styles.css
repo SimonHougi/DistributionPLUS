@@ -9,6 +9,10 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navigation */
 
 header nav {
@@ -1031,6 +1035,15 @@ footer div {
     background-size: cover;
 }
 
+.ateheader h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3rem;
+}
+
 .center {
     color: white;
     position: absolute;
@@ -1052,8 +1065,54 @@ footer div {
     bottom: 1vh;
 }
 
-.atemain {
+.ate-onepage {
     height: 200vh;
+}
+
+.atesections {
+    height: 50vh;
+}
+
+#ate1 {
+    background-color: lightgray;
+    color: white;
+}
+
+#ate2 {
+    background-color: grey;
+    color: white;
+}
+
+#ate3 {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+#ate3 button {
+    height: 5vh;
+    width: 15vw;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#ate4 {
+    background-color: darkgray;
+    color: white;
+}
+
+#ate4 table {
+    width: 30vw;
+}
+
+#ate4 table, th, td {
+    border: 1px solid white;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#ate4 th, td {
+    text-align: left;
+    padding: 10px;
 }
 
 
