@@ -403,20 +403,46 @@ footer div {
     width: 20vw;
     padding: 25px;
     height: 30vh;
-    background: rgb(92, 76, 148);
     color: white;
-    /* background-image: url("../images/Hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    */
-    opacity: 90%;
+    opacity: 100%;
     border-radius: 0.1vw;
+    border: 2px solid rgb(92, 76, 148);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.categorybox p {
+    margin-top: 40%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.categorybox:hover {
+    transform: scale(1.1);
 }
 
 .categorybox h4 {
     margin-top: 5%;
     opacity: 100%;
     font-size: 1rem;
+}
+
+.cat1 {
+    background-image: url(../images/Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cat2 {
+    background-image: url(../images/Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cat3 {
+    background-image: url(../images/Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Styling for loesninger.html starts here */
@@ -1057,47 +1083,72 @@ footer div {
 }
 
 .fixedmenu-right {
-    height: 25vh;
-    width: 10vw;
-    background-color: orange;
+    height: 35vh;
+    width: 15vw;
     position: fixed;
-    right: 1vw;
-    bottom: 1vh;
+    right: 2vw;
+    bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.fixedmenu-right a {
+    width: 8vw;
+    background-color: rgb(92, 76, 148);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 1.5vh auto;
+    height: 5vh;
+    padding-top: 1.2vh;
+    border-radius: 10px;
+    font-size: 1.2rem;
 }
 
 .ate-onepage {
-    height: 200vh;
+    background-image: url(../images/testonepage.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .atesections {
-    height: 50vh;
+    line-height: 3vh;
+    color: white;
+    width: 60vw;
+    padding-bottom: 5vh;
+    border-bottom: 2px solid rgb(92, 76, 148);
 }
 
-#ate1 {
-    background-color: lightgray;
-    color: white;
+.atesections h2 {
+    text-align: center;
+    padding: 5vh 0 5vh 0;
 }
 
-#ate2 {
-    background-color: grey;
-    color: white;
+
+
+
+#ate2 table, th, td {
+    border: 1px solid rgb(92, 76, 148);
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
 }
 
-#ate3 {
-    background-color: darkolivegreen;
-    color: white;
-}
 
 #ate3 button {
     height: 5vh;
     width: 15vw;
     text-decoration: none;
     font-size: 1rem;
+    margin-top: 2vh;
+    margin-left: 37%;
 }
 
 #ate4 {
-    background-color: darkgray;
-    color: white;
+    padding-bottom: 5vh;
 }
 
 #ate4 table {
@@ -1113,6 +1164,11 @@ footer div {
 #ate4 th, td {
     text-align: left;
     padding: 10px;
+}
+
+#ate4 a {
+    color: white;
+    font-size: 1.2rem;
 }
 
 
