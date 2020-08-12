@@ -429,19 +429,19 @@ footer div {
 }
 
 .cat1 {
-    background-image: url(../images/Hero.jpg);
+    background-image: url(../images/forsidemuligheder.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cat2 {
-    background-image: url(../images/Hero.jpg);
+    background-image: url(../images/forsideloesninger.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cat3 {
-    background-image: url(../images/Hero.jpg);
+    background-image: url(../images/forsidekontakt.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -605,9 +605,14 @@ footer div {
     background-color: #888888;
 }
 
+.loesningerbackground {
+    background-image: url(../images/loesningerbaggrund.jpg);
+    height: 100vh;
+}
+
 .solutions-h1 {
     text-align: center;
-    margin: 10vh 0 10vh 0;
+    padding: 10vh 0 10vh 0;
     font-weight: normal;
     font-size: 2.2vw;
 }
@@ -1056,7 +1061,8 @@ footer div {
 }
 
 .ateheader {
-    background: url(../images/Hero.jpg);
+    background: url(../images/atebaggrund.jpg);
+    background-position: bottom;
     margin: 0;
     height: 65vh;
     background-size: cover;
@@ -1109,7 +1115,8 @@ footer div {
 }
 
 .ate-onepage {
-    background-image: url(../images/testonepage.jpg);
+    background-image: url(../images/atebaggrund.jpg);
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     align-items: center;
