@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DistributionPLUS, Hunden - Skal dit magasin indeholde en sjov og personlig gimmick?">
-    <meta name="keywords" content="Hunden, håndpakning">
+    <meta name="description"
+        content="DistributionPLUS, Scleroseforeningen - VI PAKKER BØSSER I FOLIE TIL DINE ARRANGEMENTER OG MÆRKEDAGE!">
+    <meta name="keywords" content="Scleroseforeningen, håndpakning og foliering">
     <meta name="author" content="Martin Sørensen, Simon Hougaard">
-    <title>Cases | Scleroseforeningen</title>
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <link rel="shortcut icon" href="assets/images/dpplogo.png" type="image/png">
+    <title>Case | Scleroseforeningen</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="../assets/images/dpplogo.png" type="image/png">
     <script src="https://kit.fontawesome.com/2f6e4a59d9.js" crossorigin="anonymous"></script>
     <!--Font awesome Icons-->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge  Fonts -->
     <script src="assets/js/script.js" defer></script>
 </head>
 
@@ -24,11 +25,11 @@
         <nav>
             <div id="burgermenuCloseButtonWrapper"><a class="btn btn-close" href="#"
                     onclick="toggleClass('header > nav', 'active');return false">Luk</a></div>
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo none"
+            <a href="../index.html"><img src="../assets/images/dpplogo.png" class="logo none"
                     alt="Distribution PLUS logo"></a>
             <ul>
-                <li>
-                    <a href="loesninger.html">Løsninger</a>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
+                    <a href="../loesninger.html">Løsninger</a>
                     <ul>
                         <div class="dropdown-wrapper">
                             <h2>Vores løsninger</h2>
@@ -37,25 +38,25 @@
                                     <div class="dropdown-category-sectionboxes">
                                         <h3>Dataservice</h3>
                                     </div>
-                                    <a href="">Adressekøb</a>
-                                    <a href="">Databehandling</a>
+                                    <a href="loesninger/adressekoeb.html">Adressekøb</a>
+                                    <a href="loesninger/databehandling.html">Databehandling</a>
                                 </div>
                                 <div class="dropdown-column">
                                     <div class="dropdown-category-sectionboxes">
                                         <h3>Adressering og pakning</h3>
                                     </div>
-                                    <a href="">Adressering</a>
-                                    <a href="">Foliering/indpakning</a>
-                                    <a href="">Paper wrapping</a>
+                                    <a href="../loesninger/adressering.html">Adressering</a>
+                                    <a href="../loesninger/foliering.html">Foliering/indpakning</a>
+                                    <a href="../loesninger/papirindpakning.html">Paper wrapping</a>
                                     <a href="">Bundt foliering</a>
-                                    <a href="">Segmentering</a>
-                                    <a href="">Indstik</a>
+                                    <a href="../loesninger/segmentering.html">Segmentering</a>
+                                    <a href="../loesninger/indstik.html">Indstik</a>
                                     <a href="">Manuel pålægning</a>
-                                    <a href="">Labes påsætning</a>
-                                    <a href="">Kuvertering</a>
-                                    <a href="">Pakning af kasser</a>
-                                    <a href="">Print</a>
-                                    <a href="">Lagerhotel</a>
+                                    <a href="">Lables påsætning</a>
+                                    <a href="../loesninger/kuvertering.html">Kuvertering</a>
+                                    <a href="../loesninger/haandpakning.html">Pakning af kasser</a>
+                                    <a href="../loesninger/print.html">Print</a>
+                                    <a href="../loesninger/lagerhotel.html">Lagerhotel</a>
                                 </div>
                                 <div class="dropdown-column">
                                     <div class="dropdown-category-sectionboxes">
@@ -63,8 +64,8 @@
                                     </div>
                                     <a href="">Rådgivning</a>
                                     <a href="">Magasiner</a>
-                                    <a href="">Breve</a>
-                                    <a href="">Pakker</a>
+                                    <a href="../loesninger/breve.html">Breve</a>
+                                    <a href="../loesninger/pakker.html">Pakker</a>
                                     <a href="">Adresseløst</a>
                                 </div>
                                 <div class="dropdown-column">
@@ -77,22 +78,28 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="selected" href="case.html">Cases</a>
-                    <ul class="width-dropdown">
-                        <li><a href="case.html#popuphunden">Hunden</a></li>
-                        <li><a href="case.html#popupaeldresagen">Ældresagen</a></li>
-                        <li><a href="case.html#popupjaeger">Jæger</a></li>
-                        <li><a href="case.html#popupskiltemagasinetimpuls">Skiltemagasinet Impuls</a></li>
+                    <a href="../case.html">Cases</a>
+                </li>
+                <li>
+                    <a href="../ate.html">Alt til Erhverv</a>
+                </li>
+                <li>
+                    <a href="../omos.html">Om os</a>
+                </li>
+                <li>
+                    <a href="../kontakt.html">Kontakt</a>
+                </li>
+                <li onmouseover="handleOverlay(true)" onmouseleave="handleOverlay(false)">
+                    <a href="../kontakt.html#signup-direct"><button class="subscribe">Tilmeld nyhedsbrev</button></a>
+                    <ul>
+                        <div class="subscribe-dropdown">
+                            <h4>Indtast e-mail</h4>
+                            <form method="POST" action="mailto:martin.s96@outlook.dk">
+                                <input type="email" placeholder="Skriv E-mail her...">
+                                <input type="submit" value="Tilmeld">
+                            </form>
+                        </div>
                     </ul>
-                </li>
-                <li>
-                    <a href="ate.html">Alt til Erhverv</a>
-                </li>
-                <li>
-                    <a href="omos.html">Om os</a>
-                </li>
-                <li>
-                    <a href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
         </nav>
@@ -116,14 +123,15 @@
                     behjælpelige med på telefon 23232323.</p>
             </div>
             <div class="specific-cases-img">
-                <img src="assets/images/scleroseforeningen.jpg" alt="Billede af pakkeløsning Hunden">
+                <img src="../assets/images/scleroseforeningen.jpg" alt="Billede af pakkeløsning Hunden">
             </div>
         </div>
     </main>
 
     <footer>
         <div class="leftfooter">
-            <a href="index.html"><img src="assets/images/dpplogo.png" class="logo" alt="Distribution PLUS logo"></a>
+            <a href="../index.html"><img src="../assets/images/dpplogo.png" class="logo"
+                    alt="Distribution PLUS logo"></a>
             <p>Charles Lindberghsvej 9 <br> 9430 Vadum</p>
         </div>
         <div class="middlefooter">
