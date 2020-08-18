@@ -1473,72 +1473,149 @@ footer div {
     }
     /* Styling for loesninger.html (tablet) starter her */
     .loesningerframe {
-        display: block;
+        grid-template-areas: 
+        'top1 top2' 
+        'top3 top4' 
+        'top5 mid1' 
+        'mid2 mid3' 
+        'mid4 mid5' 
+        'mid6 mid7' 
+        'mid8 mid9' 
+        'mid10 bot1' 
+        'bot2 bot3' 
+        'bot4 bot5';
         padding-top: 10vh;
     }
     .loesningerframe section {
-        width: 70vw;
+        width: 40vw;
         height: 100%;
-        margin: 5vh auto;
+        margin: 1vh auto;
     }
     .centered {
         font-size: 60px;
     }
-    /* Styling for case.html (tablet) starter her */
-    .cases {
-        display: block;
+
+    /* Styling for de enkelte løsninger (tablet) starter her */
+
+    .solutions-h1 {
+        font-size: 5vw;
+        padding: 2vw;
     }
-    .cases section {
+
+    .solutions-flex {
+        display: unset;
+    }
+    
+    .solutions-flex div {
+        width: 80vw;
+        margin: auto;
+        padding: auto;
+    }
+
+    .solutions-flex video {
+        width: 80vw;
+        margin: 5vh 0;        
+    }
+
+    .solutions-h2 {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .solutions-text {
+        font-size: 2vw;
+    }
+
+    .advantages-flex {
         width: 90vw;
+    }
+
+    .advantages {
+        margin-top: 5vh;
+        width: 20vw;
+        height: 13vh;
+    }
+
+    /* Styling for case.html (tablet) starter her */
+    
+    #myBtnContainer {
+        margin-top: 10vh;
+    }
+
+    #myBtnContainer button {
+        width: 16.5vw;
+    }
+
+    .row {
+        height: 220vh;
+    }
+
+    .column {
+        width: 40vw;
+    }
+
+    /* Styling for de enkelte cases (tablet) starter her */
+    
+    .specific-cases h1 {
+        font-size: 3.5vw;
+    }
+
+    .specific-cases h2 {
+        font-size: 2.5vw;
+    }
+
+    .specific-cases-text p {
+        font-size: 2vw;
+    }
+
+    .specific-cases-img img {
+        width: 35vw;
+    }
+
+    /* Styling for ate.html (tablet) starter her */
+
+    .ateheader {
         height: 30vh;
-        margin: 0 auto 5vh auto;
     }
-    .caseboxtext h1 {
-        font-size: 60px;
-        position: relative;
-        bottom: 21.5vh;
+
+    .ateheader h1 {
+        top: 15%;
     }
-    /* Styling for case.html (tablet) pop-up vinduer starter her */
-    .popup-header .title {
-        margin-left: 3vw;
-        font-size: 60px;
-    }
-    .popup-body {
-        display: block;
-    }
-    .popup {
-        overflow: scroll;
-    }
-    .casesize {
-        margin: 3vh 0 0 2vw;
-    }
-    .casesize h2 {
-        font-size: 36px;
-        width: 70vw;
-    }
-    .casesize p {
-        font-size: 24px;
-        width: 70vw;
-    }
-    .popup-image {
+
+    .fixedmenu-right {
         display: none;
     }
+
+    .atesections h2 {
+        font-size: 4vw;
+    }
+
+    .atesections p {
+        font-size: 2vw;
+    }
+
     /* Styling for omos.html (tablet) starter her */
-    .omos-banner {
-        display: none;
+    
+    .omosheader {
+        width: 100vw;
+        height: 80vh;
     }
+
     .omos-missionandvision {
         display: block;
         height: 40vh;
+        top: 0;
     }
     .omos-missionandvision div {
         width: 80vw;
-        margin: auto;
-        height: 15vh;
+        margin: 5vh auto;
     }
     .omos-missionandvision p {
         font-size: 2vw;
     }
+
+    
+
     .history h2 {
         margin-top: 5vh;
         font-size: 40px;
