@@ -190,7 +190,6 @@ body.showmenu .dropdown-dark-background {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transition: 0.4s;
-
 }
 
 .subscribe-dropdown input {
@@ -241,12 +240,12 @@ footer {
 }
 
 .fa-linkedin {
-    color: rgb(92, 76, 148);
+    color: #2867B2;
     font-size: 2vw;
 }
 
 .fa-youtube {
-    color: rgb(92, 76, 148);
+    color: #FF0000;
     font-size: 2vw;
 }
 
@@ -585,11 +584,7 @@ footer div {
 
 .grid {
     display: grid;
-    grid-template-areas:
-    'top1 top2 top3 top4 top5'
-    'mid1 mid2 mid3 mid4 mid5'
-    'mid6 mid7 mid8 mid9 mid10'
-    'bot1 bot2 bot3 bot4 bot5';
+    grid-template-areas: 'top1 top2 top3 top4 top5' 'mid1 mid2 mid3 mid4 mid5' 'mid6 mid7 mid8 mid9 mid10' 'bot1 bot2 bot3 bot4 bot5';
     gap: 15px;
     width: 86vw;
     margin: auto;
@@ -661,121 +656,60 @@ footer div {
     background-color: #C0C0C0;
 }
 
-.filter {
-    width: 84vw;
-    margin: auto;
-    height: 10vh;
-    background-color: white;
-    border-radius: 25px;
+#myBtnContainer {
     text-align: center;
-    padding: 2.5vh;
 }
 
-.filter button {
-    margin: 0 2.8vw;
+#myBtnContainer button {
+    background: none;
+    border: 3px solid #5C4C94;
+    border-radius: 50px;
+    width: 8vw;
+    color: #5C4C94;
+    margin: 0.5vw;
 }
 
-.invisible {
+#myBtnContainer .btn:hover {
+    background-color: #6F619F;
+    color: white;
+}
+
+#myBtnContainer .btn.active {
+    background-color: #5C4C94;
+    color: white;
+}
+
+.row {
+   width: 90vw;
+   margin: auto;
+   height: 110vh;
+}
+
+.column {
+    float: left;
+    width: 15vw;
+    height: 30vh;
+    margin: 3vh 1.5vw;
+    text-align: center;
+    background-size: 100%;
     display: none;
+    color: white;
 }
 
-.filter button:hover {
-    background-color: rgb(75, 64, 110);
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.filter button:active {
-    background-color: rgb(48, 41, 71);
-}
-
-.cases {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-areas: 'top1 top2 top3 top4 top5' 'mid1 mid2 mid3 mid4 mid5' 'bot1 bot2 bot3 bot4 bot5';
-    gap: 1.5vw;
-    width: 84vw;
-    margin: 10vh auto 10vh auto;
-}
-
-.cases a {
-    text-decoration: none;
-}
-
-.hunden {
-    grid-area: top1;
-}
-
-.case2 {
-    grid-area: top2;
-}
-
-.skiltemagasinet {
-    grid-area: top3;
-}
-
-.jaeger {
-    grid-area: top4;
-}
-
-.case5 {
-    grid-area: top5;
-}
-
-.case6 {
-    grid-area: mid1;
-}
-
-.case7 {
-    grid-area: mid2;
-}
-
-.case8 {
-    grid-area: mid3;
-}
-
-.case9 {
-    grid-area: mid4;
-}
-
-.case10 {
-    grid-area: mid5;
-}
-
-.case11 {
-    grid-area: bot1;
-}
-
-.case12 {
-    grid-area: bot2;
-}
-
-.case13 {
-    grid-area: bot3;
-}
-
-.case14 {
-    grid-area: bot4;
-}
-
-.case15 {
-    grid-area: bot5;
+.show {
+    display: block;
 }
 
 .hoverandclick:hover {
     transform: scale(1.05);
     transition: transform .25s;
     cursor: pointer;
-}
-
-.casebox {
-    width: 15vw;
-    height: 30vh;
-    text-align: center;
-    background-size: contain;
-    padding-top: 12.5vh;
-}
-
-.casebox h1 {
-    color: white;
 }
 
 .casebox-bg-hunden {
@@ -983,7 +917,7 @@ footer div {
 }
 
 .signup form {
-    margin-top: 1.5vh; 
+    margin-top: 1.5vh;
 }
 
 .signup input[type=submit] {
@@ -1048,8 +982,6 @@ footer div {
     font-size: 0.8vw;
 }
 
-
-
 /* Styling for ate.html starter her */
 
 .bodyate {
@@ -1072,7 +1004,7 @@ footer div {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
 }
@@ -1082,7 +1014,7 @@ footer div {
     position: absolute;
     top: 35%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .ate-banner h1 {
@@ -1135,16 +1067,12 @@ footer div {
     padding: 5vh 0 5vh 0;
 }
 
-
-
-
 #ate2 table, th, td {
     border: 1px solid rgb(92, 76, 148);
     text-align: center;
     border-collapse: collapse;
     padding: 10px;
 }
-
 
 #ate3 button {
     height: 5vh;
@@ -1178,7 +1106,6 @@ footer div {
     color: white;
     font-size: 1.2rem;
 }
-
 
 /* Styling for omos.html starter her */
 
@@ -1361,15 +1288,12 @@ footer div {
 
 /* Styling for tablet version starter her */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
     /* Generelt */
     .desktop-none {
         display: block;
         position: absolute;
         margin: 1vh 0 0 2vw;
-    }
-    .none {
-        display: none;
     }
     main .desktop-none {
         display: block;
@@ -1429,9 +1353,6 @@ footer div {
         width: 80vw;
         background-color: #C0C0C0;
         margin-left: 0;
-    }
-    .logo {
-        display: none;
     }
     footer .logo {
         display: block;
@@ -1528,6 +1449,20 @@ footer div {
         height: 30vh;
     }
     #nyhedsbrev {
+        background-color: #c0c0c0;
+        height: 40vh;
+    }
+    #nyhedsbrev .video-news {
+        display: none;
+    }
+    .categorybox {
+        height: 20vh;
+        width: 30vw;
+    }
+    .categorybox h4 {
+        font-size: 20px;
+    }
+    .categorybox p {
         display: none;
     }
     .logo {
@@ -1537,49 +1472,17 @@ footer div {
         font-size: 50px;
     }
     /* Styling for loesninger.html (tablet) starter her */
-    .loesningerframe .video-container {
-        background-color: rgb(92, 76, 148);
-        font-size: 4vw;
-    }
-    .videotext h1 {
-        color: white;
-    }
     .loesningerframe {
         display: block;
-        width: 90vw;
+        padding-top: 10vh;
     }
     .loesningerframe section {
-        width: 90vw;
-        height: 30vh;
-        margin: 5vh auto 5vh auto;
+        width: 70vw;
+        height: 100%;
+        margin: 5vh auto;
     }
-    .videobox {
-        display: none;
-    }
-    .videotext {
-        background: none;
-        color: black;
-    }
-    .videotext p {
-        display: none;
-    }
-    /* Styling for loesninger.html (tablet) pop-up vinduer starter her */
-    .popup-header .close-button {
-        font-size: 10vw;
-        margin-right: 3vw;
-    }
-    .popup-loesninger-text {
-        font-size: 24px;
-        margin-left: 2vw;
-    }
-    .popup-loesninger-text h2 {
-        font-size: 40px;
-    }
-    .popup-video {
-        display: none;
-    }
-    .advantages {
-        display: none;
+    .centered {
+        font-size: 60px;
     }
     /* Styling for case.html (tablet) starter her */
     .cases {
@@ -1790,9 +1693,6 @@ footer div {
         position: absolute;
         margin: 1vh 0 0 2vw;
     }
-    .none {
-        display: none;
-    }
     .desktop-none {
         display: block;
     }
@@ -1881,13 +1781,6 @@ footer div {
         font-size: 11px;
     }
     /* Styling for loesninger.html (mobile) starter her */
-    .loesningerframe .video-container {
-        background-color: rgb(92, 76, 148);
-        font-size: 4vw;
-    }
-    .videotext h1 {
-        color: white;
-    }
     .loesningerframe {
         display: block;
         width: 90vw;
@@ -1896,16 +1789,6 @@ footer div {
         width: 90vw;
         height: 20vh;
         margin: 5vh auto 5vh auto;
-    }
-    .videobox {
-        display: none;
-    }
-    .videotext {
-        background: none;
-        color: black;
-    }
-    .videotext p {
-        display: none;
     }
     /* Styling for loesninger.html (mobile) pop-up vinduer starter her */
     .popup {

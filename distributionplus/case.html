@@ -14,6 +14,7 @@
     <!--Font awesome Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> <!-- Goolge Fonts -->
     <script src="assets/js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.js" defer></script>
 </head>
 
 <body class="bodycase">
@@ -106,86 +107,88 @@
     </header>
 
     <main>
-        <div class="filter">
-            <button onclick="toggleList('kategori1')">Kategori 1</button>
-            <button onclick="toggleList('kategori2')">Kategori 2</button>
-            <button onclick="toggleList('all')">Vis alle</button>
-            <button onclick="toggleList('kategori3')">Kategori 3</button>
-            <button onclick="toggleList('kategori4')">Kategori 4</button>
+        <a href="index.html"><img src="assets/images/dpplogo.png" class="logo desktop-none"
+            alt="Distribution PLUS logo"></a>
+
+        <div id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('kategori1')">Kategori 1</button>
+            <button class="btn" onclick="filterSelection('kategori2')">Kategori 2</button>
+            <button class="btn active" onclick="filterSelection('all')">Vis alle</button>
+            <button class="btn" onclick="filterSelection('kategori3')">Kategori 3</button>
+            <button class="btn" onclick="filterSelection('kategori4')">Kategori 4</button>
         </div>
 
-        <div class="cases filterContainer">
-
+        <div class="row">
             <a href="cases/hunden.html">
-                <section class="hunden casebox hoverandclick shadow casebox-bg-hunden invisible all kategori1">
+                <div class="hunden casebox hoverandclick shadow casebox-bg-hunden column kategori1">
                     <h1>Hunden</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/aeldresagen.html">
-                <section class="aeldresagen casebox hoverandclick shadow casebox-bg-aeldresagen invisible all kategori1">
+                <div class="aeldresagen casebox hoverandclick shadow casebox-bg-aeldresagen column kategori1">
                     <h1>Ældresagen</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/skiltemagasinet.html">
-                <section class="skiltemagasinet casebox hoverandclick shadow casebox-bg-skiltemagasinet invisible all kategori2">
+                <div class="skiltemagasinet casebox hoverandclick shadow casebox-bg-skiltemagasinet column kategori2">
                     <h1>Skiltemagasinet</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/jaeger.html">
-                <section class="jaeger casebox hoverandclick shadow casebox-bg-jaeger invisible all kategori2">
+                <div class="jaeger casebox hoverandclick shadow casebox-bg-jaeger column kategori2">
                     <h1>Jæger</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/solbriller.html">
-                <section class="pinksolbriller casebox hoverandclick shadow casebox-bg-pinksolbriller invisible all kategori3">
+                <div class="pinksolbriller casebox hoverandclick shadow casebox-bg-pinksolbriller column kategori3">
                     <h1>Pink Solbriller</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/bruntpapir.html">
-                <section class="bruntpapir casebox hoverandclick shadow casebox-bg-bruntpapir invisible all kategori3">
+                <div class="bruntpapir casebox hoverandclick shadow casebox-bg-bruntpapir column kategori3">
                     <h1>Arbejde med brunt papir</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/hvidtpapir.html">
-                <section class="hvidtpapir casebox hoverandclick shadow casebox-bg-hvidtpapir invisible all kategori4">
+                <div class="hvidtpapir casebox hoverandclick shadow casebox-bg-hvidtpapir column kategori4">
                     <h1>Arbejde med hvidt papir</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/printcase.html">
-                <section class="printcase casebox hoverandclick shadow casebox-bg-printcase invisible all kategori4">
+                <div class="printcase casebox hoverandclick shadow casebox-bg-printcase column kategori4">
                     <h1>Print</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/scleroseforeningen.html">
-                <section class="scleroseforeningen casebox hoverandclick shadow casebox-bg-sclerose invisible all kategori1">
-                    <h1>Scleroseforeningen</h1>
-                </section>
+                <div class="scleroseforeningen casebox hoverandclick shadow casebox-bg-sclerose column kategori1">
+                    <h1>Sclerose foreningen</h1>
+                </div>
             </a>
 
             <a href="cases/shapeup.html">
-                <section class="shapeup casebox hoverandclick shadow casebox-bg-shapeup invisible all kategori2">
+                <div class="shapeup casebox hoverandclick shadow casebox-bg-shapeup column kategori2">
                     <h1>Shape Up</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/costume.html">
-                <section class="costume casebox hoverandclick shadow casebox-bg-costume invisible all kategori3">
+                <div class="costume casebox hoverandclick shadow casebox-bg-costume column kategori3">
                     <h1>Costume</h1>
-                </section>
+                </div>
             </a>
 
             <a href="cases/kingmagazine.html">
-                <section class="kingmagazine casebox hoverandclick shadow casebox-bg-kingmagazine invisible all kategori4">
+                <div class="kingmagazine casebox hoverandclick shadow casebox-bg-kingmagazine column kategori4">
                     <h1>King Magazine</h1>
-                </section>
+                </div>
             </a>
         </div>
     </main>
