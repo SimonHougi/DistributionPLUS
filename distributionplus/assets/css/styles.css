@@ -1290,6 +1290,9 @@ footer div {
 
 @media (min-width: 768px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
     /* Generelt */
+
+    
+
     .desktop-none {
         display: block;
         position: absolute;
@@ -1366,7 +1369,7 @@ footer div {
         background-color: rgb(92, 76, 148);
         width: 100vw;
         height: 100vh;
-        z-index: 1;
+        z-index: 2;
         transform: translateX(100%);
         transition: transform .3s ease-out;
         position: fixed;
@@ -1613,8 +1616,6 @@ footer div {
     .omos-missionandvision p {
         font-size: 2vw;
     }
-
-    
 
     .history h2 {
         margin-top: 5vh;
