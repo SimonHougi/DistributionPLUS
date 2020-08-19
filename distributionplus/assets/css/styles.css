@@ -694,6 +694,7 @@ footer div {
     background-size: 100%;
     display: none;
     color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
 .row:after {
