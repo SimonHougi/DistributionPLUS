@@ -173,41 +173,8 @@ body.showmenu .dropdown-dark-background {
 
 .subscribe {
     width: 10vw;
-    z-index: 2;
-}
-
-.subscribe-dropdown {
-    width: 15vw;
-    text-align: center;
-    color: white;
-}
-
-.subscribe-dropdown h4 {
-    margin: 1vh 0 1vh 0;
-}
-
-.subscribe:hover {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    transition: 0.4s;
-}
-
-.subscribe-dropdown input {
-    width: 14vw;
-}
-
-.subscribe-dropdown input[type=submit] {
-    background-color: #3B3B3B;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    margin: 1vh 0 1vh 0;
-    height: 3vh;
-    width: 7vw;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 0.8vw;
+    position: relative;
+    z-index: -1;
 }
 
 button {
@@ -455,7 +422,6 @@ footer div {
 
 .grid section {
     width: 15vw;
-    margin-top: 4vh;
 }
 
 .video-container {
@@ -506,98 +472,69 @@ footer div {
     transform: scale(1.05);
 }
 
-.adressekoeb {
-    grid-area: top1;
-}
-
-.databehandling {
-    grid-area: top2;
-}
-
-.adressering {
-    grid-area: top3;
-}
-
-.foliering {
-    grid-area: top4;
-}
-
-.paperwrapping {
-    grid-area: top5;
-}
-
-.bundtfoliering {
-    grid-area: mid1;
-}
-
-.segmentering {
-    grid-area: mid2;
-}
-
-.indstik {
-    grid-area: mid3;
-}
-
-.manuelpaalaegning {
-    grid-area: mid4;
-}
-
-.labelspaasaetning {
-    grid-area: mid5;
-}
-
-.kuvertering {
-    grid-area: mid6;
-}
-
-.pakningafkasser {
-    grid-area: mid7;
-}
-
-.print {
-    grid-area: mid8;
-}
-
-.lagerhotel {
-    grid-area: mid9;
-}
-
-.raadgivning {
-    grid-area: mid10;
-}
-
-.magasiner {
-    grid-area: bot1;
-}
-
-.breve {
-    grid-area: bot2;
-}
-
-.pakker {
-    grid-area: bot3;
-}
-
-.adresseloest {
-    grid-area: bot4;
-}
-
-.grid {
-    display: grid;
-    grid-template-areas: 'top1 top2 top3 top4 top5' 'mid1 mid2 mid3 mid4 mid5' 'mid6 mid7 mid8 mid9 mid10' 'bot1 bot2 bot3 bot4 bot5';
-    gap: 15px;
-    width: 86vw;
-    margin: auto;
-}
 
 .bodyloesninger footer {
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 /* Styling for the different solution pages starts here */
 
 .greybg {
     background-color: #888888;
+}
+
+.loesningermain {
+    display: flex;
+    width: 100%;
+}
+
+.l_category {
+    width: 100%;
+    order: 5;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.l_category a {
+    width: 15vw;
+    margin: 25px;
+}
+
+.l_category h1 {
+    text-align: center;
+}
+
+.loesninger1 {
+    margin-bottom: 2vh;
+}
+
+.loesninger1 h1 {
+    text-align: center;
+    color: rgb(92, 76, 148);
+}
+
+.loesninger2 {
+    margin-bottom: 2vh;
+}
+
+.loesninger2 h1 {
+    text-align: center;
+    color: rgb(92, 76, 148);
+}
+
+.loesninger3 {
+    margin-bottom: 2vh;
+}
+
+.loesninger3 h1 {
+    text-align: center;
+    color: rgb(92, 76, 148);
+}
+
+.loesningermain {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .loesningerbackground {
@@ -633,6 +570,11 @@ footer div {
 .solutions-video {
     width: 40vw;
     margin-left: 5vw;
+}
+
+.placeholder {
+    width: inherit;
+    height: 8.3vw;
 }
 
 .advantages {
@@ -820,83 +762,50 @@ footer div {
     background-color: #C0C0C0;
 }
 
-.kontakttop {
-    height: 30vh;
-    background-color: #3B3B3B;
-    color: white;
-    padding-left: 5vw;
-    padding-top: 5vh;
-    font-size: 1.4vw;
+.kontaktheader {
+    position: absolute;
 }
 
-.kontaktgrid {
-    display: grid;
-    grid-template-areas: 'tl tm tr' 'ml mm mr' 'bl bm br' 'bl bm2 br2';
-    line-height: 2vw;
-    justify-content: space-evenly;
-    margin: 5vh 0 5vh 0;
+.vk_main {
+    width: 100vw;
+    background: linear-gradient(#C0C0C0, rgb(92, 76, 148), #C0C0C0);
 }
 
-.kontaktgrid h2 {
+.vk_main h1 {
+    text-align: center;
     color: rgb(92, 76, 148);
-}
-
-.kontaktgrid p {
-    margin: 0;
-    padding: 0;
-}
-
-.bold p:first-of-type {
     font-weight: bold;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 2rem;
 }
 
-.topright {
-    grid-area: tr;
+.vk_columns {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    column-gap: 10vw;
 }
 
-.topmid {
-    grid-area: tm;
-    margin-bottom: 5vh;
+.vk_column1 {
+
 }
 
-.topleft {
-    grid-area: tl;
+.vk_column2 {
+
 }
 
-.midleft {
-    grid-area: ml;
+.vk_columns_both {
+    display: flex;
+    flex-direction: column;
 }
 
-.midmid {
-    grid-area: mm;
-    margin-bottom: 5vh;
-}
-
-.midright {
-    grid-area: mr;
-}
-
-.botleft {
-    grid-area: bl;
-}
-
-.botmid {
-    grid-area: bm;
-    margin-bottom: 5vh;
-}
-
-.botright {
-    grid-area: br;
-}
-
-.botmid2 {
-    grid-area: bm2;
-}
-
-.botright2 {
-    grid-area: br2;
-}
+.vk_image {
+    width: 25vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    border: 2px solid rgb(92, 76, 148);
+    border-radius: 3px;
+    }
 
 .contactwrapper {
     text-align: center;
@@ -1476,25 +1385,8 @@ footer div {
         font-size: 50px;
     }
     /* Styling for loesninger.html (tablet) starter her */
-    .loesningerframe {
-        grid-template-areas: 
-        'top1 top2' 
-        'top3 top4' 
-        'top5 mid1' 
-        'mid2 mid3' 
-        'mid4 mid5' 
-        'mid6 mid7' 
-        'mid8 mid9' 
-        'mid10 bot1' 
-        'bot2 bot3' 
-        'bot4 bot5';
-        padding-top: 10vh;
-    }
-    .loesningerframe section {
-        width: 40vw;
-        height: 100%;
-        margin: 1vh auto;
-    }
+    
+
     .centered {
         font-size: 60px;
     }
