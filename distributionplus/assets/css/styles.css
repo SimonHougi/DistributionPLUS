@@ -786,14 +786,6 @@ footer div {
     column-gap: 10vw;
 }
 
-.vk_column1 {
-
-}
-
-.vk_column2 {
-
-}
-
 .vk_columns_both {
     display: flex;
     flex-direction: column;
@@ -1324,6 +1316,7 @@ footer div {
         width: 100vw;
         height: 55vh;
         padding: 12vh 0 0 25vw;
+        background-size: cover;
     }
     #backgroundimage h1 {
         font-size: 60px;
@@ -1385,8 +1378,23 @@ footer div {
         font-size: 50px;
     }
     /* Styling for loesninger.html (tablet) starter her */
-    
 
+    .loesninger1 {
+        margin-top: 10vh;
+    }
+    
+    .l_category {
+        display: unset;
+    }
+
+    .video-container {
+        margin: auto;
+    }
+
+    .grid section {
+        width: 60vw;
+    }
+    
     .centered {
         font-size: 60px;
     }
@@ -1617,7 +1625,7 @@ footer div {
         background-color: rgb(92, 76, 148);
         width: 100vw;
         height: 100vh;
-        z-index: 1;
+        z-index: 2;
         transform: translateX(100%);
         transition: transform .3s ease-out;
         position: fixed;
@@ -1667,64 +1675,7 @@ footer div {
     .desktop-none {
         display: block;
     }
-    /* Styling for index.html (mobile) starter her */
-    header nav ul {
-        display: block;
-    }
-    .selected {
-        color: white;
-    }
-    #backgroundimage {
-        width: 100vw;
-        height: 35vh;
-        padding: 12vh 0 0 25vw;
-    }
-    #backgroundimage h1 {
-        font-size: 30px;
-    }
-    #backgroundimage h2 {
-        display: none;
-    }
-    #top {
-        display: none;
-    }
-    .indexbody .flexbox {
-        display: block;
-    }
-    #left {
-        width: 100vw;
-        padding: 0;
-        height: 20vh;
-    }
-    #left h2 {
-        padding-top: 1vh;
-        padding-left: 10vw;
-        margin: 0;
-        font-size: 20px;
-        font-weight: normal;
-    }
-    #left p {
-        padding-top: 1vh;
-        padding-left: 10vw;
-        width: 80vw;
-        font-size: 12px;
-        line-height: 1.2;
-        margin: 0;
-    }
-    #left button {
-        margin-top: 2vh;
-        margin-left: 10vw;
-        width: 30vw;
-        font-size: 11px;
-        border-radius: 100px;
-    }
-    #map {
-        width: 100vw;
-        height: 30vh;
-    }
-    #nyhedsbrev {
-        display: none;
-    }
+
     footer {
         height: 15vh;
     }
@@ -1751,150 +1702,268 @@ footer div {
     footer h3 {
         font-size: 11px;
     }
-    /* Styling for loesninger.html (mobile) starter her */
-    .loesningerframe {
-        display: block;
-        width: 90vw;
-    }
-    .loesningerframe section {
-        width: 90vw;
-        height: 20vh;
-        margin: 5vh auto 5vh auto;
-    }
-    /* Styling for loesninger.html (mobile) pop-up vinduer starter her */
-    .popup {
-        width: 90vw;
-    }
-    .popup-header {
-        height: 10vh;
-    }
-    .popup-header .close-button {
-        font-size: 16vw;
-        margin: 0 5vw 0 0;
-    }
-    .popup .title {
-        font-size: 30px;
-        margin: 2.5vh 0 0 5vw;
-    }
-    .popup-loesninger-text {
-        font-size: 16px;
-        margin-left: 2vw;
-    }
-    .popup-loesninger-text h2 {
-        font-size: 24px;
-        color: black;
-    }
-    .popup-video {
-        display: none;
-    }
-    .advantages {
-        display: none;
-    }
-    /* Styling for case.html (mobile) starter her */
-    .cases {
+
+    /* Styling for index.html (mobile) starter her */
+
+    header nav ul {
         display: block;
     }
-    .cases section {
-        width: 90vw;
+
+    #backgroundimage {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .brandsection {
+        height: 15vh;
+    }
+
+    .video-news {
+        display: none;
+    }
+
+    #nyhedsbrev {
+        background-color: #C0C0C0;
+        height: auto;
+    }
+
+    .frontpage-boxcontainer {
+        display: unset;
+    }
+
+    .categorybox {
+        width: 60vw;
         height: 30vh;
-        margin: 0 auto 5vh auto;
+        margin: 5vh auto;
     }
-    .caseboxtext h1 {
-        font-size: 40px;
-        position: relative;
-        bottom: 20vh;
+
+    /* Styling for loesninger.html (mobile) starter her */
+    .loesninger1 {
+        margin-top: 10vh;
     }
-    /* Styling for case.html (mobile) pop-up vinduer starter her */
-    .popup-body {
-        display: block;
+    
+    .l_category {
+        display: unset;
     }
-    .popup {
-        overflow: scroll;
+
+    .video-container {
+        margin: auto;
     }
-    .casesize {
-        margin: 3vh 0 0 2vw;
+
+    .grid section {
+        width: 60vw;
     }
-    .casesize h2 {
-        font-size: 24px;
+    
+    .centered {
+        font-size: 30px;
+    }
+
+    /* Styling for de enkelte løsninger (mobile) starter her */
+
+    .solutions-h1 {
+        font-size: 8vw;
+        padding: 2vw;
+        margin-top: 10vh;
+    }
+
+    .solutions-flex {
+        display: unset;
+    }
+    
+    .solutions-flex div {
+        width: 80vw;
+        margin: auto;
+        padding: auto;
+    }
+
+    .solutions-flex video {
+        width: 80vw;
+        margin: 5vh 0;        
+    }
+
+    .solutions-h2 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .solutions-text {
+        font-size: 4vw;
+    }
+
+    .advantages-flex {
+        width: 90vw;
+        display: unset;
+    }
+
+    .advantages {
+        margin: 5vh auto;
+        width: 60vw;
+        height: 20vh;
+    }
+
+    /* Styling for case.html (mobile) starter her */
+    
+    #myBtnContainer {
+        margin-top: 10vh;
+    }
+
+    #myBtnContainer button {
+        width: 17vw;
+        font-size: 3vw;
+    }
+
+    .row {
+        height: 220vh;
+    }
+
+    .column {
+        width: 40vw;
+    }
+
+    .hoverandclick {
+        background-size: cover;
+    }
+
+    .hoverandclick h1 {
+        font-size: 5vw;
+    }
+
+    /* Styling for de enkelte cases (mobile) starter her */
+    
+    .specific-cases h1 {
+        font-size: 7vw;
+    }
+
+    .specific-cases h2 {
+        font-size: 5vw;
+    }
+
+    .specific-cases-text p {
+        font-size: 4vw;
+    }
+
+    .specific-cases-img {
+        width: 80vw;
+        margin: 5vh auto;
+    }
+
+    .specific-cases-img img {
         width: 70vw;
     }
-    .casesize p {
-        font-size: 16px;
-        width: 70vw;
+
+    .specific-cases-content {
+        display: unset;
+        margin: auto;
     }
-    .popup-image {
+
+    .specific-cases-content p {
+        width: 80vw;
+    }
+
+    .specific-cases-text {
+        width: 90vw;
+        margin: auto;
+    }
+
+    /* Styling for ate.html (mobile) starter her */
+
+    .ateheader {
+        height: 30vh;
+    }
+
+    .ateheader h1 {
+        top: 15%;
+    }
+
+    .fixedmenu-right {
         display: none;
     }
+
+    .atesections h2 {
+        font-size: 8vw;
+    }
+
+    .atesections p {
+        font-size: 4vw;
+    }
+
+    .atesections table {
+        font-size: 3vw;
+    }
+
     /* Styling for omos.html (mobile) starter her */
-    .omos-banner {
-        display: none;
+    
+    .omosheader {
+        width: 100vw;
+        height: 90vh;
     }
+
     .omos-missionandvision {
         display: block;
-        height: 55vh;
+        height: 40vh;
+        top: 0;
     }
     .omos-missionandvision div {
         width: 80vw;
-        margin: auto;
-        height: 25vh;
-    }
-    .omos-missionandvision h1 {
-        font-size: 24px;
-        padding-top: 0vh;
-        margin: 0;
+        margin: 5vh auto;
     }
     .omos-missionandvision p {
-        font-size: 3vw;
-        padding-bottom: 5vh;
+        font-size: 4vw;
     }
-    .timelinewrapper {
-        display: none;
-    }
+
     .history h2 {
         margin-top: 5vh;
         font-size: 40px;
     }
     .history h3 {
         margin-top: 5vh;
-        font-size: 30px;
+        font-size: 7vw;
     }
     .history p {
-        font-size: 20px;
-    }
-    /* Styling for kontakt.html (tablet) starter her */
-    .kontakttop h1 {
-        font-size: 30px;
-        margin-bottom: 2vh;
-    }
-    .kontakttop p {
-        font-size: 20px;
-    }
-    .none {
-        display: none;
-    }
-    .kontaktgrid {
-        display: grid;
-        grid-template-areas: 'tr tl' 'tm ml' 'mr mm' 'br bm' 'br2 bm2' 'bl none';
-    }
-    .bold {
-        width: 46vw;
-        margin: auto;
-    }
-    .kontaktgrid div h2 {
-        margin-top: 2vh;
         font-size: 16px;
     }
-    .kontaktgrid div p {
-        color: black;
-        margin-bottom: 2vh;
-        font-size: 10px;
+
+    .flexbox {
+        display: unset;
     }
-    .rightfooter p {
-        padding: 0;
-        margin-top: 2vh;
-        margin-bottom: 0;
+
+    .width {
+        width: 80vw;
+        margin: 5vh auto;
     }
-    .leftfooter p {
-        margin-bottom: 0;
+
+    .timeline-center h3 {
+        font-size: 5vw;
+    }
+
+    .timeline-singleborder h4 {
+        font-size: 5vw;
+    }
+
+    .timeline-singleborder h5 {
+        font-size: 2vw;
+    }
+    /* Styling for kontakt.html (mobile) starter her */ 
+
+    .none, .splitline {
+        display: none;
+    }
+
+    .contactwrapper {
+        display: unset;
+    }
+
+    .formular {
+        width: 80vw;
+        margin: 5vh 0 0 10vw;
+    }
+
+    .formular h3 {
+        font-size: 5vw;
+    }
+
+    .signup {
+        width: 80vw;
+        margin: 5vh 0 5vh 10vw;
     }
 }
