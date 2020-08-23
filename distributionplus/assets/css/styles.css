@@ -483,6 +483,15 @@ footer div {
     background-color: #888888;
 }
 
+.bg_same {
+    background-image: url(../images/loesningerbaggrund.jpg);
+}
+
+.text_bg {
+    color: white;
+    text-shadow: 2px 2px 5px #3B3B3B;
+}
+
 .loesningermain {
     display: flex;
     width: 100%;
@@ -570,6 +579,7 @@ footer div {
 .solutions-video {
     width: 40vw;
     margin-left: 5vw;
+    border: 3px solid white;
 }
 
 .placeholder {
@@ -584,6 +594,7 @@ footer div {
     background-color: #6F619F;
     margin: auto;
     padding: 1.5vw;
+    border: 2px solid white;
 }
 
 .advantages-flex {
