@@ -422,6 +422,7 @@ footer div {
 
 .grid section {
     width: 15vw;
+    height: 15vh;
 }
 
 .video-container {
@@ -442,6 +443,7 @@ footer div {
 
 .preview {
     width: inherit;
+    background: url(../images/loesningerbaggrund.jpg);
 }
 
 .video-container .grayscale-filter {
