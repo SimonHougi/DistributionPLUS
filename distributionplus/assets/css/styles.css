@@ -104,7 +104,8 @@ header nav ul li ul li a:hover {
 }
 
 .dropdown-wrapper h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 3px 3px 5px black;
 }
 
 .dropdown-category {
@@ -115,7 +116,36 @@ header nav ul li ul li a:hover {
 .dropdown-category-sectionboxes {
     height: 12vh;
     width: 12vw;
-    background: white;
+    background: black;
+}
+
+.dropdown-category-sectionboxes h3 {
+    color: white !important;
+    font-weight: bold;
+}
+
+.menu_dataservice {
+    background-image: url(../images/menu_dataservice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu_adressering {
+    background-image: url(../images/menu_adressering.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu_distribution {
+    background-image: url(../images/menu_distribution.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu_denye {
+    background-image: url(../images/menu_denye.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .dropdown-column {
