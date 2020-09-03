@@ -476,6 +476,70 @@ footer div {
     background: url(../images/loesningerbaggrund.jpg);
 }
 
+/* Posters til løsninger */
+
+.poster_adressekoeb {
+    background: url(../images/poster/Adressekoebposter.jpg);
+    background-size: cover;
+}
+
+.poster_databehandling {
+    background: url(../images/poster/Databehandlingposter.jpg);
+    background-size: cover;
+}
+
+.poster_paperwrap {
+    background: url(../images/poster/Paperwrapposter.jpg);
+    background-size: cover;
+}
+
+.poster_segmentering {
+    background: url(../images/poster/Segmenteringposter.jpg);
+    background-size: cover;
+}
+
+.poster_label {
+    background: url(../images/poster/Labelposter.jpg);
+    background-size: cover;
+}
+
+.poster_print {
+    background: url(../images/poster/Printposter.jpg);
+    background-size: cover;
+}
+
+.poster_lagerhotel {
+    background: url(../images/poster/Lagerhotelposter.jpg);
+    background-size: cover;
+}
+
+.poster_raadgivning {
+    background: url(../images/poster/Raadgivningposter.jpg);
+    background-size: cover;
+}
+
+.poster_magasiner {
+    background: url(../images/poster/Magasinerposter.jpg);
+    background-size: cover;
+}
+
+.poster_breve {
+    background: url(../images/poster/Breveposter.jpg);
+    background-size: cover;
+}
+
+.poster_pakker {
+    background: url(../images/poster/Pakkerposter.jpg);
+    background-size: cover;
+}
+
+.poster_adresseloest {
+    background: url(../images/poster/Adresseloestposter.jpg);
+    background-size: cover;
+}
+
+/* Posters slut */
+
 .video-container .grayscale-filter {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -649,7 +713,7 @@ footer div {
     background: none;
     border: 3px solid #5C4C94;
     border-radius: 50px;
-    width: 8vw;
+    width: 9vw;
     color: #5C4C94;
     margin: 0.5vw;
 }
@@ -657,6 +721,9 @@ footer div {
 #myBtnContainer .btn:hover {
     background-color: #6F619F;
     color: white;
+    transform: scale(1.10);
+    transition: transform .25s;
+    cursor: pointer;
 }
 
 #myBtnContainer .btn.active {
