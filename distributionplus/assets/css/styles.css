@@ -1574,8 +1574,9 @@ footer div {
     }
     /* Styling for loesninger.html (tablet) starter her */
 
-    .loesninger1 {
-        margin-top: 10vh;
+    .loesninger1, .loesninger2, .loesninger3 {
+        margin-top: 20vh;
+        font-size: 30px;
     }
     
     .l_category {
@@ -1583,7 +1584,7 @@ footer div {
     }
 
     .video-container {
-        margin: auto;
+        margin: 6vh auto;
     }
 
     .grid section {
@@ -2157,8 +2158,24 @@ footer div {
         font-size: 5vw;
     }
 
+    .formular button {
+        width: 30vw;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
     .signup {
         width: 80vw;
         margin: 5vh 0 5vh 10vw;
+    }
+
+    .signup input[type=email] {
+        width: 50vw;
+    }
+
+    .signup input[type=submit] {
+        width: 30vw;
+        height: 5vh;
+        font-size: 16px;
     }
 }
