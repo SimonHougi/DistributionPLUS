@@ -860,8 +860,6 @@ footer div {
     background-image: url(../images/hundenbg.jpg);
 }
 
-/* Styling for aeldresagen.html starts here */
-
 .aeldresagen-bg-image {
     background-image: url(../images/ældresagenbg.jpg);
 }
@@ -891,6 +889,7 @@ footer div {
 
 .bruntpapir-bg-image {
     background-image: url(../images/bruntpapirbg.jpg);
+    background-size: cover;
 }
 
 .bruntpapir-bg-image p, h1, h2 {
