@@ -866,6 +866,92 @@ footer div {
     background-image: url(../images/ældresagenbg.jpg);
 }
 
+.skiltemagasinet-bg-image {
+    background-image: url(../images/impulsbladbg.jpg);
+    background-size: cover;
+}
+
+.skiltemagasinet-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.jaeger-bg-image {
+    background-image: url(../images/jægerbladbg.jpg);
+    background-size: cover;
+}
+
+.solbriller-bg-image {
+    background-image: url(../images/pinksolbrillerbg.jpg);
+    background-size: cover;
+}
+
+.solbriller-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.bruntpapir-bg-image {
+    background-image: url(../images/bruntpapirbg.jpg);
+}
+
+.bruntpapir-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.hvidtpapir-bg-image {
+    background-image: url(../images/hvidtpapirbg.jpg);
+    background-size: cover;
+}
+
+.hvidtpapir-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.print-bg-image {
+    background-image: url(../images/printcasebg.jpg);
+    background-size: cover;
+}
+
+.print-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.scleroseforeningen-bg-image {
+    background-image: url(../images/scleroseforeningenbg.jpg);
+    background-size: cover;
+}
+
+.scleroseforeningen-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.shapeup-bg-image {
+    background-image: url(../images/shapeupbg.jpg);
+    background-size: cover;
+}
+
+.shapeup-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.costume-bg-image {
+    background-image: url(../images/costumebg.jpg);
+    background-size: cover;
+}
+
+.costume-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+.kingmagazine-bg-image {
+    background-image: url(../images/kingmagazinebg.jpg);
+    background-size: cover;
+}
+
+.kingmagazine-bg-image p, h1, h2 {
+    text-shadow: 1.5px 1.5px grey;
+}
+
+
 /* Styling for kontakt.html starter her */
 
 .bodykontakt {
