@@ -100,6 +100,46 @@ function validate() // Funktion der tjekker, om vigtige oplysninger er indtastet
 }
 
 
+// Script til udfyldning af afmelding på ATE //
+
+function validateAte() // Funktion der tjekker, om vigtige oplysninger er indtastet //
+{
+     // Variabler oprettet for hver af inputfelterne //
+    let company = document.forms["info"]["Virksomhed"];
+    let adress = document.forms["info"]["Adresse"];
+    let city = document.forms["info"]["By"];
+    let email = document.forms["info"]["Email"];
+
+
+    if (company.value == "") {
+        window.alert("Virksomhed* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
+        company.focus();
+        return false;
+    }
+
+    if (adress.value == "") {
+        window.alert("Adresse* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
+        adress.focus();
+        return false;
+    }
+
+    if (city.value == "") {
+        window.alert("Postnr. og by* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
+        city.focus();
+        return false;
+    }
+
+    if (email.value == "") {
+        window.alert("E-mail* skal udfyldes"); // Hvis feltet er tomt, så popper der en alert op //
+        email.focus();
+        return false;
+    }
+
+
+    return true; // Hvis felterne med stjerne er udfyldt, så kan man trykke på sendknappen //
+}
+
+
 // Script til burgermenu - hentet inspiration og hjælp fra workshop med DAHG //
 
 function toggleClass(selector, className) {
